@@ -1,0 +1,44 @@
+@media (max-width: 1440px) {
+	#splash {
+		.half {
+			transform: scale(0.7);
+		}
+	}
+}
+@media (max-width: 1280px) {
+	#modal {
+		#music {
+			transform: scale(0.7);
+			padding-top: 0;
+		}
+	}
+	#stage {
+		&.open {
+			transform: translate(0,40vh);
+		}
+	}
+}
+/* Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+	#modal {
+		#music {
+			transform: scale(0.8);
+			padding-top: 0;
+		}
+	}
+	#stage {
+		&.open {
+			transform: translate(0,30vh);
+		}
+	}
+}
+@meida (max-width: 1024px) {
+	#modal {
+		height: inherit;
+		overflow: scroll;
+	}
+}

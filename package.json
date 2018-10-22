@@ -2,12 +2,22 @@
   "name": "ap",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://andersonpaak.com/",
+  "url": "https://github.com/Bebeau/ap/issues",
+  "email": "kyle@theinitgroup.com",
   "dependencies": {
+    "node-sass-chokidar": "^1.3.4",
+    "npm": "^6.4.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-particles-js": "^2.3.0",
+    "react-responsive-carousel": "^3.1.43",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5"
   },
   "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/assets/sass/ -o src/assets/sass/ --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -1,0 +1,361 @@
+@font-face {
+    font-family: "CooperBlack";
+    font-style: normal;
+    src: local("Cooper Black"), 
+    local("cooperblack.ttf"),  
+    url("../fonts/cooperblack.ttf") format("ttf");
+}
+@font-face {
+    font-family: "Gothic";
+    font-style: normal;
+    src: local("Century Gothic"), 
+    local("gothic.ttf"),  
+    url("../fonts/gothic.ttf") format("ttf");
+}
+@font-face {
+    font-family: "Gothic Bold";
+    font-style: normal;
+    src: local("Century Bold"), 
+    local("gothic.ttf"),  
+    url("../fonts/gothicb.ttf") format("ttf");
+}
+@font-face {
+    font-family: "Gothic Itallic";
+    font-style: normal;
+    src: local("Century Gothic"), 
+    local("gothic.ttf"),  
+    url("../fonts/gothici.ttf") format("ttf");
+}
+@font-face {
+    font-family: Universe;
+    src: url("../fonts/universe.otf") format("opentype");
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background: #0d0d0d;
+	font-family: "Gothic Bold", sans-serif;
+	overflow: hidden;
+}
+a, button {
+	&:focus {
+		outline: none;
+	}
+}
+.particles {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+#stage {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background: url('../img/bg.png') no-repeat scroll bottom center / cover;
+	transition: all 0.5s ease-in-out;
+	&.open {
+		transform: translate(0,50vh);
+		transition: all 1s ease-in-out;
+	}
+}
+#splash {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	background: #f7efe4;
+	box-sizing: border-box;
+	overflow: hidden;
+	&.close {
+		transform: translate(0,-100vh);
+		transition: all 0.3s ease-in-out;
+	}
+	.half {
+		width: 50%;
+		height: 100vh;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		z-index: 2;
+		&.image {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+	button {
+		background: none;
+		border: none;
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 16px;
+		letter-spacing: 5px;
+		text-align: center;
+		transition: all 0.3s ease-in-out;
+		z-index: 999;
+		&:hover {
+			cursor: pointer;
+			letter-spacing: 5.5px;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+	img {
+		width: 200px;
+		height: auto;
+		display: block;
+	}
+	.universe {
+		font-family: "Universe", sans-serif;
+		text-transform: uppercase;
+		font-size: 21pt;
+	}
+	.cooper {
+		font-family: "CooperBlack", sans-serif;
+		text-transform: uppercase;
+		font-size: 24pt;
+	}
+	#intro {
+		text-align: left;
+		transform: translate(-300px,0);
+		display: block;
+	}
+	#feature {
+		transform: translate(80%,-175px);
+	}
+	h1 {
+		font-size: 125pt !important;
+		letter-spacing: 10px;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 300pt;
+		margin: 0;
+		padding: 0;
+		transform: translate(0,-100px);
+		text-align: center;
+	}
+	#aftermath {
+		position: absolute;
+		right: 25px;
+		bottom: 25px;
+		width: 50px;
+		height: auto;
+		z-index: 999;
+	}
+	#musicLinks {
+		text-align: center;
+		p {
+			text-transform: uppercase;
+			letter-spacing: 15px;
+			font-weight: bold;
+			font-size: 24pt;
+		}
+		a {
+			width: 35px;
+			height: auto;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 10px;
+			&.apple {
+				width: 50px;
+			}
+			img {
+				max-width: 100%;
+				vertical-align: middle;
+			}
+		}
+	}
+	.image {
+		position: relative;
+		z-index: 1;
+		video {
+			border: none;
+			height: auto;
+		}
+	}
+}
+#logo {
+	position: fixed;
+	left: 25px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 10;
+	img {
+		width: 150px;
+		height: auto;
+	}
+}
+nav {
+	position: fixed;
+	top: 0;
+	right: 25px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
+	button, a {
+		display: block;
+		border: none;
+		background: none;
+		color: white;
+		margin: 0;
+		padding: 0;
+		font-size: 16pt;
+		font-weight: bold;
+		width: 150px;
+		text-align: right;
+		line-height: 40px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		transition: all 0.3s ease-in-out;
+		text-decoration: none;
+		&:hover {
+			cursor: pointer;
+			color: #EFB123;
+			transition: all 0.3s ease-in-out;
+		}
+		&.selected {
+			color: #EFB123;
+		}
+	}
+}
+#social {
+	position: fixed;
+	bottom: 25px;
+	left: 25px;
+	z-index: 10;
+	a {
+		display: inline-block;
+		margin: 0 10px;
+		&#facebook {
+			width: 10px;
+			height: auto;
+		}
+		&#instagram {
+			width: 18px;
+			height: auto;
+		}
+		&#twitter {
+			width: 22px;
+			height: auto;
+		}
+		&#youtube {
+			width: 55px;
+			height: auto;
+			margin: 0 5px;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+#legal {
+	position: fixed;
+	bottom: 0;
+	right: 25px;
+	opacity: 0.5;
+	display: block;
+	color: white;
+	font-size: 8pt;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	z-index: 10;
+	text-align: right;
+	span {
+		font-size: 6pt;
+		display: block;
+		line-height: 60px;
+		vertical-align: middle;
+	}
+	a {
+		display: block;
+		width: 50px;
+		height: auto;
+		display: inline-block;
+		margin: 0 auto;
+		opacity: 0.25;
+		text-align: right;
+		transform: translate(0,7px);
+	}
+}
+#modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 9;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	transform: translate(0,-100vh);
+	transition: all 0.5s ease-in-out;
+	&.open {
+		transform: translate(0,0);
+		transition: all 1s ease-in-out;
+	}
+	#music {
+		text-align: center;
+		width: 1200px;
+		min-height: 100%;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 100px;
+		.album {
+			display: inline-block;
+			margin: 25px;
+			img {
+				display: block;
+			}
+			a {
+				width: 25px;
+				height: auto;
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0 10px;
+				&.apple {
+					width: 50px;
+					background: url('../img/SVG/apple.svg') no-repeats scroll center / cover;
+				}
+				&.spotify {
+					background: url('../img/SVG/spotify.svg') no-repeats scroll center / cover;
+				}
+				&.itunes {
+					background: url('../img/SVG/itunes.svg') no-repeats scroll center / cover;
+				}
+				&.tidal {
+					background: url('../img/SVG/tidal.svg') no-repeats scroll center / cover;
+				}
+				&.google {
+					background: url('../img/SVG/google.svg') no-repeats scroll center / cover;
+				}
+				&.amazon {
+					background: url('../img/SVG/amazon.svg') no-repeats scroll center / cover;
+				}
+			}
+		}
+	}
+}
