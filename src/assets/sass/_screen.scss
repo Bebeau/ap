@@ -1,3 +1,5 @@
+$tint: #28292d;
+
 @font-face {
     font-family: "CooperBlack";
     font-style: normal;
@@ -138,8 +140,8 @@ a, button {
 	#feature {
 		transform: translate(80%,-175px);
 	}
-	h1 {
-		font-size: 125pt !important;
+	#title {
+		font-size: 125pt;
 		letter-spacing: 10px;
 		text-transform: uppercase;
 		text-align: center;
@@ -148,6 +150,23 @@ a, button {
 		padding: 0;
 		transform: translate(0,-100px);
 		text-align: center;
+		span{
+			&#t {
+				color: $tint;
+			}
+			&#i {
+				color: lighten($tint, 20%);
+			}
+			&#n {
+				color: darken($tint, 5%);
+			}
+			&#t2 {
+				color: lighten($tint, 15%);
+			}
+			&#s {
+				color: lighten($tint, 55%);
+			}
+		}
 	}
 	#aftermath {
 		position: absolute;

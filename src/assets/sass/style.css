@@ -116,8 +116,8 @@ a:focus, button:focus {
     display: block; }
   #splash #feature {
     transform: translate(80%, -175px); }
-  #splash h1 {
-    font-size: 125pt !important;
+  #splash #title {
+    font-size: 125pt;
     letter-spacing: 10px;
     text-transform: uppercase;
     text-align: center;
@@ -126,6 +126,16 @@ a:focus, button:focus {
     padding: 0;
     transform: translate(0, -100px);
     text-align: center; }
+    #splash #title span#t {
+      color: #28292d; }
+    #splash #title span#i {
+      color: #585a63; }
+    #splash #title span#n {
+      color: #1c1d20; }
+    #splash #title span#t2 {
+      color: #4c4e56; }
+    #splash #title span#s {
+      color: #b3b4bb; }
   #splash #aftermath {
     position: absolute;
     right: 25px;
@@ -312,9 +322,15 @@ nav {
 @media (max-width: 1280px) {
   #modal #music {
     transform: scale(0.7);
-    padding-top: 0; }
+    padding-top: 0;
+    width: auto; }
   #stage.open {
     transform: translate(0, 40vh); } }
+
+@meida (max-width: 1024px) {
+  #modal {
+    height: inherit;
+    overflow: scroll; } }
 
 /* Landscape */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
@@ -322,15 +338,93 @@ nav {
     transform: scale(0.8);
     padding-top: 0; }
   #stage.open {
-    transform: translate(0, 30vh); } }
+    transform: translate(0, 30vh); }
+  #splash #feature {
+    transform: translate(62%, -160px); }
+    #splash #feature .cooper {
+      font-size: 32pt; } }
 
-@meida (max-width: 1024px) {
-  #modal {
-    height: inherit;
-    overflow: scroll; } }
-
-@meida (max-width: 414px) {
+@media (max-width: 414px) {
+  #splash #feature {
+    transform: translate(0, -200px);
+    text-align: center; }
+    #splash #feature .universe {
+      margin-bottom: 15px; }
+      #splash #feature .universe:before {
+        content: "";
+        width: 80%;
+        height: 1px;
+        background: #d9bd96;
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translate(-50%, 0); }
+      #splash #feature .universe:after {
+        content: "";
+        width: 200px;
+        height: 1px;
+        background: #d9bd96;
+        opacity: 0.5;
+        position: absolute;
+        left: -6px;
+        top: -200px; }
+  #splash .half {
+    width: auto;
+    display: block; }
+    #splash .half.image {
+      left: 100px;
+      top: -40px; }
+      #splash .half.image video {
+        width: 300px; }
+  #splash #intro {
+    transform: translate(-50px, 0); }
+  #splash #musicLinks p {
+    font-size: 16pt; }
+  #splash #musicLinks a.apple {
+    width: 75px; }
+  #splash #title {
+    font-size: 120pt;
+    transform: translate(-90px, -100px); }
+  #splash button {
+    text-indent: -9999px;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    margin: 0;
+    padding: 0; }
   nav {
-    display: none; }
+    display: none !important; }
   #modal {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    display: block; }
+  #logo {
+    position: relative;
+    height: auto;
+    width: auto;
+    left: 0;
+    text-align: left;
+    display: block;
+    z-index: 1; }
+    #logo img {
+      width: 100px; }
+  #social,
+  #legal {
     position: relative; } }
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  #splash #title {
+    font-size: 135pt;
+    transform: translate(-100px, -100px); } }
+
+@media (max-width: 320px) {
+  #splash .half.image {
+    left: 90px; }
+  #splash #title {
+    font-size: 100pt;
+    transform: translate(-80px, -100px); } }

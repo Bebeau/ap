@@ -33,7 +33,13 @@ class Splash extends Component{
 			       		<span className="universe">Starring</span>
 			       		<img src={logo} alt="Anderson Paak" />
 			       	</div>
-		       		<h1 id="title" className="cooper">Tints</h1>
+		       		<h1 id="title" className="cooper">
+		       			<span id="t">T</span>
+		       			<span id="i">i</span>
+		       			<span id="n">n</span>
+		       			<span id="t2">t</span>
+		       			<span id="s">s</span>
+		       		</h1>
 		       		<div id="feature">
 						<div className="universe">and</div>
 						<span className="cooper">Kendrick Lamar</span>

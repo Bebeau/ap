@@ -10,6 +10,7 @@
 		#music {
 			transform: scale(0.7);
 			padding-top: 0;
+			width: auto;
 		}
 	}
 	#stage {
@@ -18,11 +19,17 @@
 		}
 	}
 }
+@meida (max-width: 1024px) {
+	#modal {
+		height: inherit;
+		overflow: scroll;
+	}
+}
 /* Landscape */
 @media only screen 
   and (min-device-width: 1024px) 
-  and (max-device-width: 1366px) 
-  and (orientation: landscape) 
+  and (max-device-width: 1366px)
+  and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 1.5) {
 	#modal {
 		#music {
@@ -35,18 +42,132 @@
 			transform: translate(0,30vh);
 		}
 	}
-}
-@meida (max-width: 1024px) {
-	#modal {
-		height: inherit;
-		overflow: scroll;
+	#splash {
+		#feature {
+			transform: translate(62%,-160px);
+			.cooper {
+				font-size: 32pt;
+			}
+		}
 	}
 }
-@meida (max-width: 414px) {
+@media (max-width: 414px) {
+	#splash {
+		#feature {
+			transform: translate(0,-200px);
+			text-align: center;
+			.universe {
+				margin-bottom: 15px;
+				&:before {	
+					content: "";
+					width: 80%;
+					height: 1px;
+					background: darken(#f4ece1, 20%);
+					position: absolute;
+					left: 50%;
+					top: 10px;
+					transform: translate(-50%,0);
+				}
+				&:after {
+					content: "";
+					width: 200px;
+					height: 1px;
+					background: darken(#f4ece1, 20%);
+					opacity: 0.5;
+					position: absolute;
+					left: -6px;
+					top: -200px;
+				}
+			}
+		}
+		.half {
+			width: auto;
+			display: block;
+			&.image {
+				left: 100px;
+				top: -40px;
+				video {
+					width: 300px;
+				}
+			}
+		}
+		#intro {
+			transform: translate(-50px,0);
+		}
+		#musicLinks {
+			p {
+				font-size: 16pt;
+			}
+			a {
+				&.apple {
+					width: 75px;
+				}
+			}
+		}
+		#title {
+			font-size: 120pt;
+			transform: translate(-90px,-100px);
+		}
+		button {
+			text-indent: -9999px;
+			overflow: hidden;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 60vh;
+			margin: 0;
+			padding: 0;
+		}
+	}
 	nav {
-		display: none;
+		display: none !important;
 	}
 	#modal {
 		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		display: block;
+	}
+	#logo {
+		position: relative;
+		height: auto;
+		width: auto;
+		left: 0;
+		text-align: left;
+		display: block;
+		z-index: 1;
+		img {
+			width: 100px;
+		}
+	}
+	#social,
+	#legal {
+		position: relative;
+	}
+}
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) {
+	#splash {
+		#title {
+			font-size: 135pt;
+			transform: translate(-100px,-100px);
+		}
+	}
+}
+@media (max-width: 320px) {
+	#splash {
+		.half {
+			&.image {
+				left: 90px;
+			}
+		}
+		#title {
+			font-size: 100pt;
+			transform: translate(-80px,-100px);
+		}
 	}
 }
