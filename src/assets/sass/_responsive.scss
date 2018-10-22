@@ -42,3 +42,11 @@
 		overflow: scroll;
 	}
 }
+@meida (max-width: 414px) {
+	nav {
+		display: none;
+	}
+	#modal {
+		position: relative;
+	}
+}
