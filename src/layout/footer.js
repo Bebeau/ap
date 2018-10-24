@@ -24,9 +24,10 @@ class Footer extends Component{
               <a id="youtube" href="https://www.youtube.com/user/Breezylovejoy" target="_BLANK" rel="noopener noreferrer">
                 <img src={youtube} alt="" />
               </a>
+              <div className="showMobile">© 2018 Anderson .Paak</div>
             </article>
             <p id="legal">
-            	© 2018 Anderson .Paak
+            	<span className="hideMobile">© 2018 Anderson .Paak</span>
               <span><a href="https://beheard.la" target="_BLANK" rel="noopener noreferrer"> <img src={heard} alt="The INiT Group" /></a></span>
             </p>
           </footer>

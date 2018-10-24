@@ -47,6 +47,12 @@ a, button {
 		outline: none;
 	}
 }
+.showMobile {
+	display: none;
+}
+.hideMobile {
+	display: block;
+}
 .particles {
 	position: fixed;
 	top: 0;
@@ -229,7 +235,7 @@ a, button {
 	align-items: center;
 	justify-content: space-around;
 	z-index: 10;
-	background: linear-gradient(to right, black, transparent);
+	background: linear-gradient(to right, rgba(0,0,0,0.8), transparent);
 	img {
 		width: 150px;
 		height: auto;
@@ -246,7 +252,10 @@ nav {
 	align-items: center;
 	justify-content: center;
 	z-index: 12;
-	background: linear-gradient(to left, black, transparent);
+	background: linear-gradient(to left, rgba(0,0,0,1), transparent);
+	&.hideMobile {
+		display: flex !important;
+	}
 	button, a {
 		display: block;
 		border: none;
@@ -303,6 +312,14 @@ nav {
 			height: auto;
 		}
 	}
+	.showMobile {
+		font-size: 10pt;
+		line-height: 25px;
+		vertical-align: middle;
+		color: white;
+		text-align: center;
+		opacity: 0.5;
+	}
 }
 #legal {
 	position: fixed;
@@ -314,12 +331,12 @@ nav {
 	font-size: 8pt;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	z-index: 15;
+	z-index: 20;
 	text-align: right;
 	span {
 		font-size: 6pt;
 		display: block;
-		line-height: 60px;
+		line-height: 25px;
 		vertical-align: middle;
 	}
 	a {
@@ -328,9 +345,8 @@ nav {
 		height: auto;
 		display: inline-block;
 		margin: 0 auto;
-		opacity: 0.25;
+		opacity: 0.35;
 		text-align: right;
-		transform: translate(0,7px);
 	}
 }
 #modal {
@@ -346,10 +362,12 @@ nav {
 	height: 100vh;
 	overflow: hidden;
 	transform: translate(0,-100vh);
-	transition: all 0.5s ease-in-out;
+	transition: all 1s ease-in-out;
+	opacity: 0;
 	&.open {
 		transform: translate(0,0);
-		transition: all 1s ease-in-out;
+		transition: all 1.5s ease-in-out;
+		opacity: 1;
 	}
 	h2 {
 		font-size: 16pt;
@@ -378,19 +396,20 @@ nav {
 	}
 	#music {
 		text-align: center;
-		width: 1200px;
 		min-height: 100%;
 		margin: 0 auto;
 		text-align: center;
 		padding-top: 100px;
+		width: 1200px;
 		&.show {
-			display: inline-block;
+			display: block;
 		}
 		.album {
 			display: inline-block;
 			margin: 25px;
 			img {
 				display: block;
+				margin: 0 auto;
 			}
 			a {
 				width: 25px;
@@ -421,9 +440,13 @@ nav {
 		}
 	}
 	#tour {
+		width: 100%;
 		transform: translate(0,-50px);
 		ul {
+			width: 1200px;
 			list-style: none;
+			margin: 0;
+			padding: 0;
 			li {
 				color: white;
 				text-transform: uppercase;
@@ -431,24 +454,34 @@ nav {
 				margin: 25px 0;
 				font-weight: bold;
 				letter-spacing: 2px;
-				span {
+				width: 100%;
+				.wrap {
 					display: table-cell;
+					box-sizing: border-box;
+					width: 50%;
+					margin: 0;
+					paddign: 0;
+					span {
+						display: inline-block;
+						white-space: nowrap;
+						margin: 0;
+						paddign: 0;
+					}
 				}
 				.date {
 					width: 200px;
-					text-align: center;
 				}
 				.venue {
-					width: 400px;
+					width: 300px;
 					font-style: oblique;
 					font-weight: lighter;
 				}
 				.location {
-					width: 300px;
+					width: 50%;
 					text-align: left;
 				}
 				.continent {
-					width: 250px;
+					width: 50%;
 					text-align: left;
 				}
 				.buy {
@@ -479,13 +512,21 @@ nav {
 		}
 	}
 	#videos {
-		width:854px;
-		overflow: hidden;
-		transform: translate(0,-50px);
+		width: 100%;
 		&.show {
-			flex-direction: row;
-			align-items: center;
+			flex-direction: column;
+			align-items: flex-start;
 			justify-content: flex-start;
+		}
+		.slide {
+			margin: 0 auto;
+			iframe {
+				width: 854px;
+				height: 480px;
+			}
+			&:last-child {
+				padding-bottom: 15vh;
+			}
 		}
 	}
 }

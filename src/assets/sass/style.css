@@ -34,6 +34,12 @@ body {
 a:focus, button:focus {
   outline: none; }
 
+.showMobile {
+  display: none; }
+
+.hideMobile {
+  display: block; }
+
 .particles {
   position: fixed;
   top: 0;
@@ -187,7 +193,7 @@ a:focus, button:focus {
   align-items: center;
   justify-content: space-around;
   z-index: 10;
-  background: linear-gradient(to right, black, transparent); }
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent); }
   #logo img {
     width: 150px;
     height: auto; }
@@ -204,6 +210,8 @@ nav {
   justify-content: center;
   z-index: 12;
   background: linear-gradient(to left, black, transparent); }
+  nav.hideMobile {
+    display: flex !important; }
   nav button, nav a {
     display: block;
     border: none;
@@ -251,6 +259,13 @@ nav {
     #social a img {
       width: 100%;
       height: auto; }
+  #social .showMobile {
+    font-size: 10pt;
+    line-height: 25px;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+    opacity: 0.5; }
 
 #legal {
   position: fixed;
@@ -262,12 +277,12 @@ nav {
   font-size: 8pt;
   letter-spacing: 3px;
   text-transform: uppercase;
-  z-index: 15;
+  z-index: 20;
   text-align: right; }
   #legal span {
     font-size: 6pt;
     display: block;
-    line-height: 60px;
+    line-height: 25px;
     vertical-align: middle; }
   #legal a {
     display: block;
@@ -275,9 +290,8 @@ nav {
     height: auto;
     display: inline-block;
     margin: 0 auto;
-    opacity: 0.25;
-    text-align: right;
-    transform: translate(0, 7px); }
+    opacity: 0.35;
+    text-align: right; }
 
 #modal {
   position: fixed;
@@ -292,10 +306,12 @@ nav {
   height: 100vh;
   overflow: hidden;
   transform: translate(0, -100vh);
-  transition: all 0.5s ease-in-out; }
+  transition: all 1s ease-in-out;
+  opacity: 0; }
   #modal.open {
     transform: translate(0, 0);
-    transition: all 1s ease-in-out; }
+    transition: all 1.5s ease-in-out;
+    opacity: 1; }
   #modal h2 {
     font-size: 16pt;
     color: white;
@@ -323,18 +339,19 @@ nav {
       justify-content: center; }
   #modal #music {
     text-align: center;
-    width: 1200px;
     min-height: 100%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 100px; }
+    padding-top: 100px;
+    width: 1200px; }
     #modal #music.show {
-      display: inline-block; }
+      display: block; }
     #modal #music .album {
       display: inline-block;
       margin: 25px; }
       #modal #music .album img {
-        display: block; }
+        display: block;
+        margin: 0 auto; }
       #modal #music .album a {
         width: 25px;
         height: auto;
@@ -355,30 +372,43 @@ nav {
         #modal #music .album a.amazon {
           background: url("../img/SVG/amazon.svg") no-repeats scroll center/cover; }
   #modal #tour {
+    width: 100%;
     transform: translate(0, -50px); }
     #modal #tour ul {
-      list-style: none; }
+      width: 1200px;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
       #modal #tour ul li {
         color: white;
         text-transform: uppercase;
         font-size: 14pt;
         margin: 25px 0;
         font-weight: bold;
-        letter-spacing: 2px; }
-        #modal #tour ul li span {
-          display: table-cell; }
+        letter-spacing: 2px;
+        width: 100%; }
+        #modal #tour ul li .wrap {
+          display: table-cell;
+          box-sizing: border-box;
+          width: 50%;
+          margin: 0;
+          paddign: 0; }
+          #modal #tour ul li .wrap span {
+            display: inline-block;
+            white-space: nowrap;
+            margin: 0;
+            paddign: 0; }
         #modal #tour ul li .date {
-          width: 200px;
-          text-align: center; }
+          width: 200px; }
         #modal #tour ul li .venue {
-          width: 400px;
+          width: 300px;
           font-style: oblique;
           font-weight: lighter; }
         #modal #tour ul li .location {
-          width: 300px;
+          width: 50%;
           text-align: left; }
         #modal #tour ul li .continent {
-          width: 250px;
+          width: 50%;
           text-align: left; }
         #modal #tour ul li .buy {
           width: 100px;
@@ -401,13 +431,18 @@ nav {
     #modal #photos img {
       width: 100%; }
   #modal #videos {
-    width: 854px;
-    overflow: hidden;
-    transform: translate(0, -50px); }
+    width: 100%; }
     #modal #videos.show {
-      flex-direction: row;
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
       justify-content: flex-start; }
+    #modal #videos .slide {
+      margin: 0 auto; }
+      #modal #videos .slide iframe {
+        width: 854px;
+        height: 480px; }
+      #modal #videos .slide:last-child {
+        padding-bottom: 15vh; }
 
 @media (max-width: 1600px) {
   #tour {
@@ -429,8 +464,6 @@ nav {
     width: auto; }
   #modal #tour {
     transform: scale(0.7) translate(0, -75px); }
-    #modal #tour ul li .venue {
-      width: 400px; }
   #stage.open {
     transform: translate(0, 40vh); } }
 
@@ -439,15 +472,20 @@ nav {
     transform: scale(0.7);
     padding-top: 0;
     width: auto; }
-  #modal #videos {
-    transform: scale(0.7) translate(0, -75px); }
+  #modal #tour {
+    transform: scale(0.7); }
+    #modal #tour ul {
+      width: auto; }
   #stage.open {
     transform: translate(0, 40vh); } }
 
 @meida (max-width: 1024px) {
-  #modal {
-    height: inherit;
-    overflow: scroll; } }
+  #modal #tour ul {
+    width: 800px; }
+    #modal #tour ul li .wrap {
+      display: block; }
+      #modal #tour ul li .wrap span {
+        display: block; } }
 
 /* Landscape */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
@@ -455,7 +493,7 @@ nav {
     transform: scale(0.8);
     padding-top: 0; }
   #stage.open {
-    transform: translate(0, 30vh); }
+    transform: translate(0, 35vh); }
   #splash .half {
     transform: scale(0.5); }
     #splash .half.image {
@@ -465,9 +503,62 @@ nav {
     #splash #feature .cooper {
       font-size: 32pt; } }
 
+@media (max-width: 768px) {
+  #splash #title {
+    font-size: 120pt;
+    transform: translate(0, -100px); }
+  #splash .half {
+    width: 100%;
+    transform: translate(0, -50px) scale(0.7); }
+    #splash .half.image {
+      transform: translate(0, -50px) scale(0.5); }
+  #splash #musicLinks {
+    transform: translate(0, 200px); }
+  #modal #music {
+    width: 100%;
+    transform: scale(1); }
+    #modal #music .album {
+      margin: 0 auto;
+      display: block; }
+      #modal #music .album:last-child {
+        padding-bottom: 35vh; }
+  #modal #videos {
+    margin: 0 auto;
+    overflow: scroll; }
+    #modal #videos .slide iframe {
+      width: 640px;
+      height: 385px; }
+    #modal #videos .slide:last-child {
+      padding-bottom: 35vh; }
+  #modal #tour ul li div span {
+    display: block; } }
+
 @media (max-width: 414px) {
+  .showMobile {
+    display: block !important; }
+  .hideMobile {
+    display: none !important; }
+  nav {
+    padding-top: 25px;
+    background: none; }
+    nav.open {
+      pointer-events: none; }
+      nav.open .close {
+        pointer-events: auto;
+        transform: translate(0, 0);
+        transition: all 0.5s ease-in-out; }
+      nav.open .navLinks {
+        transform: translate(25vh, 0);
+        transition: all 0.5s ease-in-out; }
+    nav .navLinks {
+      transform: translate(0, 0);
+      transition: all 0.5s ease-in-out; }
+    nav .close {
+      position: absolute;
+      transform: translate(0, -100px);
+      transition: all 0.5s ease-in-out; }
   #splash #feature {
-    transform: translate(0, -200px);
+    transform: translate(0, -150px);
     text-align: center; }
     #splash #feature .universe {
       margin-bottom: 15px; }
@@ -480,32 +571,35 @@ nav {
         left: 50%;
         top: 10px;
         transform: translate(-50%, 0); }
-      #splash #feature .universe:after {
-        content: "";
-        width: 200px;
-        height: 1px;
-        background: #d9bd96;
-        opacity: 0.5;
-        position: absolute;
-        left: -6px;
-        top: -200px; }
   #splash .half {
     width: auto;
     display: block; }
     #splash .half.image {
-      left: 100px;
-      top: -40px; }
+      left: 120px;
+      top: -135px;
+      transform: scale(0.4); }
       #splash .half.image video {
         width: 300px; }
   #splash #intro {
-    transform: translate(-50px, 0); }
-  #splash #musicLinks p {
-    font-size: 16pt; }
-  #splash #musicLinks a.apple {
-    width: 75px; }
+    transform: translate(-50px, -25px); }
+    #splash #intro:after {
+      content: "";
+      width: 200px;
+      height: 1px;
+      background: #d9bd96;
+      opacity: 0.5;
+      position: absolute;
+      left: 35px;
+      bottom: 0; }
+  #splash #musicLinks {
+    transform: translate(0, -80px); }
+    #splash #musicLinks p {
+      font-size: 16pt; }
+    #splash #musicLinks a.apple {
+      width: 75px; }
   #splash #title {
-    font-size: 120pt;
-    transform: translate(-90px, -100px); }
+    font-size: 135pt;
+    transform: translate(-100px, -100px); }
   #splash button {
     text-indent: -9999px;
     overflow: hidden;
@@ -515,8 +609,8 @@ nav {
     height: 60vh;
     margin: 0;
     padding: 0; }
-  nav {
-    display: none !important; }
+  #stage.open {
+    transform: translate(0, 30vh); }
   #modal {
     position: relative;
     top: auto;
@@ -524,24 +618,35 @@ nav {
     right: auto;
     bottom: auto;
     display: block; }
+    #modal #tour {
+      transform: scale(1); }
   #logo {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: auto;
     width: auto;
     left: 0;
     text-align: left;
     display: block;
-    z-index: 1; }
+    z-index: 20;
+    padding: 0;
+    background: none; }
     #logo img {
       width: 100px; }
-  #social,
-  #legal {
-    position: relative; } }
+  #social {
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: nowrap; }
+  #legal a {
+    transform: translate(0, 0); } }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+@media (max-width: 375px) {
   #splash #title {
-    font-size: 135pt;
-    transform: translate(-100px, -100px); } }
+    font-size: 120pt;
+    transform: translate(-90px, -100px); }
+  #splash .half.image {
+    top: -105px; } }
 
 @media (max-width: 320px) {
   #splash .half.image {

@@ -149,15 +149,15 @@ const photos = [
 
 const videos = [
   {
-    url: 'https://www.youtube-nocookie.com/embed/y_Ka5wiQBEw',
+    url: 'https://www.youtube-nocookie.com/embed/y_Ka5wiQBEw?showinfo=0&controls=0',
     title: 'The Season'
   },
   {
-    url: 'https://www.youtube-nocookie.com/embed/-OqrcUvrbRY',
+    url: 'https://www.youtube-nocookie.com/embed/-OqrcUvrbRY?showinfo=0&controls=0',
     title: 'The Come Down'
   },
   {
-    url: 'https://www.youtube-nocookie.com/embed/7A1utb0NrHU',
+    url: 'https://www.youtube-nocookie.com/embed/7A1utb0NrHU?showinfo=0&controls=0',
     title: 'TINITS'
   }
 ]
@@ -166,7 +166,7 @@ const VideoSlide = ({url, title}) => {
   return (
     <div className="slide">
       <h2>{title}</h2>
-      <iframe width="854" height="480" src={url} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe src={url} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
     </div>
   );
 };
@@ -226,7 +226,12 @@ class App extends Component {
       });
     }.bind(this), 800);
   }
-  componentWillUnmount () {
+  showMenu = (id) => {
+    this.setState({ 
+      active: false
+    });
+  }
+  componentWillUnmount() {
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
     }
@@ -239,12 +244,22 @@ class App extends Component {
         <div id="logo">
           <img src={logo} alt="Anderson Paak" />
         </div>
-        <nav>
+        <nav className="hideMobile">
           <a href="https://buy.andersonpaak.com" target="_blank" rel="noopener noreferrer">Store</a>
           <button onClick={this.addActiveClass.bind(this, 'tour')} className={this.state.id === 'tour' ? 'selected': null}>Tour</button>
           <button onClick={this.addActiveClass.bind(this, 'music')} className={this.state.id === 'music' ? 'selected': null}>Music</button>
           <button onClick={this.addActiveClass.bind(this, 'videos')} className={this.state.id === 'videos' ? 'selected': null}>Videos</button>
           <button onClick={this.addActiveClass.bind(this, 'photos')} className={this.state.id === 'photos' ? 'selected': null}>Photos</button>
+        </nav>
+        <nav className={this.state.active ? 'open showMobile': "showMobile"}>
+          <button className="close" onClick={this.showMenu}>X</button>
+          <div className="navLinks">
+            <a href="https://buy.andersonpaak.com" target="_blank" rel="noopener noreferrer">Store</a>
+            <button onClick={this.addActiveClass.bind(this, 'tour')}>Tour</button>
+            <button onClick={this.addActiveClass.bind(this, 'music')}>Music</button>
+            <button onClick={this.addActiveClass.bind(this, 'videos')}>Videos</button>
+            <button onClick={this.addActiveClass.bind(this, 'photos')}>Photos</button>
+          </div>
         </nav>
         <section id="modal" className={this.state.active ? 'open': null}>
           <div id="music" className={this.state.id === 'music' ? 'show':null}>
@@ -283,38 +298,58 @@ class App extends Component {
             <h2>Upcoming Dates</h2>
             <ul>
               <li className="event">
-                <span className="date">10.31.2018</span>
-                <span className="venue">Greek Theater</span>
-                <span className="location">Los Angeles, CA</span>
-                <span className="continent">North America</span>
+                <div className="wrap">
+                  <span className="date">10.31.2018</span>
+                  <span className="venue">Greek Theater</span>
+                </div>
+                <div className="wrap">
+                  <span className="location">Los Angeles, CA</span>
+                  <span className="continent">North America</span>
+                </div>
                 <a href="" className="buy">Tickets</a>
               </li>
               <li className="event">
-                <span className="date">01.09.2019</span>
-                <span className="venue">Hordern Pavilion</span>
-                <span className="location">Sydney, NSW</span>
-                <span className="continent">Australia</span>
+                <div className="wrap">
+                  <span className="date">01.09.2019</span>
+                  <span className="venue">Hordern Pavilion</span>
+                </div>
+                <div className="wrap">
+                  <span className="location">Sydney, NSW</span>
+                  <span className="continent">Australia</span>
+                </div>
                 <a href="" className="buy">Tickets</a>
               </li>
               <li className="event">
-                <span className="date">01.10.2019</span>
-                <span className="venue">Festival Hall</span>
-                <span className="location">Melbourne, VIC</span>
-                <span className="continent">Australia</span>
+                <div className="wrap">
+                  <span className="date">01.10.2019</span>
+                  <span className="venue">Festival Hall</span>
+                </div>
+                <div className="wrap">
+                  <span className="location">Melbourne, VIC</span>
+                  <span className="continent">Australia</span>
+                </div>
                 <a href="" className="buy">Tickets</a>
               </li>
               <li className="event">
-                <span className="date">01.10.2019</span>
-                <span className="venue">Festival Hall</span>
-                <span className="location">Melbourne, VIC</span>
-                <span className="continent">Australia</span>
+                <div className="wrap">
+                  <span className="date">01.10.2019</span>
+                  <span className="venue">Festival Hall</span>
+                </div>
+                <div className="wrap">
+                  <span className="location">Melbourne, VIC</span>
+                  <span className="continent">Australia</span>
+                </div>
                 <a href="" className="buy">Tickets</a>
               </li>
               <li className="event">
-                <span className="date">01.12.2019</span>
-                <span className="venue">Logan Campbell Centre</span>
-                <span className="location">Auckland</span>
-                <span className="continent">New Zealand</span>
+                <div className="wrap">
+                  <span className="date">01.12.2019</span>
+                  <span className="venue">Logan Campbell Centre</span>
+                </div>
+                <div className="wrap">
+                  <span className="location">Auckland</span>
+                  <span className="continent">New Zealand</span>
+                </div>
                 <a href="" className="buy">Tickets</a>
               </li>
             </ul>

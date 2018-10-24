@@ -28,13 +28,13 @@
 		}
 		#tour {
 			transform: scale(0.7) translate(0,-75px);
-			ul {
-				li {
-					.venue {
-						width: 400px;
-					}
-				}
-			}
+			// ul {
+			// 	li {
+			// 		.venue {
+			// 			width: 400px;
+			// 		}
+			// 	}
+			// }
 		}
 	}
 	#stage {
@@ -57,8 +57,11 @@
 			padding-top: 0;
 			width: auto;
 		}
-		#videos {
-			transform: scale(0.7) translate(0,-75px);
+		#tour {
+			transform: scale(0.7);
+			ul {
+				width: auto;
+			}
 		}
 	}
 	#stage {
@@ -69,8 +72,19 @@
 }
 @meida (max-width: 1024px) {
 	#modal {
-		height: inherit;
-		overflow: scroll;
+		#tour {
+			ul {
+				width: 800px;
+				li {
+					.wrap {
+						display: block;
+						span {
+							display: block;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 /* Landscape */
@@ -87,7 +101,7 @@
 	}
 	#stage {
 		&.open {
-			transform: translate(0,30vh);
+			transform: translate(0,35vh);
 		}
 	}
 	#splash {
@@ -105,10 +119,96 @@
 		}
 	}
 }
+@media (max-width: 768px) {
+	#splash {
+		#title {
+			font-size: 120pt;
+			transform: translate(0,-100px);
+		}
+		.half {
+			width: 100%;
+			transform: translate(0,-50px) scale(0.7);
+			&.image {
+				transform: translate(0,-50px) scale(0.5);
+			}
+		}
+		#musicLinks {
+			transform: translate(0,200px);
+		}
+	}
+	#modal {
+		#music {
+			width: 100%;
+			transform: scale(1);
+			.album {
+				margin: 0 auto;
+				display: block;
+				&:last-child {
+					padding-bottom: 35vh;
+				}
+			}
+		}
+		#videos {
+			margin: 0 auto;
+			overflow: scroll;
+			.slide {
+				iframe {
+					width:640px;
+					height:385px;
+				}
+				&:last-child {
+					padding-bottom: 35vh;
+				}
+			}
+		}
+		#tour {
+			ul {
+				li {
+					div {
+						span {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 @media (max-width: 414px) {
+	.showMobile {
+		display: block !important;
+	}
+	.hideMobile {
+		display: none !important;
+	}
+	nav {
+		padding-top: 25px;
+		background: none;
+		&.open {
+			pointer-events: none;
+			.close {
+				pointer-events: auto;
+				transform: translate(0,0);
+				transition: all 0.5s ease-in-out;
+			}
+			.navLinks {
+				transform: translate(25vh,0);
+				transition: all 0.5s ease-in-out;
+			}
+		}
+		.navLinks {
+			transform: translate(0,0);
+			transition: all 0.5s ease-in-out;
+		}
+		.close {
+			position: absolute;
+			transform: translate(0,-100px);
+			transition: all 0.5s ease-in-out;
+		}
+	}
 	#splash {
 		#feature {
-			transform: translate(0,-200px);
+			transform: translate(0,-150px);
 			text-align: center;
 			.universe {
 				margin-bottom: 15px;
@@ -122,33 +222,35 @@
 					top: 10px;
 					transform: translate(-50%,0);
 				}
-				&:after {
-					content: "";
-					width: 200px;
-					height: 1px;
-					background: darken(#f4ece1, 20%);
-					opacity: 0.5;
-					position: absolute;
-					left: -6px;
-					top: -200px;
-				}
 			}
 		}
 		.half {
 			width: auto;
 			display: block;
 			&.image {
-				left: 100px;
-				top: -40px;
+				left: 120px;
+				top: -135px;
+				transform: scale(0.4);
 				video {
 					width: 300px;
 				}
 			}
 		}
 		#intro {
-			transform: translate(-50px,0);
+			transform: translate(-50px,-25px);
+			&:after {
+				content: "";
+				width: 200px;
+				height: 1px;
+				background: darken(#f4ece1, 20%);
+				opacity: 0.5;
+				position: absolute;
+				left: 35px;
+				bottom: 0;
+			}
 		}
 		#musicLinks {
+			transform: translate(0,-80px);
 			p {
 				font-size: 16pt;
 			}
@@ -159,8 +261,8 @@
 			}
 		}
 		#title {
-			font-size: 120pt;
-			transform: translate(-90px,-100px);
+			font-size: 135pt;
+			transform: translate(-100px,-100px);
 		}
 		button {
 			text-indent: -9999px;
@@ -173,8 +275,10 @@
 			padding: 0;
 		}
 	}
-	nav {
-		display: none !important;
+	#stage {
+		&.open {
+			transform: translate(0,30vh);
+		}
 	}
 	#modal {
 		position: relative;
@@ -183,32 +287,47 @@
 		right: auto;
 		bottom: auto;
 		display: block;
+		#tour {
+			transform: scale(1);
+		}
 	}
 	#logo {
-		position: relative;
+		position: absolute;
+		top: 0;
+		left: 0;
 		height: auto;
 		width: auto;
 		left: 0;
 		text-align: left;
 		display: block;
-		z-index: 1;
+		z-index: 20;
+		padding: 0;
+		background: none;
 		img {
 			width: 100px;
 		}
 	}
-	#social,
+	#social {
+		left: 50%;
+		transform: translate(-50%,0);
+		white-space: nowrap;
+	}
 	#legal {
-		position: relative;
+		a {
+			transform: translate(0,0);
+		}
 	}
 }
-@media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) 
-and (orientation : portrait) {
+@media (max-width: 375px) {
 	#splash {
 		#title {
-			font-size: 135pt;
-			transform: translate(-100px,-100px);
+			font-size: 120pt;
+			transform: translate(-90px,-100px);
+		}
+		.half {
+			&.image {
+				top: -105px;
+			}
 		}
 	}
 }
