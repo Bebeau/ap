@@ -154,7 +154,9 @@ a, button {
       vertical-align: middle;
       margin: 0 10px; }
       #splash #musicLinks a.apple {
-        width: 50px; }
+        width: 75px; }
+        #splash #musicLinks a.apple img {
+          max-width: 90%; }
       #splash #musicLinks a img {
         max-width: 100%;
         vertical-align: middle; }
@@ -303,7 +305,7 @@ nav {
     line-height: 100px;
     margin: 0;
     padding: 0;
-    font-weight: normal; }
+    font-weight: bold; }
   #modal #music,
   #modal #videos,
   #modal #photos,

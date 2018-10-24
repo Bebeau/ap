@@ -175,7 +175,10 @@ a, button {
 			vertical-align: middle;
 			margin: 0 10px;
 			&.apple {
-				width: 50px;
+				width: 75px;
+				img {
+					max-width: 90%;
+				}
 			}
 			img {
 				max-width: 100%;
@@ -345,7 +348,7 @@ nav {
 		line-height: 100px;
 		margin: 0;
 		padding: 0;
-		font-weight: normal;
+		font-weight: bold;
 	}
 	#music,
 	#videos,
