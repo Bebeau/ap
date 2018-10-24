@@ -17,7 +17,7 @@ $tint: #28292d;
 @font-face {
     font-family: "Gothic Bold";
     font-style: normal;
-    src: local("Century Bold"), 
+    src: local("Gothic Bold"), 
     local("gothic.ttf"),  
     url("../fonts/gothicb.ttf") format("ttf");
 }
@@ -39,7 +39,7 @@ body {
 	padding: 0;
 	height: 100vh;
 	background: #0d0d0d;
-	font-family: "Gothic Bold", sans-serif;
+	font-family: "Gothic", sans-serif;
 	overflow: hidden;
 }
 a, button {
@@ -61,6 +61,14 @@ a, button {
 	right: 0;
 	z-index: 1;
 	height: 100vh;
+}
+#container {
+	opacity: 0;
+	transition: all 2s ease-in-out;
+	&.in {
+		opacity: 1;
+		transition: all 2s ease-in-out;
+	}
 }
 #stage {
 	position: absolute;
@@ -187,7 +195,7 @@ a, button {
 	}
 	#aftermath {
 		position: absolute;
-		right: 25px;
+		left: 25px;
 		bottom: 25px;
 		width: 50px;
 		height: auto;
@@ -235,7 +243,7 @@ a, button {
 	align-items: center;
 	justify-content: space-around;
 	z-index: 10;
-	background: linear-gradient(to right, rgba(0,0,0,0.8), transparent);
+	background: linear-gradient(to right, rgba(0,0,0,0.5), transparent);
 	img {
 		width: 150px;
 		height: auto;
@@ -252,7 +260,7 @@ nav {
 	align-items: center;
 	justify-content: center;
 	z-index: 12;
-	background: linear-gradient(to left, rgba(0,0,0,1), transparent);
+	background: linear-gradient(to left, rgba(0,0,0,0.5), transparent);
 	&.hideMobile {
 		display: flex !important;
 	}
@@ -273,7 +281,7 @@ nav {
 		transition: all 0.3s ease-in-out;
 		text-decoration: none;
 		&:hover {
-			cursor: pointer;
+			cursor: pointer !important;
 			color: #EFB123;
 			transition: all 0.3s ease-in-out;
 		}
@@ -401,6 +409,7 @@ nav {
 		text-align: center;
 		padding-top: 100px;
 		width: 1200px;
+		transform: scale(0.9);
 		&.show {
 			display: block;
 		}
@@ -419,22 +428,6 @@ nav {
 				margin: 0 10px;
 				&.apple {
 					width: 50px;
-					background: url('../img/SVG/apple.svg') no-repeats scroll center / cover;
-				}
-				&.spotify {
-					background: url('../img/SVG/spotify.svg') no-repeats scroll center / cover;
-				}
-				&.itunes {
-					background: url('../img/SVG/itunes.svg') no-repeats scroll center / cover;
-				}
-				&.tidal {
-					background: url('../img/SVG/tidal.svg') no-repeats scroll center / cover;
-				}
-				&.google {
-					background: url('../img/SVG/google.svg') no-repeats scroll center / cover;
-				}
-				&.amazon {
-					background: url('../img/SVG/amazon.svg') no-repeats scroll center / cover;
 				}
 			}
 		}
@@ -489,13 +482,18 @@ nav {
 					background: #EFB123;
 					text-decoration: none;
 					color: black;
-					font-size: 10pt;
+					font-size: 8pt;
 					letter-spacing: 3px;
 					display: inline-block;
-					line-height: 30px;
-					padding: 0 15px;
+					line-height: 40px;
+					padding: 0 25px;
 					text-align: center;
 					display: table-cell;
+					transition: all 0.3s ease-in-out;
+					&:hover {
+						background: lighten(#EFB123, 10%);
+						transition: all 0.3s ease-in-out;
+					}
 				}
 			}
 		}
