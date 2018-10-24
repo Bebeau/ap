@@ -306,7 +306,7 @@
 			}
 		}
 		#title {
-			font-size: 135pt;
+			font-size: 125pt;
 			transform: translate(-100px,-100px);
 		}
 		button {
@@ -320,12 +320,10 @@
 			padding: 0;
 		}
 		#aftermath {
-			position: relative;
-			left: auto;
-			bottom: auto;
-			width: 100%;
+			position: absolute;
+			left: 50%;
 			text-align: center;
-			transform: translate(0,0);
+			transform: translate(-50%,0);
 		}
 	}
 	#modal {
@@ -391,7 +389,7 @@
 @media (max-width: 375px) {
 	#splash {
 		#title {
-			font-size: 120pt;
+			font-size: 115pt;
 			transform: translate(-90px,-100px);
 		}
 		.half {
