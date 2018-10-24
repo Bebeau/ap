@@ -1,23 +1,4 @@
-@font-face {
-  font-family: "CooperBlack";
-  font-style: normal;
-  src: local("Cooper Black"), local("cooperblack.ttf"), url("../fonts/cooperblack.ttf") format("ttf"); }
-
-@font-face {
-  font-family: "Gothic";
-  font-style: normal;
-  src: local("Century Gothic"), local("gothic.ttf"), url("../fonts/gothic.ttf") format("ttf"); }
-
-@font-face {
-  font-family: "Gothic Bold";
-  font-style: normal;
-  src: local("Gothic Bold"), local("gothic.ttf"), url("../fonts/gothicb.ttf") format("ttf"); }
-
-@font-face {
-  font-family: "Gothic Itallic";
-  font-style: normal;
-  src: local("Century Gothic"), local("gothic.ttf"), url("../fonts/gothici.ttf") format("ttf"); }
-
+@import url("https://use.typekit.net/kmp8rqf.css");
 @font-face {
   font-family: Universe;
   src: url("../fonts/universe.otf") format("opentype"); }
@@ -28,11 +9,11 @@ body {
   padding: 0;
   height: 100vh;
   background: #0d0d0d;
-  font-family: "Gothic", sans-serif;
+  font-family: "century-gothic", sans-serif;
   overflow: hidden; }
 
 a, button {
-  font-family: "Gothic", sans-serif; }
+  font-family: "century-gothic", sans-serif; }
   a:focus, button:focus {
     outline: none; }
 
@@ -132,7 +113,7 @@ a, button {
     text-transform: uppercase;
     font-size: 21pt; }
   #splash .cooper {
-    font-family: "CooperBlack", sans-serif;
+    font-family: "cooper-black-std", sans-serif;
     text-transform: uppercase;
     font-size: 24pt; }
   #splash #intro {
@@ -479,6 +460,8 @@ nav {
         display: block; } }
 
 @media (max-width: 768px) {
+  body {
+    overflow: hidden; }
   #splash #title {
     font-size: 120pt;
     transform: translate(0, -100px); }
@@ -652,8 +635,12 @@ nav {
     margin: 0;
     padding: 0; }
   #splash #aftermath {
-    left: 50%;
-    transform: translate(-50%, 0); }
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+    text-align: center;
+    transform: translate(0, 0); }
   #modal {
     position: relative;
     top: auto;

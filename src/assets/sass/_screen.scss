@@ -1,33 +1,6 @@
 $tint: #28292d;
 
-@font-face {
-    font-family: "CooperBlack";
-    font-style: normal;
-    src: local("Cooper Black"), 
-    local("cooperblack.ttf"),  
-    url("../fonts/cooperblack.ttf") format("ttf");
-}
-@font-face {
-    font-family: "Gothic";
-    font-style: normal;
-    src: local("Century Gothic"), 
-    local("gothic.ttf"),  
-    url("../fonts/gothic.ttf") format("ttf");
-}
-@font-face {
-    font-family: "Gothic Bold";
-    font-style: normal;
-    src: local("Gothic Bold"), 
-    local("gothic.ttf"),  
-    url("../fonts/gothicb.ttf") format("ttf");
-}
-@font-face {
-    font-family: "Gothic Itallic";
-    font-style: normal;
-    src: local("Century Gothic"), 
-    local("gothic.ttf"),  
-    url("../fonts/gothici.ttf") format("ttf");
-}
+@import url("https://use.typekit.net/kmp8rqf.css");
 @font-face {
     font-family: Universe;
     src: url("../fonts/universe.otf") format("opentype");
@@ -39,11 +12,11 @@ body {
 	padding: 0;
 	height: 100vh;
 	background: #0d0d0d;
-	font-family: "Gothic", sans-serif;
+	font-family: "century-gothic", sans-serif;
 	overflow: hidden;
 }
 a, button {
-	font-family: "Gothic", sans-serif;
+	font-family: "century-gothic", sans-serif;
 	&:focus {
 		outline: none;
 	}
@@ -155,7 +128,7 @@ a, button {
 		font-size: 21pt;
 	}
 	.cooper {
-		font-family: "CooperBlack", sans-serif;
+		font-family: "cooper-black-std", sans-serif;
 		text-transform: uppercase;
 		font-size: 24pt;
 	}

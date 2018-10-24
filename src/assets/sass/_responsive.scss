@@ -78,6 +78,9 @@
 	}
 }
 @media (max-width: 768px) {
+	body {
+		overflow: hidden;
+	}
 	#splash {
 		#title {
 			font-size: 120pt;
@@ -317,8 +320,12 @@
 			padding: 0;
 		}
 		#aftermath {
-			left: 50%;
-			transform: translate(-50%,0);
+			position: relative;
+			left: auto;
+			bottom: auto;
+			width: 100%;
+			text-align: center;
+			transform: translate(0,0);
 		}
 	}
 	#modal {

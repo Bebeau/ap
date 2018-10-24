@@ -25,10 +25,6 @@ import venice from './assets/img/albums/venice.jpg';
 
 import Particles from 'react-particles-js';
 
-import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-
 import photo1 from './assets/img/photos/1.jpg';
 import photo2 from './assets/img/photos/2.jpg';
 import photo3 from './assets/img/photos/3.jpg';
@@ -176,7 +172,7 @@ const VideoSlide = ({url, title}) => {
   return (
     <div className="slide">
       <h2>{title}</h2>
-      <iframe src={url} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+      <iframe src={url} title={title} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
     </div>
   );
 };
@@ -212,7 +208,7 @@ class Albums extends React.Component {
 class Photos extends React.Component {
   render() {
     return (
-      <img src={this.props.img} alt="Anderson Paak Photo" />
+      <img src={this.props.img} alt="" />
     )
   }
 }
