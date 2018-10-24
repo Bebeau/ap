@@ -48,12 +48,13 @@ a, button {
 	}
 }
 .particles {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	z-index: 1;
+	height: 100vh;
 }
 #stage {
 	position: absolute;
@@ -61,8 +62,11 @@ a, button {
 	width: 100%;
 	bottom: 0;
 	left: 0;
+	z-index: 10;
 	background: url('../img/bg.png') no-repeat scroll bottom center / cover;
-	transition: all 0.5s ease-in-out;
+	mask-image: url('../img/bg.png') center / cover;
+	transition: all 0.8s ease-in-out;
+	pointer-events: none;
 	&.open {
 		transform: translate(0,50vh);
 		transition: all 1s ease-in-out;
@@ -94,8 +98,15 @@ a, button {
 		z-index: 2;
 		&.image {
 			position: absolute;
-			top: 0;
+			top: -1px;
 			right: 0;
+			.videoWrap {
+				transform: scale(0.8);
+				video {
+					height: auto;
+					margin: -5px 0;
+				}
+			}
 		}
 	}
 	button {
@@ -210,13 +221,15 @@ a, button {
 }
 #logo {
 	position: fixed;
-	left: 25px;
+	left: 0;
+	padding-left: 25px;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
 	z-index: 10;
+	background: linear-gradient(to right, black, transparent);
 	img {
 		width: 150px;
 		height: auto;
@@ -225,13 +238,15 @@ a, button {
 nav {
 	position: fixed;
 	top: 0;
-	right: 25px;
+	right: 0;
+	padding-right: 25px;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	z-index: 10;
+	z-index: 12;
+	background: linear-gradient(to left, black, transparent);
 	button, a {
 		display: block;
 		border: none;
@@ -262,7 +277,7 @@ nav {
 	position: fixed;
 	bottom: 25px;
 	left: 25px;
-	z-index: 10;
+	z-index: 15;
 	a {
 		display: inline-block;
 		margin: 0 10px;
@@ -299,7 +314,7 @@ nav {
 	font-size: 8pt;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	z-index: 10;
+	z-index: 15;
 	text-align: right;
 	span {
 		font-size: 6pt;
@@ -326,15 +341,40 @@ nav {
 	right: 0;
 	z-index: 9;
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
+	overflow: hidden;
 	transform: translate(0,-100vh);
 	transition: all 0.5s ease-in-out;
 	&.open {
 		transform: translate(0,0);
 		transition: all 1s ease-in-out;
+	}
+	h2 {
+		font-size: 16pt;
+		color: white;
+		letter-spacing: 10px;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 100px;
+		margin: 0;
+		padding: 0;
+		font-weight: normal;
+	}
+	#music,
+	#videos,
+	#photos,
+	#tour {
+		display: none;
+		overflow: scroll;
+		height: 100%;
+		&.show {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 	#music {
 		text-align: center;
@@ -343,6 +383,9 @@ nav {
 		margin: 0 auto;
 		text-align: center;
 		padding-top: 100px;
+		&.show {
+			display: inline-block;
+		}
 		.album {
 			display: inline-block;
 			margin: 25px;
@@ -375,6 +418,74 @@ nav {
 					background: url('../img/SVG/amazon.svg') no-repeats scroll center / cover;
 				}
 			}
+		}
+	}
+	#tour {
+		transform: translate(0,-50px);
+		ul {
+			list-style: none;
+			li {
+				color: white;
+				text-transform: uppercase;
+				font-size: 14pt;
+				margin: 25px 0;
+				font-weight: bold;
+				letter-spacing: 2px;
+				span {
+					display: table-cell;
+				}
+				.date {
+					width: 200px;
+					text-align: center;
+				}
+				.venue {
+					width: 400px;
+					font-style: oblique;
+					font-weight: lighter;
+				}
+				.location {
+					width: 300px;
+					text-align: left;
+				}
+				.continent {
+					width: 250px;
+					text-align: left;
+				}
+				.buy {
+					width: 100px;
+					background: #EFB123;
+					text-decoration: none;
+					color: black;
+					font-size: 10pt;
+					letter-spacing: 3px;
+					display: inline-block;
+					line-height: 30px;
+					padding: 0 15px;
+					text-align: center;
+					display: table-cell;
+				}
+			}
+		}
+	}
+	#photos {
+		width: 100%;
+		margin: 0 auto;
+		&.show {
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	#videos {
+		width:854px;
+		overflow: hidden;
+		transform: translate(0,-50px);
+		&.show {
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
 		}
 	}
 }

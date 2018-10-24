@@ -35,12 +35,13 @@ a:focus, button:focus {
   outline: none; }
 
 .particles {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1; }
+  z-index: 1;
+  height: 100vh; }
 
 #stage {
   position: absolute;
@@ -48,8 +49,11 @@ a:focus, button:focus {
   width: 100%;
   bottom: 0;
   left: 0;
+  z-index: 10;
   background: url("../img/bg.png") no-repeat scroll bottom center/cover;
-  transition: all 0.5s ease-in-out; }
+  mask-image: url("../img/bg.png") center/cover;
+  transition: all 0.8s ease-in-out;
+  pointer-events: none; }
   #stage.open {
     transform: translate(0, 50vh);
     transition: all 1s ease-in-out; }
@@ -79,8 +83,13 @@ a:focus, button:focus {
     z-index: 2; }
     #splash .half.image {
       position: absolute;
-      top: 0;
+      top: -1px;
       right: 0; }
+      #splash .half.image .videoWrap {
+        transform: scale(0.8); }
+        #splash .half.image .videoWrap video {
+          height: auto;
+          margin: -5px 0; }
   #splash button {
     background: none;
     border: none;
@@ -170,13 +179,15 @@ a:focus, button:focus {
 
 #logo {
   position: fixed;
-  left: 25px;
+  left: 0;
+  padding-left: 25px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  z-index: 10; }
+  z-index: 10;
+  background: linear-gradient(to right, black, transparent); }
   #logo img {
     width: 150px;
     height: auto; }
@@ -184,13 +195,15 @@ a:focus, button:focus {
 nav {
   position: fixed;
   top: 0;
-  right: 25px;
+  right: 0;
+  padding-right: 25px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 10; }
+  z-index: 12;
+  background: linear-gradient(to left, black, transparent); }
   nav button, nav a {
     display: block;
     border: none;
@@ -218,7 +231,7 @@ nav {
   position: fixed;
   bottom: 25px;
   left: 25px;
-  z-index: 10; }
+  z-index: 15; }
   #social a {
     display: inline-block;
     margin: 0 10px; }
@@ -249,7 +262,7 @@ nav {
   font-size: 8pt;
   letter-spacing: 3px;
   text-transform: uppercase;
-  z-index: 10;
+  z-index: 15;
   text-align: right; }
   #legal span {
     font-size: 6pt;
@@ -274,15 +287,40 @@ nav {
   right: 0;
   z-index: 9;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  overflow: hidden;
   transform: translate(0, -100vh);
   transition: all 0.5s ease-in-out; }
   #modal.open {
     transform: translate(0, 0);
     transition: all 1s ease-in-out; }
+  #modal h2 {
+    font-size: 16pt;
+    color: white;
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 100px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal; }
+  #modal #music,
+  #modal #videos,
+  #modal #photos,
+  #modal #tour {
+    display: none;
+    overflow: scroll;
+    height: 100%; }
+    #modal #music.show,
+    #modal #videos.show,
+    #modal #photos.show,
+    #modal #tour.show {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
   #modal #music {
     text-align: center;
     width: 1200px;
@@ -290,6 +328,8 @@ nav {
     margin: 0 auto;
     text-align: center;
     padding-top: 100px; }
+    #modal #music.show {
+      display: inline-block; }
     #modal #music .album {
       display: inline-block;
       margin: 25px; }
@@ -314,16 +354,93 @@ nav {
           background: url("../img/SVG/google.svg") no-repeats scroll center/cover; }
         #modal #music .album a.amazon {
           background: url("../img/SVG/amazon.svg") no-repeats scroll center/cover; }
+  #modal #tour {
+    transform: translate(0, -50px); }
+    #modal #tour ul {
+      list-style: none; }
+      #modal #tour ul li {
+        color: white;
+        text-transform: uppercase;
+        font-size: 14pt;
+        margin: 25px 0;
+        font-weight: bold;
+        letter-spacing: 2px; }
+        #modal #tour ul li span {
+          display: table-cell; }
+        #modal #tour ul li .date {
+          width: 200px;
+          text-align: center; }
+        #modal #tour ul li .venue {
+          width: 400px;
+          font-style: oblique;
+          font-weight: lighter; }
+        #modal #tour ul li .location {
+          width: 300px;
+          text-align: left; }
+        #modal #tour ul li .continent {
+          width: 250px;
+          text-align: left; }
+        #modal #tour ul li .buy {
+          width: 100px;
+          background: #EFB123;
+          text-decoration: none;
+          color: black;
+          font-size: 10pt;
+          letter-spacing: 3px;
+          display: inline-block;
+          line-height: 30px;
+          padding: 0 15px;
+          text-align: center;
+          display: table-cell; }
+  #modal #photos {
+    width: 100%;
+    margin: 0 auto; }
+    #modal #photos.show {
+      align-items: flex-start;
+      justify-content: flex-start; }
+    #modal #photos img {
+      width: 100%; }
+  #modal #videos {
+    width: 854px;
+    overflow: hidden;
+    transform: translate(0, -50px); }
+    #modal #videos.show {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start; }
+
+@media (max-width: 1600px) {
+  #tour {
+    transform: scale(0.7); } }
 
 @media (max-width: 1440px) {
   #splash .half {
-    transform: scale(0.7); } }
+    transform: scale(0.7); }
+    #splash .half.image .videoWrap {
+      transform: scale(2);
+      overflow: hidden; }
+      #splash .half.image .videoWrap video {
+        width: 100%;
+        height: auto;
+        margin: -5px 0; }
+  #modal #music {
+    transform: scale(0.8);
+    padding-top: 0;
+    width: auto; }
+  #modal #tour {
+    transform: scale(0.7) translate(0, -75px); }
+    #modal #tour ul li .venue {
+      width: 400px; }
+  #stage.open {
+    transform: translate(0, 40vh); } }
 
 @media (max-width: 1280px) {
   #modal #music {
     transform: scale(0.7);
     padding-top: 0;
     width: auto; }
+  #modal #videos {
+    transform: scale(0.7) translate(0, -75px); }
   #stage.open {
     transform: translate(0, 40vh); } }
 
@@ -339,6 +456,10 @@ nav {
     padding-top: 0; }
   #stage.open {
     transform: translate(0, 30vh); }
+  #splash .half {
+    transform: scale(0.5); }
+    #splash .half.image {
+      transform: scale(0.8); }
   #splash #feature {
     transform: translate(62%, -160px); }
     #splash #feature .cooper {

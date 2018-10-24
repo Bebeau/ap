@@ -67,9 +67,11 @@ class Splash extends Component{
 					</div>
 				</article>
 				<article className="half image">
-					<video autoPlay="true" poster={poster}>
-		              <source src={video} type="video/mp4" />
-		            </video>
+					<div className="videoWrap">
+						<video autoPlay={true} poster={poster}>
+			              <source src={video} type="video/mp4" />
+			            </video>
+			        </div>
 				</article>
 				<img id="aftermath" src={aftermath} alt="Aftermath" />
           	</section>
