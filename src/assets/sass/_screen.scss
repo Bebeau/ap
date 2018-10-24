@@ -43,6 +43,7 @@ body {
 	overflow: hidden;
 }
 a, button {
+	font-family: "Gothic", sans-serif;
 	&:focus {
 		outline: none;
 	}
@@ -82,7 +83,7 @@ a, button {
 	transition: all 0.8s ease-in-out;
 	pointer-events: none;
 	&.open {
-		transform: translate(0,50vh);
+		transform: translate(0,40vh);
 		transition: all 1s ease-in-out;
 	}
 }
@@ -136,6 +137,7 @@ a, button {
 		text-align: center;
 		transition: all 0.3s ease-in-out;
 		z-index: 999;
+		font-weight: bold;
 		&:hover {
 			cursor: pointer;
 			letter-spacing: 5.5px;
@@ -175,23 +177,7 @@ a, button {
 		padding: 0;
 		transform: translate(0,-100px);
 		text-align: center;
-		span{
-			&#t {
-				color: $tint;
-			}
-			&#i {
-				color: lighten($tint, 20%);
-			}
-			&#n {
-				color: darken($tint, 5%);
-			}
-			&#t2 {
-				color: lighten($tint, 15%);
-			}
-			&#s {
-				color: lighten($tint, 55%);
-			}
-		}
+		color: black;
 	}
 	#aftermath {
 		position: absolute;

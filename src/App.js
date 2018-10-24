@@ -255,6 +255,12 @@ class App extends Component {
     }
   }
   render() {
+    if(this.state.clicked) {
+        var fixed = document.getElementById('splash');
+        fixed.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+      }, false);
+    }
     return (
       <div id="App">
         <Header />
