@@ -92,7 +92,7 @@
 				margin: 25px auto;
 				display: block;
 				&:last-child {
-					padding-bottom: 15vh;
+					padding-bottom: 150px;
 				}
 			}
 		}
@@ -104,6 +104,9 @@
 					width:640px;
 					height:385px;
 				}
+				&:last-child {
+					padding-bottom: 150px;
+				}
 			}
 		}
 		#tour {
@@ -112,7 +115,8 @@
 				justify-content: center;
 			}
 			ul {
-				padding-bottom: 5vh;
+				width: auto;
+				padding-bottom: 150px;
 				li {
 					width: 300px;
 					margin: 25px auto;

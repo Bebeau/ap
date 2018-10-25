@@ -260,7 +260,7 @@ nav {
     text-align: right; }
 
 #modal {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
@@ -293,7 +293,8 @@ nav {
   #modal #photos,
   #modal #tour {
     display: none;
-    overflow: scroll;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     height: 100%; }
     #modal #music.show,
     #modal #videos.show,
@@ -394,6 +395,8 @@ nav {
       justify-content: flex-start; }
     #modal #photos img {
       max-width: 100%;
+      display: block;
+      margin: 0 auto;
       height: auto; }
   #modal #videos {
     width: 100%; }
@@ -465,19 +468,22 @@ nav {
       margin: 25px auto;
       display: block; }
       #modal #music .album:last-child {
-        padding-bottom: 15vh; }
+        padding-bottom: 150px; }
   #modal #videos {
     margin: 0 auto;
     overflow: scroll; }
     #modal #videos .slide iframe {
       width: 640px;
       height: 385px; }
+    #modal #videos .slide:last-child {
+      padding-bottom: 150px; }
   #modal #tour {
     transform: scale(1); }
     #modal #tour.show {
       justify-content: center; }
     #modal #tour ul {
-      padding-bottom: 5vh; }
+      width: auto;
+      padding-bottom: 150px; }
       #modal #tour ul li {
         width: 300px;
         margin: 25px auto; }

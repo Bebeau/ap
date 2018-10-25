@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 import './assets/sass/style.css';
 
@@ -225,7 +225,7 @@ class App extends Component {
   targetElement = null;
   componentDidMount() {
     // 2. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav). 
-    this.targetElement = document.querySelector('#modal');
+    this.targetPhotos = document.querySelector('.modal');
   }
   toggleSplash = () => {
     const currentState = this.state.clicked;
@@ -250,6 +250,7 @@ class App extends Component {
     this.setState({ 
       active: false
     });
+    enableBodyScroll(this.targetElement);
   }
   componentWillUnmount() {
     if (this.timeoutId) {
@@ -317,7 +318,7 @@ class App extends Component {
             </div>
           </nav>
           <section id="modal" className={this.state.active ? 'open': null}>
-            <div id="music" className={this.state.id === 'music' ? 'show':null}>
+            <div id="music" className={this.state.id === 'music' ? 'show modalwrap': 'modalwrap'}>
               {albums.map((album, index) => (
                 <Albums
                   key={index}
@@ -331,7 +332,7 @@ class App extends Component {
                 />
               ))}
             </div>
-            <div id="videos" className={this.state.id === 'videos' ? 'show':null}>
+            <div id="videos" className={this.state.id === 'videos' ? 'show modalwrap': 'modalwrap'}>
               {videos.map((video, i) => (
                 <VideoSlide 
                   key = {i}
@@ -341,7 +342,7 @@ class App extends Component {
                 ))
               }
             </div>
-            <div id="photos" className={this.state.id === 'photos' ? 'show':null}>
+            <div id="photos" className={this.state.id === 'photos' ? 'show modalwrap': 'modalwrap'}>
               {photos.map((photo, index) => (
                 <Photos
                   key={index}
@@ -349,7 +350,7 @@ class App extends Component {
                 />
               ))}
             </div>
-            <div id="tour" className={this.state.id === 'tour' ? 'show':null}>
+            <div id="tour" className={this.state.id === 'tour' ? 'show modalwrap': 'modalwrap'}>
               <h2>Upcoming Dates</h2>
               <ul>
                 <li className="event">
@@ -361,7 +362,7 @@ class App extends Component {
                     <span className="location">Los Angeles, CA</span>
                     <span className="continent">North America</span>
                   </div>
-                  <a href="https://www1.ticketmaster.com/mac-miller-a-celebration-of-life/event/0900553CE1F0B08D" className="buy">Tickets</a>
+                  <a href="https://www1.ticketmaster.com/mac-miller-a-celebration-of-life/event/0900553CE1F0B08D" target="_BLANK" className="buy">Tickets</a>
                 </li>
                 <li className="event">
                   <div className="wrap">
@@ -372,7 +373,7 @@ class App extends Component {
                     <span className="location">Sydney, NSW</span>
                     <span className="continent">Australia</span>
                   </div>
-                  <a href="https://www.livenation.com.au/show/1207348/anderson-paak-and-the-free-nationals/sydney/2019-01-09/en" className="buy">Tickets</a>
+                  <a href="https://www.livenation.com.au/show/1207348/anderson-paak-and-the-free-nationals/sydney/2019-01-09/en" target="_BLANK" className="buy">Tickets</a>
                 </li>
                 <li className="event">
                   <div className="wrap">
@@ -383,7 +384,7 @@ class App extends Component {
                     <span className="location">Melbourne, VIC</span>
                     <span className="continent">Australia</span>
                   </div>
-                  <a href="https://www.livenation.com.au/show/1207352/anderson-paak-and-the-free-nationals/melbourne/2019-01-10/en" className="buy">Tickets</a>
+                  <a href="https://www.livenation.com.au/show/1207352/anderson-paak-and-the-free-nationals/melbourne/2019-01-10/en" target="_BLANK" className="buy">Tickets</a>
                 </li>
                 <li className="event">
                   <div className="wrap">
@@ -394,7 +395,7 @@ class App extends Component {
                     <span className="location">Auckland</span>
                     <span className="continent">New Zealand</span>
                   </div>
-                  <a href="https://www.livenation.co.nz/show/1207362/anderson-paak-and-the-free-nationals/auckland/2019-01-12/en" className="buy">Tickets</a>
+                  <a href="https://www.livenation.co.nz/show/1207362/anderson-paak-and-the-free-nationals/auckland/2019-01-12/en" target="_BLANK" className="buy">Tickets</a>
                 </li>
               </ul>
             </div>
