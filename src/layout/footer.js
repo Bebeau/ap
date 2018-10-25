@@ -18,7 +18,7 @@ class Footer extends Component{
               <a id="instagram" href="https://www.instagram.com/anderson._paak/" target="_BLANK" rel="noopener noreferrer">
                 <img src={instagram} alt="" />
               </a>
-              <a id="twitter" href="https://twitter.com/@andersonpaak" target="_BLANK" rel="noopener noreferrer">
+              <a id="twitter" href="https://twitter.com/AndersonPaak" target="_BLANK" rel="noopener noreferrer">
                 <img src={twitter} alt="" />
               </a>
               <a id="youtube" href="https://www.youtube.com/user/Breezylovejoy" target="_BLANK" rel="noopener noreferrer">

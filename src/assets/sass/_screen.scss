@@ -67,9 +67,11 @@ a, button {
 	right: 0;
 	bottom: 0;
 	z-index: 999;
-	background: #f7efe4;
 	box-sizing: border-box;
 	overflow: hidden;
+	background: url('../img/oxnard_albumn.jpg') no-repeat scroll right center / cover #f7efe4;
+	background-size: 75%;
+	background-position: 150% 50%;
 	&.close {
 		transform: translate(0,-100vh);
 		transition: all 0.3s ease-in-out;
@@ -84,18 +86,6 @@ a, button {
 		justify-content: center;
 		position: relative;
 		z-index: 2;
-		&.image {
-			position: absolute;
-			top: -1px;
-			right: 0;
-			.videoWrap {
-				transform: scale(0.8);
-				video {
-					height: auto;
-					margin: -5px 0;
-				}
-			}
-		}
 	}
 	button {
 		background: none;
@@ -134,23 +124,15 @@ a, button {
 	}
 	#intro {
 		text-align: left;
-		transform: translate(-300px,0);
+		transform: translate(-250px,0);
 		display: block;
 	}
 	#feature {
-		transform: translate(80%,-175px);
+		transform: translate(80%,-75px);
 	}
 	#title {
-		font-size: 125pt;
-		letter-spacing: 10px;
-		text-transform: uppercase;
-		text-align: center;
-		line-height: 300pt;
-		margin: 0;
-		padding: 0;
-		transform: translate(0,-100px);
-		text-align: center;
-		color: black;
+		width: 80%;
+		transform: translate(0,-50px);
 	}
 	#aftermath {
 		position: absolute;
@@ -164,9 +146,9 @@ a, button {
 		text-align: center;
 		p {
 			text-transform: uppercase;
-			letter-spacing: 15px;
+			letter-spacing: 8px;
 			font-weight: bold;
-			font-size: 24pt;
+			font-size: 18pt;
 		}
 		a {
 			width: 35px;
@@ -370,15 +352,18 @@ nav {
 		margin: 0 auto;
 		text-align: center;
 		padding-top: 100px;
-		width: 1200px;
-		transform: scale(0.9);
+		width: 1000px;
 		&.show {
 			display: block;
 		}
 		.album {
 			display: inline-block;
 			margin: 25px;
+			width: 250px;
+			text-align: center;
+			margin: 25px;
 			img {
+				max-width: 100%;
 				display: block;
 				margin: 0 auto;
 			}
@@ -387,7 +372,8 @@ nav {
 				height: auto;
 				display: inline-block;
 				vertical-align: middle;
-				margin: 0 10px;
+				margin: 0 5px;
+				text-align: center;
 				&.apple {
 					width: 50px;
 				}

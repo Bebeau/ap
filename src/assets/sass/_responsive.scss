@@ -6,17 +6,9 @@
 @media (max-width: 1440px) {
 	#splash {
 		.half {
-			transform: scale(0.7);
-			&.image {
-				.videoWrap {
-					transform: scale(2);
-					overflow: hidden;
-					video {
-						width: 100%;
-						height: auto;
-						margin: -5px 0;
-					}
-				}
+			transform: scale(0.8);
+			#feature {
+				transform: translate(200px,-50px);
 			}
 		}
 	}
@@ -28,13 +20,6 @@
 		}
 		#tour {
 			transform: scale(0.7) translate(0,-75px);
-			// ul {
-			// 	li {
-			// 		.venue {
-			// 			width: 400px;
-			// 		}
-			// 	}
-			// }
 		}
 	}
 }
@@ -60,7 +45,12 @@
 		}
 	}
 }
-@meida (max-width: 1024px) {
+@media (max-width: 1024px) {
+	#splash {
+		.half {
+			transform: scale(0.5);
+		}
+	}
 	#modal {
 		#tour {
 			ul {
@@ -82,16 +72,11 @@
 		overflow: hidden;
 	}
 	#splash {
-		#title {
-			font-size: 120pt;
-			transform: translate(0,-100px);
-		}
+		background-size: 75%;
+		background-position: 50% 60%;
 		.half {
 			width: 100%;
 			transform: translate(0,-50px) scale(0.7);
-			&.image {
-				transform: translate(0,-50px) scale(0.5);
-			}
 		}
 		#musicLinks {
 			transform: translate(0,200px);
@@ -251,63 +236,37 @@
 		}
 	}
 	#splash {
-		#feature {
-			transform: translate(0,-150px);
-			text-align: center;
-			.universe {
-				margin-bottom: 15px;
-				&:before {	
-					content: "";
-					width: 80%;
-					height: 1px;
-					background: darken(#f4ece1, 20%);
-					position: absolute;
-					left: 50%;
-					top: 10px;
-					transform: translate(-50%,0);
-				}
-			}
-		}
+		background-position: 50% 70%;
 		.half {
 			width: auto;
 			display: block;
-			transform: translate(0,0) scale(0.7);
-			&.image {
-				left: 120px;
-				top: -130px;
-				transform: scale(0.4);
-				video {
-					width: 300px;
+			transform: translate(0,-50px) scale(0.7);
+			#intro {
+				transform: translate(0,0);
+			}
+			#title {
+				transform: translate(0,-20px);
+				width: 100%;
+			}
+			#feature {
+				transform: translate(0,-20px);
+				text-align: center;
+				.cooper {
+					font-size: 18pt;
 				}
 			}
 		}
-		#intro {
-			transform: translate(-50px,-25px);
-			&:after {
-				content: "";
-				width: 200px;
-				height: 1px;
-				background: darken(#f4ece1, 20%);
-				opacity: 0.5;
-				position: absolute;
-				left: 35px;
-				bottom: 0;
-			}
-		}
 		#musicLinks {
-			transform: translate(0,-80px);
+			transform: translate(0,300px) scale(0.8);
+			white-space: nowrap;
 			p {
-				font-size: 16pt;
+				font-size: 12pt;
 			}
 			a {
 				&.apple {
 					width: 75px;
 				}
 			}
-		}
-		#title {
-			font-size: 125pt;
-			transform: translate(-100px,-100px);
 		}
 		button {
 			text-indent: -9999px;
@@ -386,16 +345,55 @@
 		}
 	}
 }
-@media (max-width: 375px) {
+@media (max-width: 375px) and (max-height: 812px) {
 	#splash {
-		#title {
-			font-size: 115pt;
-			transform: translate(-90px,-100px);
-		}
 		.half {
-			&.image {
-				top: -105px;
+			width: auto;
+			display: block;
+			transform: translate(0,-50px) scale(0.7);
+			#intro {
+				transform: translate(0,0);
 			}
+			#title {
+				transform: translate(0,-20px);
+				width: 100%;
+			}
+			#feature {
+				transform: translate(0,-20px);
+				text-align: center;
+				.cooper {
+					font-size: 18pt;
+				}
+			}
+		}
+		#musicLinks {
+			transform: translate(0,400px) scale(0.8);
+		}
+	}
+}
+@media (max-width: 375px) and (max-height: 667px) {
+	#splash {
+		.half {
+			width: auto;
+			display: block;
+			transform: translate(0,-50px) scale(0.7);
+			#intro {
+				transform: translate(0,0);
+			}
+			#title {
+				transform: translate(0,-20px);
+				width: 100%;
+			}
+			#feature {
+				transform: translate(0,-20px);
+				text-align: center;
+				.cooper {
+					font-size: 18pt;
+				}
+			}
+		}
+		#musicLinks {
+			transform: translate(0,250px) scale(0.8);
 		}
 	}
 }
@@ -403,21 +401,13 @@
 	#splash {
 		.half {
 			transform: translate(0,-60px) scale(0.6);
-			&.image {
-				top: -100px;
-				left: 110px;
-			}
-		}
-		#feature {
-			transform: translate(0,-200px);
-		}
-		#title {
-			font-size: 100pt;
-			transform: translate(-80px,-100px);
 		}
 		#musicLinks {
-			transform: translate(-35px,-130px) scale(1);
-			white-space: nowrap;
+			transform: translate(-25px,250px) scale(0.8);
+		}
+		#aftermath {
+			width: 25px;
+			hieght: auto;
 		}
 	}
 }

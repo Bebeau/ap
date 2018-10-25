@@ -8,6 +8,8 @@ import Footer from './layout/footer';
 import logoWhite from './assets/img/SVG/logo_white.svg';
 import logo from './assets/img/SVG/logo.svg';
 
+import oxnard from './assets/img/oxnard.png';
+
 import apple from './assets/img/SVG/apple.svg';
 import appleWhite from './assets/img/SVG/apple_white.svg';
 import spotify from './assets/img/SVG/spotify.svg';
@@ -18,7 +20,7 @@ import google from './assets/img/SVG/google.svg';
 import amazon from './assets/img/SVG/amazon.svg';
 
 import malibu from './assets/img/albums/malibu.jpg';
-import yesLawdRemix from './assets/img/albums/yesLawdRemix.jpg';
+import bubblin from './assets/img/albums/bubblin.jpg';
 import yesLawd from './assets/img/albums/yesLawd.jpg';
 import tillitsover from './assets/img/albums/tillItsOver.jpg';
 import venice from './assets/img/albums/venice.jpg';
@@ -49,49 +51,49 @@ import aftermath from './assets/img/SVG/aftermath.svg';
 
 const albums = [
   {
-    artwork: [malibu],
-    apple: 'https://geo.itunes.apple.com/us/album/malibu/1065681363?mt=1&app=music',
-    spotify: 'http://testing.com',
-    itunes: 'http://testing.com',
-    tidal: 'http://testing.com',
-    google: 'http://testing.com',
-    amazon: 'http://testing.com'
+    artwork: [bubblin],
+    apple: 'https://itunes.apple.com/us/album/bubblin/1383381572?i=1383381915&app=music&ign-mpt=uo%3D4',
+    spotify: 'https://open.spotify.com/album/6N1y1a5qnqN8pBkizOdMvk?si=A2y4GZEGQxq68qt9pu8jog',
+    itunes: 'https://itunes.apple.com/us/album/bubblin/1383381572?i=1383381915&app=music&ign-mpt=uo%3D4',
+    tidal: 'https://tidal.com/track/88736899',
+    google: 'https://play.google.com/store/music/album?id=B756yrjl7kg2eofq2fqclykshsm&tid=song-Ttjpmct5y72vzsqhxxmng2gvx4a',
+    amazon: 'https://www.amazon.com/dp/B07CZVG8QR/ref=ap_ws_tlw_trk6'
   },
   {
-    artwork: [yesLawdRemix],
-    apple: 'http://testing.com',
-    spotify: 'http://testing.com',
-    itunes: 'http://testing.com',
-    tidal: 'http://testing.com',
-    google: 'http://testing.com',
-    amazon: 'http://testing.com'
+    artwork: [malibu],
+    apple: 'https://open.spotify.com/album/4VFG1DOuTeDMBjBLZT7hCK?si=2ZJdsZzsSQufftITqowCpg',
+    spotify: 'https://open.spotify.com/album/4VFG1DOuTeDMBjBLZT7hCK?si=2ZJdsZzsSQufftITqowCpg',
+    itunes: 'https://itunes.apple.com/us/album/malibu/1065681363?app=music&ign-mpt=uo%3D4',
+    tidal: 'https://tidal.com/album/55010255',
+    google: 'https://play.google.com/store/music/album/Anderson_Paak_Malibu?id=B562fkkr2nawzqrty3v5vr2x7fe',
+    amazon: 'https://www.amazon.com/Malibu-Explicit-Anderson-Paak/dp/B0192ZU8TG/ref=ntt_mus_dp_dpt_1'
   },
   {
     artwork: [tillitsover],
-    apple: 'http://testing.com',
-    spotify: 'http://testing.com',
-    itunes: 'http://testing.com',
-    tidal: 'http://testing.com',
-    google: 'http://testing.com',
-    amazon: 'http://testing.com'
+    apple: 'https://itunes.apple.com/us/album/til-its-over-single/1355644175?app=music&ign-mpt=uo%3D4',
+    spotify: 'https://open.spotify.com/album/7z4UqvGprXWpQ0wo8ldLDA?si=giMbalMYQh2U1DfLF87KeQ',
+    itunes: 'https://itunes.apple.com/us/album/til-its-over-single/1355644175?app=music&ign-mpt=uo%3D4',
+    tidal: 'https://tidal.com/album/86783333',
+    google: 'https://play.google.com/store/music/album?id=Be3blgz2r4f2fvsqxkzt4xihzre&tid=song-Tujidsxyffjurb2q5skhuosnd74',
+    amazon: 'https://www.amazon.com/dp/B07BVTB4HB/ref=ap_ws_tlw_trk5'
   },
   {
     artwork: [yesLawd],
-    apple: 'http://testing.com',
-    spotify: 'http://testing.com',
-    itunes: 'http://testing.com',
-    tidal: 'http://testing.com',
-    google: 'http://testing.com',
-    amazon: 'http://testing.com'
+    apple: 'https://itunes.apple.com/us/album/yes-lawd/1150640159?app=music&ign-mpt=uo%3D4',
+    spotify: 'https://open.spotify.com/album/0K3FiXt6ekJTWaUku3LpHL?si=49_BbqGuSVaLPrV0QUFGxw',
+    itunes: 'https://itunes.apple.com/us/album/yes-lawd/1150640159?app=music&ign-mpt=uo%3D4',
+    tidal: 'https://tidal.com/album/82333145',
+    google: 'https://play.google.com/store/music/album/NxWorries_Yes_Lawd?id=Bdo33c3q74gfnfizeivojzmfhka&hl=en',
+    amazon: 'https://www.amazon.com/Yes-Lawd-Explicit-NxWorries/dp/B0786VTWKT/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1540424593&sr=1-1-mp3-albums-bar-strip-0&keywords=nxworries'
   },
   {
     artwork: [venice],
-    apple: 'http://testing.com',
-    spotify: 'http://testing.com',
-    itunes: 'http://testing.com',
-    tidal: 'http://testing.com',
-    google: 'http://testing.com',
-    amazon: 'http://testing.com'
+    apple: 'https://itunes.apple.com/us/album/venice/929712951?app=music&ign-mpt=uo%3D4',
+    spotify: 'https://open.spotify.com/album/2DOiha5oI19Dmw5M9ryHD8?si=gfEotoYwQua5ZP2Vt8zGzQ',
+    itunes: 'https://itunes.apple.com/us/album/venice/929712951?app=music&ign-mpt=uo%3D4',
+    tidal: 'https://tidal.com/album/36796815',
+    google: 'https://play.google.com/store/music/album/Anderson_Paak_Venice?id=Bhvutosdz6uiobdwusjlsnndkou',
+    amazon: 'https://www.amazon.com/Venice-Explicit-Anderson-Paak/dp/B00P1K6Z3U/ref=ntt_mus_dp_dpt_2'
   }
 ]
 
@@ -267,45 +269,32 @@ class App extends Component {
               <span className="universe">Starring</span>
               <img src={logo} alt="Anderson Paak" />
             </div>
-            <h1 id="title" className="cooper">
-              <span id="t">T</span>
-              <span id="i">i</span>
-              <span id="n">n</span>
-              <span id="t2">t</span>
-              <span id="s">s</span>
-            </h1>
+            <img id="title" src={oxnard} />
             <div id="feature">
               <div className="universe">and</div>
               <span className="cooper">Kendrick Lamar</span>
             </div>
             <div id="musicLinks">
-              <p>Available Now</p>
+              <p>Available For Pre-Order</p>
               <a className="apple" href="https://geo.itunes.apple.com/us/artist/anderson-paak/855484536?mt=1&app=music" target="_BLANK" rel="noopener noreferrer">
                 <img src={apple} alt="Apple Music" />
               </a>
-                  <a className="spotify" href="https://open.spotify.com/artist/3jK9MiCrA42lLAdMGUZpwa" target="_BLANK" rel="noopener noreferrer">
+              <a className="spotify" href="https://open.spotify.com/artist/3jK9MiCrA42lLAdMGUZpwa" target="_BLANK" rel="noopener noreferrer">
                 <img src={spotify} alt="Spotify" />
-                  </a>
-                  <a className="itunes" href="https://geo.itunes.apple.com/us/artist/anderson-paak/855484536?mt=1&app=music" target="_BLANK" rel="noopener noreferrer">
+              </a>
+              <a className="itunes" href="https://geo.itunes.apple.com/us/artist/anderson-paak/855484536?mt=1&app=music" target="_BLANK" rel="noopener noreferrer">
                 <img src={itunes} alt="iTunes" />
-                  </a>
-                  <a className="tidal" href="https://tidal.com/browse/artist/5866385" target="_BLANK" rel="noopener noreferrer">
+              </a>
+              <a className="tidal" href="https://tidal.com/browse/artist/5866385" target="_BLANK" rel="noopener noreferrer">
                 <img src={tidal} alt="Tidal" />
-                  </a>
-                  <a className="google" href="https://play.google.com/store/music/artist/Anderson_Paak?id=Ats5opj5ynefptzg4lfukuonkki" target="_BLANK" rel="noopener noreferrer">
+              </a>
+              <a className="google" href="https://play.google.com/store/music/artist/Anderson_Paak?id=Ats5opj5ynefptzg4lfukuonkki" target="_BLANK" rel="noopener noreferrer">
                 <img src={google} alt="Google" />
-                  </a>
-                  <a className="amazon" href="https://www.amazon.com/Anderson-.Paak/e/B00SNBNCQM" target="_BLANK" rel="noopener noreferrer">
+              </a>
+              <a className="amazon" href="https://www.amazon.com/Anderson-.Paak/e/B00SNBNCQM" target="_BLANK" rel="noopener noreferrer">
                 <img src={amazon} alt="Amazon" />
-                  </a>
+              </a>
             </div>
-          </article>
-          <article className="half image">
-            <div className="videoWrap">
-              <video autoPlay={true} poster={poster}>
-                      <source src={video} type="video/mp4" />
-                    </video>
-                </div>
           </article>
           <img id="aftermath" src={aftermath} alt="Aftermath" />
         </section>
