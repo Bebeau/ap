@@ -450,7 +450,8 @@ nav {
 			justify-content: flex-start;
 		}
 		img {
-			width: 100%;
+			min-width: 100%;
+			height: auto;
 		}
 	}
 	#videos {

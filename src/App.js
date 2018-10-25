@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 import './assets/sass/style.css';
 
@@ -7,7 +7,6 @@ import Header from './layout/header';
 import Footer from './layout/footer';
 
 import logoWhite from './assets/img/SVG/logo_white.svg';
-import logo from './assets/img/SVG/logo.svg';
 
 import oxnard from './assets/img/oxnard.png';
 
@@ -46,8 +45,6 @@ import photo15 from './assets/img/photos/15.jpg';
 import photo16 from './assets/img/photos/16.jpg';
 import photo17 from './assets/img/photos/17.jpg';
 
-import video from './assets/video/still.mp4';
-import poster from './assets/video/poster.jpg';
 import aftermath from './assets/img/SVG/aftermath.svg';
 
 const albums = [
@@ -273,7 +270,7 @@ class App extends Component {
         <section className={this.state.clicked ? 'close': null} id="splash">
           <button onClick={this.toggleSplash} >Enter Site</button>
           <article className="half">
-            <img id="title" src={oxnard} />
+            <img id="title" src={oxnard} alt="Oxnard" />
             <div id="musicLinks">
               <p>Available For Pre-Order</p>
               <a className="apple" href="https://geo.itunes.apple.com/us/artist/anderson-paak/855484536?mt=1&app=music" target="_BLANK" rel="noopener noreferrer">
@@ -364,7 +361,7 @@ class App extends Component {
                     <span className="location">Los Angeles, CA</span>
                     <span className="continent">North America</span>
                   </div>
-                  <a href="" className="buy">Tickets</a>
+                  <a href="https://www1.ticketmaster.com/mac-miller-a-celebration-of-life/event/0900553CE1F0B08D" className="buy">Tickets</a>
                 </li>
                 <li className="event">
                   <div className="wrap">
@@ -375,7 +372,7 @@ class App extends Component {
                     <span className="location">Sydney, NSW</span>
                     <span className="continent">Australia</span>
                   </div>
-                  <a href="" className="buy">Tickets</a>
+                  <a href="https://www.livenation.com.au/show/1207348/anderson-paak-and-the-free-nationals/sydney/2019-01-09/en" className="buy">Tickets</a>
                 </li>
                 <li className="event">
                   <div className="wrap">
@@ -386,18 +383,7 @@ class App extends Component {
                     <span className="location">Melbourne, VIC</span>
                     <span className="continent">Australia</span>
                   </div>
-                  <a href="" className="buy">Tickets</a>
-                </li>
-                <li className="event">
-                  <div className="wrap">
-                    <span className="date">01.10.2019</span>
-                    <span className="venue">Festival Hall</span>
-                  </div>
-                  <div className="wrap">
-                    <span className="location">Melbourne, VIC</span>
-                    <span className="continent">Australia</span>
-                  </div>
-                  <a href="" className="buy">Tickets</a>
+                  <a href="https://www.livenation.com.au/show/1207352/anderson-paak-and-the-free-nationals/melbourne/2019-01-10/en" className="buy">Tickets</a>
                 </li>
                 <li className="event">
                   <div className="wrap">
@@ -408,7 +394,7 @@ class App extends Component {
                     <span className="location">Auckland</span>
                     <span className="continent">New Zealand</span>
                   </div>
-                  <a href="" className="buy">Tickets</a>
+                  <a href="https://www.livenation.co.nz/show/1207362/anderson-paak-and-the-free-nationals/auckland/2019-01-12/en" className="buy">Tickets</a>
                 </li>
               </ul>
             </div>

@@ -393,7 +393,8 @@ nav {
       align-items: flex-start;
       justify-content: flex-start; }
     #modal #photos img {
-      width: 100%; }
+      min-width: 100%;
+      height: auto; }
   #modal #videos {
     width: 100%; }
     #modal #videos.show {
