@@ -591,10 +591,10 @@ nav {
       margin: 0;
       padding: 0; }
     #splash #aftermath {
-      position: absolute;
+      position: relative;
       left: 50%;
       text-align: center;
-      transform: translate(-50%, 0); }
+      transform: translate(-50%, -50px); }
   #modal {
     position: relative;
     top: auto;
@@ -658,13 +658,15 @@ nav {
         width: 100%; } }
 
 @media (max-width: 375px) and (max-height: 667px) {
-  #splash .half {
-    width: auto;
-    display: block;
-    transform: translate(0, -50px) scale(0.7); }
-    #splash .half #title {
-      transform: translate(0, -20px);
-      width: 100%; } }
+  #splash {
+    background-position: 50% 0; }
+    #splash .half {
+      width: auto;
+      display: block;
+      transform: translate(0, -50px) scale(0.7); }
+      #splash .half #title {
+        transform: translate(0, -20px);
+        width: 100%; } }
 
 @media (max-width: 320px) {
   #splash .half {

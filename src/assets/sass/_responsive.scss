@@ -268,10 +268,10 @@
 			padding: 0;
 		}
 		#aftermath {
-			position: absolute;
+			position: relative;
 			left: 50%;
 			text-align: center;
-			transform: translate(-50%,0);
+			transform: translate(-50%,-50px);
 		}
 	}
 	#modal {
@@ -358,6 +358,7 @@
 }
 @media (max-width: 375px) and (max-height: 667px) {
 	#splash {
+		background-position: 50% 0;
 		.half {
 			width: auto;
 			display: block;
