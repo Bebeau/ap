@@ -563,7 +563,7 @@ nav {
     z-index: 10;
     background: linear-gradient(transparent, black); }
   #splash {
-    background-position: 50% 70%; }
+    background-position: 50% 40%; }
     #splash .half {
       width: auto;
       display: block;
@@ -574,7 +574,7 @@ nav {
         transform: translate(0, -20px);
         width: 100%; }
     #splash #musicLinks {
-      transform: translate(0, 300px) scale(0.8);
+      transform: translate(0, 350px) scale(0.8);
       white-space: nowrap; }
       #splash #musicLinks p {
         font-size: 12pt; }
@@ -667,15 +667,13 @@ nav {
       transform: translate(0, 0); }
     #splash .half #title {
       transform: translate(0, -20px);
-      width: 100%; }
-  #splash #musicLinks {
-    transform: translate(0, 250px) scale(0.8); } }
+      width: 100%; } }
 
 @media (max-width: 320px) {
   #splash .half {
     transform: translate(0, -60px) scale(0.6); }
   #splash #musicLinks {
-    transform: translate(-25px, 250px) scale(0.8); }
+    transform: translate(-25px, 350px) scale(0.8); }
   #splash #aftermath {
     width: 25px;
     hieght: auto; } }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 import './assets/sass/style.css';
 
@@ -224,6 +225,11 @@ class App extends Component {
       clicked: false
     }
   }
+  targetElement = null;
+  componentDidMount() {
+    // 2. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav). 
+    this.targetElement = document.querySelector('#modal');
+  }
   toggleSplash = () => {
     const currentState = this.state.clicked;
       this.setState({ 
@@ -241,6 +247,7 @@ class App extends Component {
         id: id
       });
     }.bind(this), 800);
+    disableBodyScroll(this.targetElement);
   }
   showMenu = (id) => {
     this.setState({ 
@@ -251,6 +258,7 @@ class App extends Component {
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
     }
+    clearAllBodyScrollLocks();
   }
   render() {
     if(this.state.clicked) {
@@ -265,10 +273,6 @@ class App extends Component {
         <section className={this.state.clicked ? 'close': null} id="splash">
           <button onClick={this.toggleSplash} >Enter Site</button>
           <article className="half">
-            <div id="intro">
-              <span className="universe">Starring</span>
-              <img src={logo} alt="Anderson Paak" />
-            </div>
             <img id="title" src={oxnard} />
             <div id="musicLinks">
               <p>Available For Pre-Order</p>
