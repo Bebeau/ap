@@ -304,9 +304,13 @@
 			}
 			ul {
 				li {
-					.location,
-					.continet {
-						display: inline-block;
+					.wrap {
+						span {
+							&.location,
+							&.continent {
+								display: inline-block;
+							}
+						}
 					}
 				}
 			}

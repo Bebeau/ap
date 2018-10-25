@@ -393,7 +393,7 @@ nav {
       align-items: flex-start;
       justify-content: flex-start; }
     #modal #photos img {
-      min-width: 100%;
+      max-width: 100%;
       height: auto; }
   #modal #videos {
     width: 100%; }
@@ -618,8 +618,7 @@ nav {
       padding-top: 25px; }
       #modal #tour.show {
         justify-content: flex-start; }
-      #modal #tour ul li .location,
-      #modal #tour ul li .continet {
+      #modal #tour ul li .wrap span.location, #modal #tour ul li .wrap span.continent {
         display: inline-block; }
   #logo {
     position: absolute;
