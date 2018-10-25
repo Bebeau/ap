@@ -270,10 +270,6 @@ class App extends Component {
               <img src={logo} alt="Anderson Paak" />
             </div>
             <img id="title" src={oxnard} />
-            <div id="feature">
-              <div className="universe">and</div>
-              <span className="cooper">Kendrick Lamar</span>
-            </div>
             <div id="musicLinks">
               <p>Available For Pre-Order</p>
               <a className="apple" href="https://geo.itunes.apple.com/us/artist/anderson-paak/855484536?mt=1&app=music" target="_BLANK" rel="noopener noreferrer">

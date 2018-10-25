@@ -52,7 +52,6 @@ a, button {
 	left: 0;
 	z-index: 10;
 	background: url('../img/bg.png') no-repeat scroll bottom center / cover;
-	mask-image: url('../img/bg.png') center / cover;
 	transition: all 0.8s ease-in-out;
 	pointer-events: none;
 	&.open {
@@ -127,9 +126,6 @@ a, button {
 		transform: translate(-250px,0);
 		display: block;
 	}
-	#feature {
-		transform: translate(80%,-75px);
-	}
 	#title {
 		width: 80%;
 		transform: translate(0,-50px);
@@ -186,7 +182,7 @@ a, button {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	z-index: 10;
+	z-index: 99;
 	background: linear-gradient(to right, rgba(0,0,0,0.5), transparent);
 	img {
 		width: 150px;

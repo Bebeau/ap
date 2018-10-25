@@ -7,9 +7,6 @@
 	#splash {
 		.half {
 			transform: scale(0.8);
-			#feature {
-				transform: translate(200px,-50px);
-			}
 		}
 	}
 	#modal {
@@ -248,13 +245,6 @@
 				transform: translate(0,-20px);
 				width: 100%;
 			}
-			#feature {
-				transform: translate(0,-20px);
-				text-align: center;
-				.cooper {
-					font-size: 18pt;
-				}
-			}
 		}
 		#musicLinks {
 			transform: translate(0,300px) scale(0.8);
@@ -313,6 +303,14 @@
 			&.show {
 				justify-content: flex-start;
 			}
+			ul {
+				li {
+					.location,
+					.continet {
+						display: inline-block;
+					}
+				}
+			}
 		}
 	}
 	#logo {
@@ -358,13 +356,6 @@
 				transform: translate(0,-20px);
 				width: 100%;
 			}
-			#feature {
-				transform: translate(0,-20px);
-				text-align: center;
-				.cooper {
-					font-size: 18pt;
-				}
-			}
 		}
 		#musicLinks {
 			transform: translate(0,400px) scale(0.8);
@@ -383,13 +374,6 @@
 			#title {
 				transform: translate(0,-20px);
 				width: 100%;
-			}
-			#feature {
-				transform: translate(0,-20px);
-				text-align: center;
-				.cooper {
-					font-size: 18pt;
-				}
 			}
 		}
 		#musicLinks {
