@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 import './assets/sass/style.css';
 
@@ -8,7 +8,7 @@ import Footer from './layout/footer';
 
 import logoWhite from './assets/img/SVG/logo_white.svg';
 
-import oxnard from './assets/img/oxnard.png';
+import oxnardLogo from './assets/img/oxnard.png';
 
 import apple from './assets/img/SVG/apple.svg';
 import appleWhite from './assets/img/SVG/apple_white.svg';
@@ -16,9 +16,10 @@ import spotify from './assets/img/SVG/spotify.svg';
 import itunes from './assets/img/SVG/itunes.svg';
 import tidal from './assets/img/SVG/tidal.svg';
 import tidalWhite from './assets/img/SVG/tidal_white.svg';
-import google from './assets/img/SVG/google.svg';
+import google from './assets/img/icons/googleplay.png';
 import amazon from './assets/img/SVG/amazon.svg';
 
+import oxnard from './assets/img/albums/oxnard.jpg';
 import malibu from './assets/img/albums/malibu.jpg';
 import bubblin from './assets/img/albums/bubblin.jpg';
 import yesLawd from './assets/img/albums/yesLawd.jpg';
@@ -44,10 +45,20 @@ import photo14 from './assets/img/photos/14.jpg';
 import photo15 from './assets/img/photos/15.jpg';
 import photo16 from './assets/img/photos/16.jpg';
 import photo17 from './assets/img/photos/17.jpg';
+import photo18 from './assets/img/photos/18.jpg';
 
 import aftermath from './assets/img/SVG/aftermath.svg';
 
 const albums = [
+  {
+    artwork: [oxnard],
+    apple: 'https://itunes.apple.com/us/album/bubblin/1383381572?i=1383381915&app=music&ign-mpt=uo%3D4',
+    spotify: 'https://open.spotify.com/album/6N1y1a5qnqN8pBkizOdMvk?si=A2y4GZEGQxq68qt9pu8jog',
+    itunes: 'https://itunes.apple.com/us/album/bubblin/1383381572?i=1383381915&app=music&ign-mpt=uo%3D4',
+    tidal: 'https://tidal.com/track/88736899',
+    google: 'https://play.google.com/store/music/album?id=B756yrjl7kg2eofq2fqclykshsm&tid=song-Ttjpmct5y72vzsqhxxmng2gvx4a',
+    amazon: 'https://www.amazon.com/dp/B07CZVG8QR/ref=ap_ws_tlw_trk6'
+  },
   {
     artwork: [bubblin],
     apple: 'https://itunes.apple.com/us/album/bubblin/1383381572?i=1383381915&app=music&ign-mpt=uo%3D4',
@@ -98,6 +109,9 @@ const albums = [
 const photos = [
   {
     img: [photo1]
+  },
+  {
+    img: [photo18]
   },
   {
     img: [photo2]
@@ -229,10 +243,11 @@ class App extends Component {
   }
   toggleSplash = () => {
     const currentState = this.state.clicked;
-      this.setState({ 
-        clicked: !currentState,
-        fadeIn: true
-      });
+    this.setState({ 
+      clicked: !currentState,
+      fadeIn: true
+    });
+    disableBodyScroll(this.targetElement);
   }
   addActiveClass = (id) => {
     this.setState({ 
@@ -244,13 +259,11 @@ class App extends Component {
         id: id
       });
     }.bind(this), 800);
-    disableBodyScroll(this.targetElement);
   }
   showMenu = (id) => {
     this.setState({ 
       active: false
     });
-    enableBodyScroll(this.targetElement);
   }
   componentWillUnmount() {
     if (this.timeoutId) {
@@ -271,7 +284,7 @@ class App extends Component {
         <section className={this.state.clicked ? 'close': null} id="splash">
           <button onClick={this.toggleSplash} >Enter Site</button>
           <article className="half">
-            <img id="title" src={oxnard} alt="Oxnard" />
+            <img id="title" src={oxnardLogo} alt="Oxnard" />
             <div id="musicLinks">
               <p>Available For Pre-Order</p>
               <a className="apple" href="https://geo.itunes.apple.com/us/artist/anderson-paak/855484536?mt=1&app=music" target="_BLANK" rel="noopener noreferrer">
@@ -355,17 +368,6 @@ class App extends Component {
               <ul>
                 <li className="event">
                   <div className="wrap">
-                    <span className="date">10.31.2018</span>
-                    <span className="venue">Greek Theater</span>
-                  </div>
-                  <div className="wrap">
-                    <span className="location">Los Angeles, CA</span>
-                    <span className="continent">North America</span>
-                  </div>
-                  <a href="https://www1.ticketmaster.com/mac-miller-a-celebration-of-life/event/0900553CE1F0B08D" target="_BLANK" className="buy">Tickets</a>
-                </li>
-                <li className="event">
-                  <div className="wrap">
                     <span className="date">01.09.2019</span>
                     <span className="venue">Hordern Pavilion</span>
                   </div>
@@ -373,7 +375,7 @@ class App extends Component {
                     <span className="location">Sydney, NSW</span>
                     <span className="continent">Australia</span>
                   </div>
-                  <a href="https://www.livenation.com.au/show/1207348/anderson-paak-and-the-free-nationals/sydney/2019-01-09/en" target="_BLANK" className="buy">Tickets</a>
+                  <a href="https://www.livenation.com.au/show/1207348/anderson-paak-and-the-free-nationals/sydney/2019-01-09/en" target="_BLANK" rel="noopener noreferrer" className="buy">Tickets</a>
                 </li>
                 <li className="event">
                   <div className="wrap">
@@ -384,7 +386,7 @@ class App extends Component {
                     <span className="location">Melbourne, VIC</span>
                     <span className="continent">Australia</span>
                   </div>
-                  <a href="https://www.livenation.com.au/show/1207352/anderson-paak-and-the-free-nationals/melbourne/2019-01-10/en" target="_BLANK" className="buy">Tickets</a>
+                  <a href="https://www.livenation.com.au/show/1207352/anderson-paak-and-the-free-nationals/melbourne/2019-01-10/en" target="_BLANK" rel="noopener noreferrer" className="buy">Tickets</a>
                 </li>
                 <li className="event">
                   <div className="wrap">
@@ -395,7 +397,7 @@ class App extends Component {
                     <span className="location">Auckland</span>
                     <span className="continent">New Zealand</span>
                   </div>
-                  <a href="https://www.livenation.co.nz/show/1207362/anderson-paak-and-the-free-nationals/auckland/2019-01-12/en" target="_BLANK" className="buy">Tickets</a>
+                  <a href="https://www.livenation.co.nz/show/1207362/anderson-paak-and-the-free-nationals/auckland/2019-01-12/en" target="_BLANK" rel="noopener noreferrer" className="buy">Tickets</a>
                 </li>
               </ul>
             </div>
