@@ -123,8 +123,8 @@ a, button {
     height: auto;
     z-index: 999; }
   #splash #musicLinks {
-    text-align: center;
-    display: none; }
+    display: block;
+    text-align: center; }
     #splash #musicLinks p {
       text-transform: uppercase;
       letter-spacing: 8px;
@@ -575,6 +575,7 @@ nav {
     z-index: 10;
     background: linear-gradient(transparent, black); }
   #splash {
+    background: url("../img/oxnard_albumnMobile.jpg") no-repeat scroll right center/cover #f7efe4;
     background-position: 50% 0;
     background-size: 100%; }
     #splash .half {

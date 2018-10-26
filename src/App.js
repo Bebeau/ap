@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import ReactPixel from 'react-facebook-pixel';
 
 import './assets/sass/style.css';
 
@@ -48,6 +49,13 @@ import photo17 from './assets/img/photos/17.jpg';
 import photo18 from './assets/img/photos/18.jpg';
 
 import aftermath from './assets/img/SVG/aftermath.svg';
+
+const advancedMatching = {};
+const options = {
+    autoConfig: true,
+    debug: false,
+};
+ReactPixel.init('252805335389609', advancedMatching, options);
 
 const albums = [
   {
@@ -250,6 +258,9 @@ class App extends Component {
     disableBodyScroll(this.targetElement);
   }
   addActiveClass = (id) => {
+    ReactPixel.track('ViewContent', {
+      value: id
+    });
     this.setState({ 
       active: false
     });
@@ -287,22 +298,22 @@ class App extends Component {
             <img id="title" src={oxnardLogo} alt="Oxnard" />
             <div id="musicLinks">
               <p>Available For Pre-Order</p>
-              <a className="apple" href="https://geo.itunes.apple.com/us/artist/anderson-paak/855484536?mt=1&app=music" target="_BLANK" rel="noopener noreferrer">
+              <a className="apple" href="https://itunes.apple.com/us/album/tints-feat-kendrick-lamar-single/1437534355?app=music&ign-mpt=uo%3D4" target="_BLANK" rel="noopener noreferrer">
                 <img src={apple} alt="Apple Music" />
               </a>
-              <a className="spotify" href="https://open.spotify.com/artist/3jK9MiCrA42lLAdMGUZpwa" target="_BLANK" rel="noopener noreferrer">
+              <a className="spotify" href="https://open.spotify.com/track/1gnwGVoG7V08vMX3hyr90x?si=oLJ8DAv6TU6AIhHwkKBbUg" target="_BLANK" rel="noopener noreferrer">
                 <img src={spotify} alt="Spotify" />
               </a>
-              <a className="itunes" href="https://geo.itunes.apple.com/us/artist/anderson-paak/855484536?mt=1&app=music" target="_BLANK" rel="noopener noreferrer">
+              <a className="itunes" href="https://itunes.apple.com/us/album/tints-feat-kendrick-lamar-single/1437534355?app=music&ign-mpt=uo%3D4" target="_BLANK" rel="noopener noreferrer">
                 <img src={itunes} alt="iTunes" />
               </a>
-              <a className="tidal" href="https://tidal.com/browse/artist/5866385" target="_BLANK" rel="noopener noreferrer">
+              <a className="tidal" href="https://tidal.com/album/96155864" target="_BLANK" rel="noopener noreferrer">
                 <img src={tidal} alt="Tidal" />
               </a>
-              <a className="google" href="https://play.google.com/store/music/artist/Anderson_Paak?id=Ats5opj5ynefptzg4lfukuonkki" target="_BLANK" rel="noopener noreferrer">
+              <a className="google" href="https://play.google.com/store/music/album/Anderson_Paak_Tints_feat_Kendrick_Lamar?id=Brnbxp77jjsxpkfmmwjtg3tdhry&hl=en" target="_BLANK" rel="noopener noreferrer">
                 <img src={google} alt="Google" />
               </a>
-              <a className="amazon" href="https://www.amazon.com/Anderson-.Paak/e/B00SNBNCQM" target="_BLANK" rel="noopener noreferrer">
+              <a className="amazon" href="https://www.amazon.com/Tints-feat-Kendrick-Lamar-Explicit/dp/B07HPX4F5Y/ref=sr_1_1?ie=UTF8&qid=1540537494&sr=8-1&keywords=anderson+paak+tints" target="_BLANK" rel="noopener noreferrer">
                 <img src={amazon} alt="Amazon" />
               </a>
             </div>

@@ -139,8 +139,8 @@ a, button {
 		z-index: 999;
 	}
 	#musicLinks {
+		display: block;
 		text-align: center;
-		display: none;
 		p {
 			text-transform: uppercase;
 			letter-spacing: 8px;
