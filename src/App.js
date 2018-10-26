@@ -56,6 +56,7 @@ const options = {
     debug: false,
 };
 ReactPixel.init('252805335389609', advancedMatching, options);
+ReactPixel.pageView();
 
 const albums = [
   {
