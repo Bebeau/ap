@@ -10,30 +10,13 @@
 		}
 	}
 	#modal {
-		#music {
-			transform: scale(0.8);
-			padding-top: 0;
-			width: auto;
-		}
 		#tour {
 			transform: scale(0.7) translate(0,-75px);
 		}
 	}
 }
 @media (max-width: 1280px) {
-	#splash {
-		.half {
-			&.image {
-			
-			}
-		}
-	}
 	#modal {
-		#music {
-			transform: scale(0.7);
-			padding-top: 0;
-			width: auto;
-		}
 		#tour {
 			transform: scale(0.7);
 			ul {
@@ -50,14 +33,50 @@
 	}
 	#modal {
 		#tour {
+			transform: scale(1);
+			&.show {
+				justify-content: flex-start;
+			}
 			ul {
-				width: 800px;
+				width: auto;
+				padding-bottom: 150px;
 				li {
+					width: 300px;
+					margin: 25px auto;
 					.wrap {
+						width: auto;
 						display: block;
+						font-size: 10pt;
+						margin: 10px 0;
 						span {
-							display: block;
+							&.venue,
+							&.date,
+							&.location,
+							&.continent {
+								width: auto;
+							}
+							&.date {
+								display: block;
+								font-size: 14pt;
+							}
+							&.continent,
+							&.location {
+								display: inline-block;
+							}
+							&.continent {
+								&:before {
+									content: "-";
+									display: inline-block;
+									padding: 0 5px;
+								}
+							}
 						}
+					}
+					.buy {
+						width: 100%;
+						display: block;
+						margin: 0 auto;
+						padding: 0;
 					}
 				}
 			}
@@ -297,6 +316,9 @@
 			line-height: 40px;
 			letter-spacing: 2px;
 		}
+		#music {
+			padding: 0;
+		}
 		#videos {
 			padding-top: 25px;
 			.slide {
@@ -325,6 +347,9 @@
 							}
 						}
 					}
+					.buy {
+						line-height: 40px;
+					}
 				}
 			}
 		}
@@ -335,21 +360,23 @@
 		left: 0;
 		height: auto;
 		width: auto;
-		left: 0;
 		text-align: left;
 		display: block;
 		z-index: 20;
 		padding: 0;
 		background: none;
 		img {
-			width: 100px;
+			width: 75px;
 		}
 	}
 	#social {
 		left: 50%;
 		bottom: 15px;
-		transform: translate(-50%,0);
+		transform: translate(-50%,0) scale(0.9);
 		white-space: nowrap;
+		div {
+			font-size: 6pt;
+		}
 		.showMobile {
 			&.sign {
 				text-transform: uppercase;
