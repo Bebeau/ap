@@ -62,9 +62,7 @@ a, button {
   z-index: 999;
   box-sizing: border-box;
   overflow: hidden;
-  background: url("../img/oxnard_albumn.jpg") no-repeat scroll right center/cover #f7efe4;
-  background-size: 75%;
-  background-position: 150% 50%; }
+  background: url("../img/bg_texture.jpg") repeat-x scroll top left #f7efe4; }
   #splash.close {
     transform: translate(0, -100vh);
     transition: all 0.3s ease-in-out; }
@@ -78,6 +76,12 @@ a, button {
     justify-content: center;
     position: relative;
     z-index: 2; }
+  #splash #video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: auto; }
   #splash button {
     background: none;
     border: none;
@@ -436,6 +440,8 @@ nav {
 @media (max-width: 1024px) {
   #splash .half {
     transform: scale(0.5); }
+  #splash #video {
+    right: -100px; }
   #modal #tour {
     transform: scale(1); }
     #modal #tour.show {
@@ -472,11 +478,14 @@ nav {
   body {
     overflow: hidden; }
   #splash {
+    background: url("../img/oxnard_albumn.jpg") no-repeat scroll center/cover #f7efe4;
     background-size: 75%;
     background-position: 50% 60%; }
     #splash .half {
       width: 100%;
       transform: translate(0, -50px) scale(0.7); }
+    #splash #video {
+      display: none; }
     #splash #musicLinks {
       transform: translate(0, 200px); }
   #modal h2 {
@@ -676,7 +685,7 @@ nav {
   #social {
     left: 50%;
     bottom: 15px;
-    transform: translate(-50%, 0) scale(0.9);
+    transform: translate(-50%, 0);
     white-space: nowrap; }
     #social div {
       font-size: 6pt; }

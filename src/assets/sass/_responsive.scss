@@ -30,6 +30,9 @@
 		.half {
 			transform: scale(0.5);
 		}
+		#video {
+			right: -100px;
+		}
 	}
 	#modal {
 		#tour {
@@ -88,11 +91,15 @@
 		overflow: hidden;
 	}
 	#splash {
+		background: url('../img/oxnard_albumn.jpg') no-repeat scroll center / cover #f7efe4;
 		background-size: 75%;
 		background-position: 50% 60%;
 		.half {
 			width: 100%;
 			transform: translate(0,-50px) scale(0.7);
+		}
+		#video {
+			display: none;
 		}
 		#musicLinks {
 			transform: translate(0,200px);
@@ -372,7 +379,7 @@
 	#social {
 		left: 50%;
 		bottom: 15px;
-		transform: translate(-50%,0) scale(0.9);
+		transform: translate(-50%,0);
 		white-space: nowrap;
 		div {
 			font-size: 6pt;

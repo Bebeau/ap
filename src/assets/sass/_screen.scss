@@ -68,9 +68,9 @@ a, button {
 	z-index: 999;
 	box-sizing: border-box;
 	overflow: hidden;
-	background: url('../img/oxnard_albumn.jpg') no-repeat scroll right center / cover #f7efe4;
-	background-size: 75%;
-	background-position: 150% 50%;
+	background: url('../img/bg_texture.jpg') repeat-x scroll top left #f7efe4;
+	// background-size: 75%;
+	// background-position: 150% 50%;
 	&.close {
 		transform: translate(0,-100vh);
 		transition: all 0.3s ease-in-out;
@@ -85,6 +85,13 @@ a, button {
 		justify-content: center;
 		position: relative;
 		z-index: 2;
+	}
+	#video {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100vh;
+		width: auto;
 	}
 	button {
 		background: none;

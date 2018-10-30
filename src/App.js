@@ -50,6 +50,8 @@ import photo18 from './assets/img/photos/18.jpg';
 
 import aftermath from './assets/img/SVG/aftermath.svg';
 
+import introVideo from './assets/videos/oxnard_intro.mp4';
+
 const advancedMatching = {};
 const options = {
     autoConfig: true,
@@ -320,6 +322,9 @@ class App extends Component {
               </a>
             </div>
           </article>
+          <video id="video" autoPlay>
+            <source src={introVideo} type="video/mp4" />
+          </video>
           <img id="aftermath" src={aftermath} alt="Aftermath" />
         </section>
         <div id="container" className={this.state.clicked ? 'in': null}>
