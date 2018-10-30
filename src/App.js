@@ -322,7 +322,7 @@ class App extends Component {
               </a>
             </div>
           </article>
-          <video id="video" autoPlay>
+          <video id="video" autoPlay preload="auto">
             <source src={introVideo} type="video/mp4" />
           </video>
           <img id="aftermath" src={aftermath} alt="Aftermath" />
