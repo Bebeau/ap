@@ -266,9 +266,7 @@ class App extends Component {
     disableBodyScroll(this.targetElement);
   }
   addActiveClass = (id) => {
-    ReactPixel.track('ViewContent', {
-      value: id
-    });
+    ReactPixel.track('ViewContent');
     this.setState({ 
       active: false
     });

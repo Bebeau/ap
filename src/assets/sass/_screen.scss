@@ -68,9 +68,8 @@ a, button {
 	z-index: 999;
 	box-sizing: border-box;
 	overflow: hidden;
-	background: url('../img/bg_texture.jpg') repeat-x scroll top left #f7efe4;
-	// background-size: 75%;
-	// background-position: 150% 50%;
+	background: url('../img/bg_texture.jpg') no-repeat scroll center / cover #f7efe4;
+	background-position: -75px 50%;
 	&.close {
 		transform: translate(0,-100vh);
 		transition: all 0.3s ease-in-out;
