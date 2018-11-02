@@ -320,7 +320,7 @@ class App extends Component {
               </a>
             </div>
           </article>
-          <video id="video" autoplay preload="auto">
+          <video id="video" autoPlay muted preload="auto">
             <source src={introVideoWEBM} type="video/webm" />
             <source src={introVideoMP4} type="video/mp4" />
           </video>
