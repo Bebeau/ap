@@ -68,8 +68,7 @@ a, button {
 	z-index: 999;
 	box-sizing: border-box;
 	overflow: hidden;
-	background: url('../img/bg_texture.jpg') no-repeat scroll center / cover #f7efe4;
-	background-position: -75px 50%;
+	background: url('../img/bg_texture.jpg') repeat-x scroll left center #f7efe4;
 	&.close {
 		transform: translate(0,-100vh);
 		transition: all 0.3s ease-in-out;
@@ -241,7 +240,7 @@ nav {
 	position: fixed;
 	bottom: 25px;
 	left: 25px;
-	z-index: 15;
+	z-index: 999;
 	a {
 		display: inline-block;
 		margin: 0 10px;
@@ -377,7 +376,7 @@ nav {
 				margin: 0 auto;
 			}
 			a {
-				width: 25px;
+				width: 20px;
 				height: auto;
 				display: inline-block;
 				vertical-align: middle;

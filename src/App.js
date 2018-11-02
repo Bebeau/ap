@@ -20,6 +20,7 @@ import google from './assets/img/icons/googleplay.png';
 import amazon from './assets/img/SVG/amazon.svg';
 
 import oxnard from './assets/img/albums/oxnard.jpg';
+import tints from './assets/img/albums/tints.jpg';
 import malibu from './assets/img/albums/malibu.jpg';
 import bubblin from './assets/img/albums/bubblin.jpg';
 import yesLawd from './assets/img/albums/yesLawd.jpg';
@@ -63,12 +64,21 @@ ReactPixel.pageView();
 const albums = [
   {
     artwork: [oxnard],
-    apple: 'https://itunes.apple.com/us/album/bubblin/1383381572?i=1383381915&app=music&ign-mpt=uo%3D4',
-    spotify: 'https://open.spotify.com/album/6N1y1a5qnqN8pBkizOdMvk?si=A2y4GZEGQxq68qt9pu8jog',
-    itunes: 'https://itunes.apple.com/us/album/bubblin/1383381572?i=1383381915&app=music&ign-mpt=uo%3D4',
-    tidal: 'https://tidal.com/track/88736899',
-    google: 'https://play.google.com/store/music/album?id=B756yrjl7kg2eofq2fqclykshsm&tid=song-Ttjpmct5y72vzsqhxxmng2gvx4a',
-    amazon: 'https://www.amazon.com/dp/B07CZVG8QR/ref=ap_ws_tlw_trk6'
+    apple: 'https://itunes.apple.com/album/oxnard/1439982774?ls=1',
+    spotify: 'https://campaigns.topsify.com/app/8524/save-bubblin--new-music-by-anderson-paak',
+    itunes: 'https://itunes.apple.com/album/oxnard/1439982774?ls=1&app=itunes',
+    tidal: '',
+    google: 'https://play.google.com/music/m/Br3ekxj3kcdd6ddnwcez2mogh4m',
+    amazon: 'https://www.amazon.com/Oxnard-Explicit-Anderson-Paak/dp/B07JMDLHGR'
+  },
+  {
+    artwork: [tints],
+    apple: 'https://itunes.apple.com/us/album/tints-feat-kendrick-lamar-single/1437534355?app=music&ign-mpt=uo%3D4',
+    spotify: 'https://open.spotify.com/track/1gnwGVoG7V08vMX3hyr90x?si=oLJ8DAv6TU6AIhHwkKBbUg',
+    itunes: 'https://itunes.apple.com/us/album/tints-feat-kendrick-lamar-single/1437534355?app=music&ign-mpt=uo%3D4',
+    tidal: 'https://tidal.com/album/96155864',
+    google: 'https://play.google.com/store/music/album/Anderson_Paak_Tints_feat_Kendrick_Lamar?id=Brnbxp77jjsxpkfmmwjtg3tdhry&hl=en',
+    amazon: 'https://www.amazon.com/Tints-feat-Kendrick-Lamar-Explicit/dp/B07HPX4F5Y/ref=sr_1_1?ie=UTF8&qid=1540537494&sr=8-1&keywords=anderson+paak+tints'
   },
   {
     artwork: [bubblin],
@@ -177,7 +187,7 @@ const photos = [
 const videos = [
   {
     url: 'https://www.youtube-nocookie.com/embed/u749Hi0gDVM?showinfo=0&controls=0',
-    title: "TINTS'"
+    title: "TINTS"
   },
   {
     url: 'https://www.youtube-nocookie.com/embed/7PmUtmfTmbg?showinfo=0&controls=0',
@@ -211,24 +221,36 @@ class Albums extends React.Component {
     return (
       <article className="album">
         <img src={this.props.artwork[0]} alt="" />
-        <a className="apple" href={this.props.apple} target="_BLANK" rel="noopener noreferrer">
-          <img src={appleWhite} alt="Apple Music" />
-        </a>
-        <a className="spotify" href={this.props.spotify} target="_BLANK" rel="noopener noreferrer">
-          <img src={spotify} alt="Spotify" />
-        </a>
-        <a className="itunes" href={this.props.itunes} target="_BLANK" rel="noopener noreferrer">
-          <img src={itunes} alt="iTunes" />
-        </a>
-        <a className="tidal" href={this.props.tidal} target="_BLANK" rel="noopener noreferrer">
-          <img src={tidalWhite} alt="Tidal" />
-        </a>
-        <a className="google" href={this.props.google} target="_BLANK" rel="noopener noreferrer">
-          <img src={google} alt="Google" />
-        </a>
-        <a className="amazon" href={this.props.amazon} target="_BLANK" rel="noopener noreferrer">
-          <img src={amazon} alt="Amazon" />
-        </a>
+        {this.props.apple ? (
+          <a className="apple" href={this.props.apple} target="_BLANK" rel="noopener noreferrer">
+            <img src={appleWhite} alt="Apple Music" />
+          </a>
+        ) : null };
+        {this.props.spotify ? (
+          <a className="spotify" href={this.props.spotify} target="_BLANK" rel="noopener noreferrer">
+            <img src={spotify} alt="Spotify" />
+          </a>
+        ) : null };
+        {this.props.itunes ? (
+          <a className="itunes" href={this.props.itunes} target="_BLANK" rel="noopener noreferrer">
+            <img src={itunes} alt="iTunes" />
+          </a>
+        ) : null };
+        {this.props.tidal ? (
+          <a className="tidal" href={this.props.tidal} target="_BLANK" rel="noopener noreferrer">
+            <img src={tidalWhite} alt="Tidal" />
+          </a>
+        ) : null };
+        {this.props.google ? (
+          <a className="google" href={this.props.google} target="_BLANK" rel="noopener noreferrer">
+            <img src={google} alt="Google" />
+          </a>
+        ) : null };
+        {this.props.amazon ? (
+          <a className="amazon" href={this.props.amazon} target="_BLANK" rel="noopener noreferrer">
+            <img src={amazon} alt="Amazon" />
+          </a>
+        ) : null };
       </article>
     )
   }
