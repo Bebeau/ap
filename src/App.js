@@ -15,7 +15,6 @@ import apple from './assets/img/SVG/apple.svg';
 import appleWhite from './assets/img/SVG/apple_white.svg';
 import spotify from './assets/img/SVG/spotify.svg';
 import itunes from './assets/img/SVG/itunes.svg';
-import tidal from './assets/img/SVG/tidal.svg';
 import tidalWhite from './assets/img/SVG/tidal_white.svg';
 import google from './assets/img/icons/googleplay.png';
 import amazon from './assets/img/SVG/amazon.svg';
@@ -321,7 +320,7 @@ class App extends Component {
               </a>
             </div>
           </article>
-          <video id="video" autoPlay preload="auto">
+          <video id="video" autoplay preload="auto">
             <source src={introVideoWEBM} type="video/webm" />
             <source src={introVideoMP4} type="video/mp4" />
           </video>
