@@ -316,6 +316,13 @@
 				}
 			}
 		}
+		#videos {
+			transform: translate(0,100px);
+			&.show {
+				align-items: flex-start;
+				justify-content: flex-start;
+			}
+		}
 	}
 	#logo {
 		position: absolute;

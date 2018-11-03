@@ -656,6 +656,11 @@ nav {
           letter-spacing: 0; }
         #modal #tour ul li .buy {
           line-height: 40px; }
+    #modal #videos {
+      transform: translate(0, 100px); }
+      #modal #videos.show {
+        align-items: flex-start;
+        justify-content: flex-start; }
   #logo {
     position: absolute;
     top: 0;
