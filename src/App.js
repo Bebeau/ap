@@ -244,8 +244,7 @@ class App extends Component {
   }
   targetElement = null;
   componentDidMount() {
-    // 2. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav). 
-    this.targetPhotos = document.querySelector('.modal');
+    this.targetElement = document.querySelector('.modal');
   }
   toggleSplash = () => {
     const currentState = this.state.clicked;
@@ -276,7 +275,7 @@ class App extends Component {
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
     }
-    clearAllBodyScrollLocks();
+    clearAllBodyScrollLocks(); 
   }
   render() {
     if(this.state.clicked) {
