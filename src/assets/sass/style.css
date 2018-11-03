@@ -429,7 +429,8 @@ nav {
       height: auto; }
   #modal #videos {
     width: 100%;
-    transform: translate(0, -80px); }
+    transform: translate(0, -80px);
+    -webkit-overflow-scrolling: auto; }
 
 @media (max-width: 1440px) {
   #splash .half {
