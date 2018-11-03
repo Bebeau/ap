@@ -1,27 +1,7 @@
-@media (max-width: 1600px) {
-	#tour {
-		transform: scale(0.7);
-	}
-}
 @media (max-width: 1440px) {
 	#splash {
 		.half {
 			transform: scale(0.8);
-		}
-	}
-	#modal {
-		#tour {
-			transform: scale(0.7) translate(0,-75px);
-		}
-	}
-}
-@media (max-width: 1280px) {
-	#modal {
-		#tour {
-			transform: scale(0.7);
-			ul {
-				width: auto;
-			}
 		}
 	}
 }
@@ -129,9 +109,6 @@
 				iframe {
 					width:640px;
 					height:385px;
-				}
-				&:last-child {
-					padding-bottom: 150px;
 				}
 			}
 		}
@@ -334,6 +311,7 @@
 				iframe {
 					width: 100%;
 					height: 200px;
+					-webkit-overflow-scrolling: touch;
 				}
 			}
 		}

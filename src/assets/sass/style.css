@@ -62,7 +62,7 @@ a, button {
   z-index: 999;
   box-sizing: border-box;
   overflow: hidden;
-  background: url("../img/bg_texture.jpg") repeat-x scroll left center #f7efe4; }
+  background: #f1ebdd; }
   #splash.close {
     transform: translate(0, -100vh);
     transition: all 0.3s ease-in-out; }
@@ -76,12 +76,25 @@ a, button {
     justify-content: center;
     position: relative;
     z-index: 2; }
-  #splash #video {
+  #splash #videoWrap {
     position: absolute;
     top: 0;
     right: 0;
     height: 100vh;
     width: auto; }
+    #splash #videoWrap:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 100vh;
+      z-index: 1;
+      background: linear-gradient(left, #f1ebdd, transparent); }
+    #splash #videoWrap #video {
+      height: 100%; }
   #splash button {
     background: none;
     border: none;
@@ -164,9 +177,10 @@ a, button {
   align-items: center;
   justify-content: space-around;
   z-index: 99;
+  pointer-events: none;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent); }
   #logo img {
-    width: 150px;
+    width: 120px;
     height: auto; }
 
 nav {
@@ -180,6 +194,7 @@ nav {
   align-items: center;
   justify-content: center;
   z-index: 12;
+  pointer-events: none;
   background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent); }
   nav.hideMobile {
     display: flex !important; }
@@ -198,7 +213,8 @@ nav {
     text-transform: uppercase;
     letter-spacing: 5px;
     transition: all 0.3s ease-in-out;
-    text-decoration: none; }
+    text-decoration: none;
+    pointer-events: auto; }
     nav button:hover, nav a:hover {
       cursor: pointer !important;
       color: #EFB123;
@@ -286,12 +302,12 @@ nav {
     transition: all 1.5s ease-in-out;
     opacity: 1; }
   #modal h2 {
-    font-size: 16pt;
+    font-size: 12pt;
     color: white;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
-    line-height: 100px;
+    line-height: 80px;
     margin: 0;
     padding: 0;
     font-weight: bold; }
@@ -343,12 +359,13 @@ nav {
           width: 50px; }
   #modal #tour {
     width: 100%;
-    transform: translate(0, -50px); }
+    transform: translate(0, -50px);
+    box-sizing: border-box; }
     #modal #tour ul {
-      width: 1200px;
       list-style: none;
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      transform: scale(0.7); }
       #modal #tour ul li {
         color: white;
         text-transform: uppercase;
@@ -362,7 +379,8 @@ nav {
           box-sizing: border-box;
           width: 50%;
           margin: 0;
-          paddign: 0; }
+          padding: 0;
+          vertical-align: middle; }
           #modal #tour ul li .wrap span {
             display: inline-block;
             white-space: nowrap;
@@ -381,6 +399,7 @@ nav {
           width: 50%;
           text-align: left; }
         #modal #tour ul li .buy {
+          vertical-align: middle;
           width: 100px;
           background: #EFB123;
           text-decoration: none;
@@ -388,8 +407,9 @@ nav {
           font-size: 8pt;
           letter-spacing: 3px;
           display: inline-block;
-          line-height: 60px;
+          line-height: 50px;
           padding: 0 25px;
+          margin: 0;
           text-align: center;
           display: table-cell;
           transition: all 0.3s ease-in-out; }
@@ -408,34 +428,12 @@ nav {
       margin: 0 auto;
       height: auto; }
   #modal #videos {
-    width: 100%; }
-    #modal #videos.show {
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start; }
-    #modal #videos .slide {
-      margin: 0 auto; }
-      #modal #videos .slide iframe {
-        width: 854px;
-        height: 480px; }
-      #modal #videos .slide:last-child {
-        padding-bottom: 15vh; }
-
-@media (max-width: 1600px) {
-  #tour {
-    transform: scale(0.7); } }
+    width: 100%;
+    transform: translate(0, -80px); }
 
 @media (max-width: 1440px) {
   #splash .half {
-    transform: scale(0.8); }
-  #modal #tour {
-    transform: scale(0.7) translate(0, -75px); } }
-
-@media (max-width: 1280px) {
-  #modal #tour {
-    transform: scale(0.7); }
-    #modal #tour ul {
-      width: auto; } }
+    transform: scale(0.8); } }
 
 @media (max-width: 1024px) {
   #splash .half {
@@ -506,8 +504,6 @@ nav {
     #modal #videos .slide iframe {
       width: 640px;
       height: 385px; }
-    #modal #videos .slide:last-child {
-      padding-bottom: 150px; }
   #modal #tour {
     transform: scale(1); }
     #modal #tour.show {
@@ -657,7 +653,8 @@ nav {
         width: 100%; }
         #modal #videos .slide iframe {
           width: 100%;
-          height: 200px; }
+          height: 200px;
+          -webkit-overflow-scrolling: touch; }
     #modal #tour {
       padding-top: 25px; }
       #modal #tour.show {

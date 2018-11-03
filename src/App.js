@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import ReactPixel from 'react-facebook-pixel';
+import YouTube from 'react-youtube';
+import VideoSlider from './components/Carousel/videos.js';
 
 import './assets/sass/style.css';
 
@@ -186,35 +188,38 @@ const photos = [
 
 const videos = [
   {
+    id: 'u749Hi0gDVM',
     url: 'https://www.youtube-nocookie.com/embed/u749Hi0gDVM?showinfo=0&controls=0',
     title: "TINTS"
   },
   {
+    id: '7PmUtmfTmbg',
     url: 'https://www.youtube-nocookie.com/embed/7PmUtmfTmbg?showinfo=0&controls=0',
     title: "Bubblin'"
   },
   {
+    id: 'N6rusSDuv-Y',
     url: 'https://www.youtube-nocookie.com/embed/N6rusSDuv-Y?showinfo=0&controls=0',
     title: "Bubblin' Challenge"
   },
   {
+    id: '-OqrcUvrbRY',
     url: 'https://www.youtube-nocookie.com/embed/-OqrcUvrbRY?showinfo=0&controls=0',
     title: 'Come Down'
   },
   {
+    id: 'y_Ka5wiQBEw',
     url: 'https://www.youtube-nocookie.com/embed/y_Ka5wiQBEw?showinfo=0&controls=0',
     title: 'The Season / Carry Me / The Waters'
   }
 ]
 
-const VideoSlide = ({url, title}) => {
-  return (
-    <div className="slide">
-      <h2>{title}</h2>
-      <iframe src={url} title={title} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
-    </div>
-  );
-};
+const opts = {
+  playerVars: {
+    iv_load_policy: 3,
+    modestbranding: 1
+  }
+}
 
 class Albums extends React.Component {
   render() {
@@ -342,10 +347,12 @@ class App extends Component {
               </a>
             </div>
           </article>
-          <video id="video" autoPlay muted preload="auto">
-            <source src={introVideoWEBM} type="video/webm" />
-            <source src={introVideoMP4} type="video/mp4" />
-          </video>
+          <div id="videoWrap">
+            <video id="video" autoPlay muted preload="auto">
+              <source src={introVideoWEBM} type="video/webm" />
+              <source src={introVideoMP4} type="video/mp4" />
+            </video>
+          </div>
           <img id="aftermath" src={aftermath} alt="Aftermath" />
         </section>
         <div id="container" className={this.state.clicked ? 'in': null}>
@@ -385,14 +392,7 @@ class App extends Component {
               ))}
             </div>
             <div id="videos" className={this.state.id === 'videos' ? 'show modalwrap': 'modalwrap'}>
-              {videos.map((video, i) => (
-                <VideoSlide 
-                  key = {i}
-                  url = {video.url}
-                  title = {video.title}
-                />
-                ))
-              }
+              <VideoSlider />
             </div>
             <div id="photos" className={this.state.id === 'photos' ? 'show modalwrap': 'modalwrap'}>
               {photos.map((photo, index) => (

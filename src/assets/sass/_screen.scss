@@ -68,7 +68,7 @@ a, button {
 	z-index: 999;
 	box-sizing: border-box;
 	overflow: hidden;
-	background: url('../img/bg_texture.jpg') repeat-x scroll left center #f7efe4;
+	background: #f1ebdd;
 	&.close {
 		transform: translate(0,-100vh);
 		transition: all 0.3s ease-in-out;
@@ -84,12 +84,27 @@ a, button {
 		position: relative;
 		z-index: 2;
 	}
-	#video {
+	#videoWrap {
 		position: absolute;
 		top: 0;
 		right: 0;
 		height: 100vh;
 		width: auto;
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 50px;
+			height: 100vh;
+			z-index: 1;
+			background: linear-gradient(left,#f1ebdd,transparent);
+		}
+		#video {
+			height: 100%;
+		}
 	}
 	button {
 		background: none;
@@ -189,9 +204,10 @@ a, button {
 	align-items: center;
 	justify-content: space-around;
 	z-index: 99;
+	pointer-events: none;
 	background: linear-gradient(to right, rgba(0,0,0,0.5), transparent);
 	img {
-		width: 150px;
+		width: 120px;
 		height: auto;
 	}
 }
@@ -206,6 +222,7 @@ nav {
 	align-items: center;
 	justify-content: center;
 	z-index: 12;
+	pointer-events: none;
 	background: linear-gradient(to left, rgba(0,0,0,0.5), transparent);
 	&.hideMobile {
 		display: flex !important;
@@ -226,6 +243,7 @@ nav {
 		letter-spacing: 5px;
 		transition: all 0.3s ease-in-out;
 		text-decoration: none;
+		pointer-events:auto;
 		&:hover {
 			cursor: pointer !important;
 			color: #EFB123;
@@ -327,12 +345,12 @@ nav {
 		opacity: 1;
 	}
 	h2 {
-		font-size: 16pt;
+		font-size: 12pt;
 		color: white;
-		letter-spacing: 10px;
+		letter-spacing: 5px;
 		text-align: center;
 		text-transform: uppercase;
-		line-height: 100px;
+		line-height: 80px;
 		margin: 0;
 		padding: 0;
 		font-weight: bold;
@@ -391,11 +409,12 @@ nav {
 	#tour {
 		width: 100%;
 		transform: translate(0,-50px);
+		box-sizing: border-box;
 		ul {
-			width: 1200px;
 			list-style: none;
 			margin: 0;
 			padding: 0;
+			transform: scale(0.7);
 			li {
 				color: white;
 				text-transform: uppercase;
@@ -409,7 +428,8 @@ nav {
 					box-sizing: border-box;
 					width: 50%;
 					margin: 0;
-					paddign: 0;
+					padding: 0;
+					vertical-align: middle;
 					span {
 						display: inline-block;
 						white-space: nowrap;
@@ -434,6 +454,7 @@ nav {
 					text-align: left;
 				}
 				.buy {
+					vertical-align: middle;
 					width: 100px;
 					background: #EFB123;
 					text-decoration: none;
@@ -441,8 +462,9 @@ nav {
 					font-size: 8pt;
 					letter-spacing: 3px;
 					display: inline-block;
-					line-height: 60px;
+					line-height: 50px;
 					padding: 0 25px;
+					margin: 0;
 					text-align: center;
 					display: table-cell;
 					transition: all 0.3s ease-in-out;
@@ -470,20 +492,6 @@ nav {
 	}
 	#videos {
 		width: 100%;
-		&.show {
-			flex-direction: column;
-			align-items: flex-start;
-			justify-content: flex-start;
-		}
-		.slide {
-			margin: 0 auto;
-			iframe {
-				width: 854px;
-				height: 480px;
-			}
-			&:last-child {
-				padding-bottom: 15vh;
-			}
-		}
+		transform: translate(0,-80px);
 	}
 }
