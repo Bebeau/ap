@@ -316,8 +316,6 @@ nav {
   #modal #photos,
   #modal #tour {
     display: none;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
     height: 100%; }
     #modal #music.show,
     #modal #videos.show,
@@ -334,7 +332,9 @@ nav {
     box-sizing: border-box;
     padding: 0 200px 150px;
     width: 100%;
-    transform: scale(1); }
+    transform: scale(1);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; }
     #modal #music.show {
       display: block;
       justify-content: flex-start; }
@@ -360,7 +360,9 @@ nav {
   #modal #tour {
     width: 100%;
     transform: translate(0, -50px);
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; }
     #modal #tour ul {
       list-style: none;
       margin: 0;
@@ -418,7 +420,9 @@ nav {
             transition: all 0.3s ease-in-out; }
   #modal #photos {
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; }
     #modal #photos.show {
       align-items: flex-start;
       justify-content: flex-start; }
@@ -430,8 +434,7 @@ nav {
   #modal #videos {
     width: 100%;
     transform: translate(0, -80px);
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: auto; }
+    overflow: hidden; }
 
 @media (max-width: 1440px) {
   #splash .half {
