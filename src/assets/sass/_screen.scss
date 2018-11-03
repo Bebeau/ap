@@ -493,6 +493,7 @@ nav {
 	#videos {
 		width: 100%;
 		transform: translate(0,-80px);
+		overflow-y: hidden;
 		-webkit-overflow-scrolling: auto;
 	}
 }
