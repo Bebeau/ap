@@ -154,6 +154,10 @@
 	}
 }
 @media (max-width: 414px) {
+	html,
+	body {
+		overflow: hidden;
+	}
 	.showMobile {
 		display: block !important;
 	}
@@ -279,11 +283,6 @@
 		}
 	}
 	#modal {
-		position: relative;
-		top: auto;
-		left: auto;
-		right: auto;
-		bottom: auto;
 		display: block;
 		h2 {
 			font-size: 10pt;
@@ -317,11 +316,7 @@
 			}
 		}
 		#videos {
-			transform: translate(0,100px);
-			&.show {
-				align-items: flex-start;
-				justify-content: flex-start;
-			}
+			overflow: hidden;
 		}
 	}
 	#logo {

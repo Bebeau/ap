@@ -536,6 +536,9 @@ nav {
           padding: 0; } }
 
 @media (max-width: 414px) {
+  html,
+  body {
+    overflow: hidden; }
   .showMobile {
     display: block !important; }
   .hideMobile {
@@ -633,11 +636,6 @@ nav {
       text-align: center;
       transform: translate(-50%, -50px); }
   #modal {
-    position: relative;
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
     display: block; }
     #modal h2 {
       font-size: 10pt;
@@ -657,10 +655,7 @@ nav {
         #modal #tour ul li .buy {
           line-height: 40px; }
     #modal #videos {
-      transform: translate(0, 100px); }
-      #modal #videos.show {
-        align-items: flex-start;
-        justify-content: flex-start; }
+      overflow: hidden; }
   #logo {
     position: absolute;
     top: 0;
