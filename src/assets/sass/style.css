@@ -429,8 +429,7 @@ nav {
       height: auto; }
   #modal #videos {
     width: 100%;
-    transform: translate(0, -80px);
-    overflow: hidden; }
+    transform: translate(0, -80px); }
 
 @media (max-width: 1440px) {
   #splash .half {
@@ -499,12 +498,6 @@ nav {
       display: block; }
       #modal #music .album:last-child {
         padding-bottom: 150px; }
-  #modal #videos {
-    margin: 0 auto;
-    overflow: scroll; }
-    #modal #videos .slide iframe {
-      width: 640px;
-      height: 385px; }
   #modal #tour {
     transform: scale(1); }
     #modal #tour.show {
@@ -647,14 +640,6 @@ nav {
       letter-spacing: 2px; }
     #modal #music {
       padding: 0; }
-    #modal #videos {
-      padding-top: 25px; }
-      #modal #videos .slide {
-        margin: 0;
-        width: 100%; }
-        #modal #videos .slide iframe {
-          width: 100%;
-          height: 200px; }
     #modal #tour {
       padding-top: 25px; }
       #modal #tour.show {

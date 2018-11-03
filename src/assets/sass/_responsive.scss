@@ -102,16 +102,6 @@
 				}
 			}
 		}
-		#videos {
-			margin: 0 auto;
-			overflow: scroll;
-			.slide {
-				iframe {
-					width:640px;
-					height:385px;
-				}
-			}
-		}
 		#tour {
 			transform: scale(1);
 			&.show {
@@ -302,17 +292,6 @@
 		}
 		#music {
 			padding: 0;
-		}
-		#videos {
-			padding-top: 25px;
-			.slide {
-				margin: 0;
-				width: 100%;
-				iframe {
-					width: 100%;
-					height: 200px;
-				}
-			}
 		}
 		#tour {
 			padding-top: 25px;
