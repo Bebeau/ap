@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import ReactPixel from 'react-facebook-pixel';
-import YouTube from 'react-youtube';
 import VideoSlider from './components/Carousel/videos.js';
 
 import './assets/sass/style.css';
@@ -185,41 +184,6 @@ const photos = [
     img: [photo17]
   }
 ]
-
-const videos = [
-  {
-    id: 'u749Hi0gDVM',
-    url: 'https://www.youtube-nocookie.com/embed/u749Hi0gDVM?showinfo=0&controls=0',
-    title: "TINTS"
-  },
-  {
-    id: '7PmUtmfTmbg',
-    url: 'https://www.youtube-nocookie.com/embed/7PmUtmfTmbg?showinfo=0&controls=0',
-    title: "Bubblin'"
-  },
-  {
-    id: 'N6rusSDuv-Y',
-    url: 'https://www.youtube-nocookie.com/embed/N6rusSDuv-Y?showinfo=0&controls=0',
-    title: "Bubblin' Challenge"
-  },
-  {
-    id: '-OqrcUvrbRY',
-    url: 'https://www.youtube-nocookie.com/embed/-OqrcUvrbRY?showinfo=0&controls=0',
-    title: 'Come Down'
-  },
-  {
-    id: 'y_Ka5wiQBEw',
-    url: 'https://www.youtube-nocookie.com/embed/y_Ka5wiQBEw?showinfo=0&controls=0',
-    title: 'The Season / Carry Me / The Waters'
-  }
-]
-
-const opts = {
-  playerVars: {
-    iv_load_policy: 3,
-    modestbranding: 1
-  }
-}
 
 class Albums extends React.Component {
   render() {

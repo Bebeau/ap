@@ -25,11 +25,11 @@ class Footer extends Component{
                 <img src={youtube} alt="" />
               </a>
               <div className="showMobile">© 2018 Anderson .Paak</div>
-              <div className="showMobile sign">Built By <a href="https://beheard.la" target="_BLANK" rel="noopener noreferrer"> <img src={heard} alt="The INiT Group" /></a></div>
+              <div className="showMobile sign">Built By <a href="instagram://user?username=beheardla" target="_BLANK" rel="noopener noreferrer"> <img src={heard} alt="@beheardla" /></a></div>
             </article>
             <p id="legal" className="hideMobile">
             	<span>© 2018 Anderson .Paak</span>
-              <span className="sign">Built By <a href="https://beheard.la" target="_BLANK" rel="noopener noreferrer"> <img src={heard} alt="The INiT Group" /></a></span>
+              <span className="sign">Built By <a href="https://instagram.com/beheardla" target="_BLANK" rel="noopener noreferrer"> <img src={heard} alt="@beheardla" /></a></span>
             </p>
           </footer>
        );
