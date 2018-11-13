@@ -268,7 +268,6 @@ class App extends Component {
   }
   addActiveClass = (id) => {
     ReactPixel.track('ViewContent');
-    disableBodyScroll(this.targetElement);
     this.setState({ 
       active: false
     });
@@ -277,6 +276,7 @@ class App extends Component {
         active: true,
         id: id
       });
+      disableBodyScroll(this.targetElement);
     }.bind(this), 800);
   }
   showMenu = (id) => {
