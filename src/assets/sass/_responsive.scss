@@ -8,6 +8,8 @@
 @media (max-width: 1024px) {
 	#splash {
 		.half {
+			width: 100%;
+			display: block;
 			transform: scale(0.5);
 		}
 		#video {
@@ -66,6 +68,50 @@
 		}
 	}
 }
+@media (max-width: 1024px) and (max-height:1366px) {
+	#splash {
+		background: url('../img/oxnard_albumn.jpg') no-repeat scroll center / cover #f7efe4;
+		background-size: 75%;
+		background-position: 50% 0;
+		.half {
+			transform: translate(0,-50px) scale(0.7);
+		}
+		#title {
+			width: 80%;
+			margin: 0 auto;
+			padding: 50vh 0 0;
+		}
+		#videoWrap {
+			display: none;
+		}
+		#musicLinks {
+			transform: translate(0,0);
+		}
+	}
+}
+@media (max-width: 1024px) and (max-height:768px) {
+	#splash {
+		background: url('../img/oxnard_albumn.jpg') no-repeat scroll center / cover #f7efe4;
+		background-size: 75%;
+		background-position: 150% 0;
+		.half {
+			width: 50%;
+			display: inline-block;
+			transform: translate(0,-50px) scale(0.7);
+		}
+		#title {
+			width: 100%;
+			margin: 0 auto;
+			padding: 30vh 0 0;
+		}
+		#video {
+			display: none;
+		}
+		#musicLinks {
+			transform: translate(0,0);
+		}
+	}
+}
 @media (max-width: 768px) {
 	body {
 		overflow: hidden;
@@ -73,16 +119,22 @@
 	#splash {
 		background: url('../img/oxnard_albumn.jpg') no-repeat scroll center / cover #f7efe4;
 		background-size: 75%;
-		background-position: 50% 60%;
+		background-position: 50% 0;
 		.half {
 			width: 100%;
+			display: block;
 			transform: translate(0,-50px) scale(0.7);
+		}
+		#title {
+			width: 80%;
+			margin: 0 auto;
+			padding: 50vh 0 0;
 		}
 		#video {
 			display: none;
 		}
 		#musicLinks {
-			transform: translate(0,200px);
+			transform: translate(0,0);
 		}
 	}
 	#modal {
@@ -239,10 +291,9 @@
 	}
 	#splash {
 		background: url('../img/oxnard_albumnMobile.jpg') no-repeat scroll right center / cover #f7efe4;
-		background-position: 50% 0;
-		background-size: 100%;
+		background-position: 50% 25px;
+		background-size: 90%;
 		.half {
-			padding-top: 60vh;
 			width: auto;
 			display: block;
 			transform: translate(0,-50px) scale(0.7);
@@ -258,11 +309,6 @@
 			p {
 				font-size: 12pt;
 			}
-			a {
-				&.apple {
-					width: 75px;
-				}
-			}
 		}
 		button {
 			position: fixed;
@@ -275,11 +321,13 @@
 			margin: 0;
 			padding: 0;
 		}
-		#aftermath {
-			position: relative;
-			left: 50%;
+		#logoMarks {
+			width: 100%;
+			left: 0;
 			text-align: center;
-			transform: translate(-50%,-50px);
+			img {
+				width: 40px;
+			}
 		}
 	}
 	#modal {
@@ -370,7 +418,8 @@
 }
 @media (max-width: 375px) and (max-height: 812px) {
 	#splash {
-		background-position: 50% 15%;
+		background-size: 100%;
+		background-position: 50% 25px;
 		.half {
 			width: auto;
 			display: block;
@@ -384,7 +433,8 @@
 }
 @media (max-width: 375px) and (max-height: 667px) {
 	#splash {
-		background-position: 50% 0;
+		background-size: 80%;
+		background-position: 50% 25px;
 		.half {
 			width: auto;
 			display: block;
@@ -403,10 +453,6 @@
 		}
 		#musicLinks {
 			transform: translate(-25px,0);
-		}
-		#aftermath {
-			width: 25px;
-			hieght: auto;
 		}
 	}
 }

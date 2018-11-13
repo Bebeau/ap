@@ -50,7 +50,7 @@ a, button {
   transition: all 0.8s ease-in-out;
   pointer-events: none; }
   #stage.open {
-    transform: translate(0, 40vh);
+    transform: translate(0, 50vh);
     transition: all 1s ease-in-out; }
 
 #splash {
@@ -132,13 +132,19 @@ a, button {
   #splash #title {
     width: 80%;
     transform: translate(0, -50px); }
-  #splash #aftermath {
+  #splash #logoMarks {
     position: absolute;
     left: 25px;
     bottom: 25px;
-    width: 50px;
     height: auto;
-    z-index: 999; }
+    z-index: 999;
+    width: 200px; }
+    #splash #logoMarks img {
+      width: 45px;
+      height: auto;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 5px; }
   #splash #musicLinks {
     display: block;
     text-align: center; }
@@ -148,18 +154,13 @@ a, button {
       font-weight: bold;
       font-size: 18pt; }
     #splash #musicLinks a {
-      width: 35px;
-      height: auto;
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0 10px; }
-      #splash #musicLinks a.apple {
-        width: 75px; }
-        #splash #musicLinks a.apple img {
-          max-width: 90%; }
+      width: 200px;
+      display: block;
+      margin: 0 auto; }
       #splash #musicLinks a img {
-        max-width: 100%;
-        vertical-align: middle; }
+        max-width: 200px;
+        min-width: 200px;
+        height: auto; }
   #splash .image {
     position: relative;
     z-index: 1; }
@@ -433,8 +434,10 @@ nav {
       height: auto; }
   #modal #videos {
     width: 100%;
-    transform: translate(0, -80px);
     overflow: hidden; }
+    #modal #videos iframe {
+      position: relative;
+      z-index: 2; }
 
 @media (max-width: 1440px) {
   #splash .half {
@@ -442,6 +445,8 @@ nav {
 
 @media (max-width: 1024px) {
   #splash .half {
+    width: 100%;
+    display: block;
     transform: scale(0.5); }
   #splash #video {
     right: -100px; }
@@ -477,20 +482,59 @@ nav {
           margin: 0 auto;
           padding: 0; } }
 
+@media (max-width: 1024px) and (max-height: 1366px) {
+  #splash {
+    background: url("../img/oxnard_albumn.jpg") no-repeat scroll center/cover #f7efe4;
+    background-size: 75%;
+    background-position: 50% 0; }
+    #splash .half {
+      transform: translate(0, -50px) scale(0.7); }
+    #splash #title {
+      width: 80%;
+      margin: 0 auto;
+      padding: 50vh 0 0; }
+    #splash #videoWrap {
+      display: none; }
+    #splash #musicLinks {
+      transform: translate(0, 0); } }
+
+@media (max-width: 1024px) and (max-height: 768px) {
+  #splash {
+    background: url("../img/oxnard_albumn.jpg") no-repeat scroll center/cover #f7efe4;
+    background-size: 75%;
+    background-position: 150% 0; }
+    #splash .half {
+      width: 50%;
+      display: inline-block;
+      transform: translate(0, -50px) scale(0.7); }
+    #splash #title {
+      width: 100%;
+      margin: 0 auto;
+      padding: 30vh 0 0; }
+    #splash #video {
+      display: none; }
+    #splash #musicLinks {
+      transform: translate(0, 0); } }
+
 @media (max-width: 768px) {
   body {
     overflow: hidden; }
   #splash {
     background: url("../img/oxnard_albumn.jpg") no-repeat scroll center/cover #f7efe4;
     background-size: 75%;
-    background-position: 50% 60%; }
+    background-position: 50% 0; }
     #splash .half {
       width: 100%;
+      display: block;
       transform: translate(0, -50px) scale(0.7); }
+    #splash #title {
+      width: 80%;
+      margin: 0 auto;
+      padding: 50vh 0 0; }
     #splash #video {
       display: none; }
     #splash #musicLinks {
-      transform: translate(0, 200px); }
+      transform: translate(0, 0); }
   #modal h2 {
     font-size: 14pt;
     letter-spacing: 3px;
@@ -602,10 +646,9 @@ nav {
     background: linear-gradient(transparent, black); }
   #splash {
     background: url("../img/oxnard_albumnMobile.jpg") no-repeat scroll right center/cover #f7efe4;
-    background-position: 50% 0;
-    background-size: 100%; }
+    background-position: 50% 25px;
+    background-size: 90%; }
     #splash .half {
-      padding-top: 60vh;
       width: auto;
       display: block;
       transform: translate(0, -50px) scale(0.7); }
@@ -618,8 +661,6 @@ nav {
       white-space: nowrap; }
       #splash #musicLinks p {
         font-size: 12pt; }
-      #splash #musicLinks a.apple {
-        width: 75px; }
     #splash button {
       position: fixed;
       top: 0;
@@ -630,11 +671,12 @@ nav {
       line-height: 60px;
       margin: 0;
       padding: 0; }
-    #splash #aftermath {
-      position: relative;
-      left: 50%;
-      text-align: center;
-      transform: translate(-50%, -50px); }
+    #splash #logoMarks {
+      width: 100%;
+      left: 0;
+      text-align: center; }
+      #splash #logoMarks img {
+        width: 40px; }
   #modal {
     display: block; }
     #modal h2 {
@@ -696,7 +738,8 @@ nav {
 
 @media (max-width: 375px) and (max-height: 812px) {
   #splash {
-    background-position: 50% 15%; }
+    background-size: 100%;
+    background-position: 50% 25px; }
     #splash .half {
       width: auto;
       display: block;
@@ -707,7 +750,8 @@ nav {
 
 @media (max-width: 375px) and (max-height: 667px) {
   #splash {
-    background-position: 50% 0; }
+    background-size: 80%;
+    background-position: 50% 25px; }
     #splash .half {
       width: auto;
       display: block;
@@ -720,7 +764,4 @@ nav {
   #splash .half {
     transform: translate(0, -60px) scale(0.6); }
   #splash #musicLinks {
-    transform: translate(-25px, 0); }
-  #splash #aftermath {
-    width: 25px;
-    hieght: auto; } }
+    transform: translate(-25px, 0); } }

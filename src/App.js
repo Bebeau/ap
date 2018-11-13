@@ -11,6 +11,7 @@ import Footer from './layout/footer';
 import logoWhite from './assets/img/SVG/logo_white.svg';
 
 import oxnardLogo from './assets/img/oxnard.png';
+import oxnardLP from './assets/img/oxnardLP.png';
 
 import apple from './assets/img/SVG/apple.svg';
 import appleWhite from './assets/img/SVG/apple_white.svg';
@@ -20,6 +21,7 @@ import tidalWhite from './assets/img/SVG/tidal_white.svg';
 import google from './assets/img/icons/googleplay.png';
 import amazon from './assets/img/SVG/amazon.svg';
 
+import whoru from './assets/img/albums/whoru.jpg';
 import oxnard from './assets/img/albums/oxnard.jpg';
 import tints from './assets/img/albums/tints.jpg';
 import malibu from './assets/img/albums/malibu.jpg';
@@ -50,6 +52,7 @@ import photo17 from './assets/img/photos/17.jpg';
 import photo18 from './assets/img/photos/18.jpg';
 
 import aftermath from './assets/img/SVG/aftermath.svg';
+import obe from './assets/img/obe.png';
 
 import introVideoMP4 from './assets/videos/oxnard_intro.mp4';
 import introVideoWEBM from './assets/videos/oxnard_intro.webm';
@@ -63,6 +66,15 @@ ReactPixel.init('252805335389609', advancedMatching, options);
 ReactPixel.pageView();
 
 const albums = [
+  {
+    artwork: [whoru],
+    apple: 'https://itunes.apple.com/us/album/who-r-u/1439982774?i=1439983348&app=music',
+    spotify: 'https://open.spotify.com/album/6Ml78jvSDFzJhLnXKyU30z',
+    itunes: 'https://itunes.apple.com/us/album/who-r-u/1439982774',
+    tidal: 'https://tidal.com/browse/album/98114488',
+    google: 'https://play.google.com/store/music/album/Anderson_Paak_Who_R_U?id=Bpavhmq5eizsrv2zpm45zn4p5vm',
+    amazon: 'https://www.amazon.com/Who-R-U-Explicit/dp/B07JM8LKS7?tag=smarturl-pivot-20'
+  },
   {
     artwork: [oxnard],
     apple: 'https://itunes.apple.com/album/oxnard/1439982774?ls=1',
@@ -275,7 +287,7 @@ class App extends Component {
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
     }
-    clearAllBodyScrollLocks(); 
+    clearAllBodyScrollLocks();
   }
   render() {
     if(this.state.clicked) {
@@ -293,20 +305,8 @@ class App extends Component {
             <img id="title" src={oxnardLogo} alt="Oxnard" />
             <div id="musicLinks">
               <p>Available For Pre-Order</p>
-              <a className="apple" href="https://itunes.apple.com/album/oxnard/1439982774?ls=1" target="_BLANK" rel="noopener noreferrer">
-                <img src={apple} alt="Apple Music" />
-              </a>
-              <a className="spotify" href="https://campaigns.topsify.com/app/8524/save-bubblin--new-music-by-anderson-paak" target="_BLANK" rel="noopener noreferrer">
-                <img src={spotify} alt="Spotify" />
-              </a>
-              <a className="itunes" href="https://itunes.apple.com/album/oxnard/1439982774?ls=1&app=itunes" target="_BLANK" rel="noopener noreferrer">
-                <img src={itunes} alt="iTunes" />
-              </a>
-              <a className="google" href="https://play.google.com/music/m/Br3ekxj3kcdd6ddnwcez2mogh4m" target="_BLANK" rel="noopener noreferrer">
-                <img src={google} alt="Google" />
-              </a>
-              <a className="amazon" href="https://www.amazon.com/Oxnard-Explicit-Anderson-Paak/dp/B07JMDLHGR" target="_BLANK" rel="noopener noreferrer">
-                <img src={amazon} alt="Amazon" />
+              <a href="https://buy.andersonpaak.com/" target="_BLANK" rel="noopener noreferrer">
+                <img src={oxnardLP} alt="Oxnard Pre-Order" />
               </a>
             </div>
           </article>
@@ -316,7 +316,10 @@ class App extends Component {
               <source src={introVideoMP4} type="video/mp4" />
             </video>
           </div>
-          <img id="aftermath" src={aftermath} alt="Aftermath" />
+          <div id="logoMarks">
+            <img id="aftermath" src={aftermath} alt="Aftermath" />
+            <img id="obe" src={obe} alt="OBE" />
+          </div>
         </section>
         <div id="container" className={this.state.clicked ? 'in': null}>
           <div id="logo">
