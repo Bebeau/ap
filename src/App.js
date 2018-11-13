@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { clearAllBodyScrollLocks } from 'body-scroll-lock';
+
 import ReactPixel from 'react-facebook-pixel';
 import VideoSlider from './components/Carousel/videos.js';
 
@@ -13,7 +14,6 @@ import logoWhite from './assets/img/SVG/logo_white.svg';
 import oxnardLogo from './assets/img/oxnard.png';
 import oxnardLP from './assets/img/oxnardLP.png';
 
-import apple from './assets/img/SVG/apple.svg';
 import appleWhite from './assets/img/SVG/apple_white.svg';
 import spotify from './assets/img/SVG/spotify.svg';
 import itunes from './assets/img/SVG/itunes.svg';
@@ -256,7 +256,7 @@ class App extends Component {
   }
   targetElement = null;
   componentDidMount() {
-    this.targetElement = document.querySelector('.modal');
+    this.targetElement = document.querySelector('#modal');
   }
   toggleSplash = () => {
     const currentState = this.state.clicked;
@@ -264,7 +264,6 @@ class App extends Component {
       clicked: !currentState,
       fadeIn: true
     });
-    disableBodyScroll(this.targetElement);
   }
   addActiveClass = (id) => {
     ReactPixel.track('ViewContent');
