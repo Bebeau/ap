@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 import ReactPixel from 'react-facebook-pixel';
 import VideoSlider from './components/Carousel/videos.js';
+
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 import './assets/sass/style.css';
 
@@ -267,6 +268,7 @@ class App extends Component {
   }
   addActiveClass = (id) => {
     ReactPixel.track('ViewContent');
+    disableBodyScroll(this.targetElement);
     this.setState({ 
       active: false
     });
@@ -281,6 +283,7 @@ class App extends Component {
     this.setState({ 
       active: false
     });
+    enableBodyScroll(this.targetElement);
   }
   componentWillUnmount() {
     if (this.timeoutId) {

@@ -153,6 +153,7 @@
 @media (max-width: 640px) {
     .slick-slider {
         width: 100%;
+        transform: translate(0,-50px);
         .slick-list {
             .slick-slide {
                 .slide {
