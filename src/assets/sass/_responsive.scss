@@ -322,7 +322,10 @@
 			padding: 0;
 		}
 		#logoMarks {
+			display: block;
+			position: relative;
 			width: 100%;
+			bottom: 60px;
 			left: 0;
 			text-align: center;
 			img {
