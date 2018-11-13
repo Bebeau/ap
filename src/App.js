@@ -257,7 +257,7 @@ class App extends Component {
   }
   targetElement = null;
   componentDidMount() {
-    this.targetElement = document.querySelector('#modal');
+    this.targetElement = document.querySelector('.modalwrap');
   }
   toggleSplash = () => {
     const currentState = this.state.clicked;
