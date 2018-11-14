@@ -259,7 +259,7 @@ class App extends Component {
   componentDidMount() {
     this.targetVideos = document.querySelector('#videos');
     this.targetPhotos = document.querySelector('#photos');
-    this.targetTours = document.querySelector('#tours');
+    this.targetTours = document.querySelector('#tour');
     this.targetMusic = document.querySelector('#music');
   }
   toggleSplash = () => {
