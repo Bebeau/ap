@@ -257,7 +257,10 @@ class App extends Component {
   }
   targetElement = null;
   componentDidMount() {
-    this.targetElement = document.querySelector('.modalwrap');
+    this.targetVideos = document.querySelector('#videos');
+    this.targetPhotos = document.querySelector('#photos');
+    this.targetTours = document.querySelector('#tours');
+    this.targetMusic = document.querySelector('#music');
   }
   toggleSplash = () => {
     const currentState = this.state.clicked;
@@ -276,14 +279,16 @@ class App extends Component {
         active: true,
         id: id
       });
-      disableBodyScroll(this.targetElement);
+      disableBodyScroll(this.targetVideos);
+      disableBodyScroll(this.targetPhotos);
+      disableBodyScroll(this.targetTours);
+      disableBodyScroll(this.targetMusic);
     }.bind(this), 800);
   }
   showMenu = (id) => {
     this.setState({ 
       active: false
     });
-    enableBodyScroll(this.targetElement);
   }
   componentWillUnmount() {
     if (this.timeoutId) {

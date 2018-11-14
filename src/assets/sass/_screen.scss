@@ -335,7 +335,7 @@ nav {
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	overflow-y: scroll;
+	overflow: hidden;
 	transform: translate(0,-100vh);
 	transition: all 1s ease-in-out;
 	opacity: 0;
