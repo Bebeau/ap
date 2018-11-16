@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import ReactPixel from 'react-facebook-pixel';
 import VideoSlider from './components/Carousel/videos.js';
 
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 import './assets/sass/style.css';
 
@@ -79,11 +79,11 @@ const albums = [
   {
     artwork: [oxnard],
     apple: 'https://itunes.apple.com/album/oxnard/1439982774?ls=1',
-    spotify: 'https://campaigns.topsify.com/app/8524/save-bubblin--new-music-by-anderson-paak',
+    spotify: 'http://open.spotify.com/album/3rqqwtJE89WoWvMyPTvbZc',
     itunes: 'https://itunes.apple.com/album/oxnard/1439982774?ls=1&app=itunes',
-    tidal: '',
-    google: 'https://play.google.com/music/m/Br3ekxj3kcdd6ddnwcez2mogh4m',
-    amazon: 'https://www.amazon.com/Oxnard-Explicit-Anderson-Paak/dp/B07JMDLHGR'
+    tidal: 'https://listen.tidal.com/album/98360379',
+    google: 'https://play.google.com/music/m/Bdhowaxhgmcaeqrhlztg4sd2zke',
+    amazon: 'http://amazon.com/dp/B07JMDLHGR'
   },
   {
     artwork: [tints],

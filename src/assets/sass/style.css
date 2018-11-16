@@ -50,7 +50,7 @@ a, button {
   transition: all 0.8s ease-in-out;
   pointer-events: none; }
   #stage.open {
-    transform: translate(0, 50vh);
+    transform: translate(0, 55vh);
     transition: all 1s ease-in-out; }
 
 #splash {
@@ -150,16 +150,15 @@ a, button {
     text-align: center; }
     #splash #musicLinks p {
       text-transform: uppercase;
-      letter-spacing: 8px;
+      letter-spacing: 6px;
       font-weight: bold;
       font-size: 18pt; }
     #splash #musicLinks a {
-      width: 200px;
+      width: 250px;
       display: block;
       margin: 0 auto; }
       #splash #musicLinks a img {
-        max-width: 200px;
-        min-width: 200px;
+        width: 100%;
         height: auto; }
   #splash .image {
     position: relative;
@@ -344,7 +343,7 @@ nav {
       margin: 25px;
       width: 250px;
       text-align: center;
-      margin: 25px; }
+      margin: 25px 25px 0; }
       #modal #music .album img {
         max-width: 100%;
         display: block;
@@ -368,7 +367,7 @@ nav {
       list-style: none;
       margin: 0;
       padding: 0;
-      transform: transition(0, -100px) scale(0.7); }
+      transform: scale(0.8); }
       #modal #tour ul li {
         color: white;
         text-transform: uppercase;

@@ -2,6 +2,7 @@
     position: relative;
     width: 853px;
     margin: 0 auto;
+    top: -50px;
     &:before {
         content: "";
         display: block;
@@ -96,6 +97,8 @@
         padding: 0;
         list-style: none;
         text-align: center;
+        transform: translate(0,-15px);
+        z-index: 1;
         li {
             display: inline-block;
             width: auto;
@@ -152,6 +155,7 @@
 }
 @media (max-width: 640px) {
     .slick-slider {
+        top: 0;
         width: 100%;
         transform: translate(0,-50px);
         .slick-list {
@@ -166,6 +170,9 @@
         }
         .slick-arrow {
             display: none !important;
+        }
+        .slick-dots {
+            transform: translate(0,0);
         }
     }
 }
