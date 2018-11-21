@@ -293,6 +293,7 @@
 		background: url('../img/oxnard_albumnMobile.jpg') no-repeat scroll right center / cover #f7efe4;
 		background-position: 50% 25px;
 		background-size: 90%;
+		overflow-y: scroll;
 		.half {
 			width: auto;
 			display: block;
@@ -330,7 +331,7 @@
 			display: block;
 			position: relative;
 			width: 100%;
-			bottom: 60px;
+			bottom: 15px;
 			left: 0;
 			text-align: center;
 			img {
