@@ -54,6 +54,7 @@ import photo18 from './assets/img/photos/18.jpg';
 
 import aftermath from './assets/img/SVG/aftermath.svg';
 import obe from './assets/img/obe.png';
+import twelveTone from './assets/img/12tone.png';
 
 import introVideoMP4 from './assets/videos/oxnard_intro.mp4';
 import introVideoWEBM from './assets/videos/oxnard_intro.webm';
@@ -68,15 +69,6 @@ ReactPixel.pageView();
 
 const albums = [
   {
-    artwork: [whoru],
-    apple: 'https://itunes.apple.com/us/album/who-r-u/1439982774?i=1439983348&app=music',
-    spotify: 'https://open.spotify.com/album/6Ml78jvSDFzJhLnXKyU30z',
-    itunes: 'https://itunes.apple.com/us/album/who-r-u/1439982774',
-    tidal: 'https://tidal.com/browse/album/98114488',
-    google: 'https://play.google.com/store/music/album/Anderson_Paak_Who_R_U?id=Bpavhmq5eizsrv2zpm45zn4p5vm',
-    amazon: 'https://www.amazon.com/Who-R-U-Explicit/dp/B07JM8LKS7?tag=smarturl-pivot-20'
-  },
-  {
     artwork: [oxnard],
     apple: 'https://itunes.apple.com/album/oxnard/1439982774?ls=1',
     spotify: 'http://open.spotify.com/album/3rqqwtJE89WoWvMyPTvbZc',
@@ -84,6 +76,15 @@ const albums = [
     tidal: 'https://listen.tidal.com/album/98360379',
     google: 'https://play.google.com/music/m/Bdhowaxhgmcaeqrhlztg4sd2zke',
     amazon: 'http://amazon.com/dp/B07JMDLHGR'
+  },
+  {
+    artwork: [whoru],
+    apple: 'https://itunes.apple.com/us/album/who-r-u/1439982774?i=1439983348&app=music',
+    spotify: 'https://open.spotify.com/album/6Ml78jvSDFzJhLnXKyU30z',
+    itunes: 'https://itunes.apple.com/us/album/who-r-u/1439982774',
+    tidal: 'https://tidal.com/browse/album/98114488',
+    google: 'https://play.google.com/store/music/album/Anderson_Paak_Who_R_U?id=Bpavhmq5eizsrv2zpm45zn4p5vm',
+    amazon: 'https://www.amazon.com/Who-R-U-Explicit/dp/B07JM8LKS7?tag=smarturl-pivot-20'
   },
   {
     artwork: [tints],
@@ -311,10 +312,11 @@ class App extends Component {
           <article className="half">
             <img id="title" src={oxnardLogo} alt="Oxnard" />
             <div id="musicLinks">
-              <p>Available For Pre-Order</p>
+              <p>Album Out Now.</p>
               <a href="https://buy.andersonpaak.com/" target="_BLANK" rel="noopener noreferrer">
                 <img src={oxnardLP} alt="Oxnard Pre-Order" />
               </a>
+              <p className="merchLink">Merch Available for Pre-Order</p>
             </div>
           </article>
           <div id="videoWrap">
@@ -326,6 +328,7 @@ class App extends Component {
           <div id="logoMarks">
             <img id="aftermath" src={aftermath} alt="Aftermath" />
             <img id="obe" src={obe} alt="OBE" />
+            <img id="twelveTone" src={twelveTone} alt="12 Tone" />
           </div>
         </section>
         <div id="container" className={this.state.clicked ? 'in': null}>

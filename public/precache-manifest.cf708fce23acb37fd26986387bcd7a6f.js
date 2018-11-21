@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "7230b740165ff7c7d1c4c15facca7e9f",
-    "url": "/static/media/1.7230b740.jpg"
+    "revision": "4ae21ece8d6af7617a9de980c95db2dc",
+    "url": "/static/media/2.4ae21ece.jpg"
   },
   {
-    "revision": "366cc310a5db6d30ee40",
-    "url": "/static/css/main.4cd9171e.chunk.css"
+    "revision": "07cc024a96625927db5d",
+    "url": "/static/css/main.b0febb1a.chunk.css"
   },
   {
-    "revision": "61546e2f48da28f548b2",
-    "url": "/static/js/1.61546e2f.chunk.js"
+    "revision": "48749540471369faf9b0",
+    "url": "/static/js/1.48749540.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -104,12 +104,12 @@ self.__precacheManifest = [
     "url": "/static/media/venice.cf1d641f.jpg"
   },
   {
-    "revision": "366cc310a5db6d30ee40",
-    "url": "/static/js/main.366cc310.chunk.js"
+    "revision": "7230b740165ff7c7d1c4c15facca7e9f",
+    "url": "/static/media/1.7230b740.jpg"
   },
   {
-    "revision": "4ae21ece8d6af7617a9de980c95db2dc",
-    "url": "/static/media/2.4ae21ece.jpg"
+    "revision": "07cc024a96625927db5d",
+    "url": "/static/js/main.07cc024a.chunk.js"
   },
   {
     "revision": "86cc455155b817f377288210b175f140",
@@ -184,16 +184,16 @@ self.__precacheManifest = [
     "url": "/static/media/obe.431f451b.png"
   },
   {
+    "revision": "fb945ec2a4a5895d0821f5decc703c59",
+    "url": "/static/media/12tone.fb945ec2.png"
+  },
+  {
     "revision": "c7b682b8c38c307c0613596ba4b3f3e6",
     "url": "/static/media/oxnard_intro.c7b682b8.mp4"
   },
   {
     "revision": "1a642c83c56fc867a0f1748dd624570a",
     "url": "/static/media/oxnard_intro.1a642c83.webm"
-  },
-  {
-    "revision": "bfe8d06255a2f68f3d14ba5a4d8024ec",
-    "url": "/static/media/bg.bfe8d062.png"
   },
   {
     "revision": "dda29b03ae56d606a83cb68f42a2c660",
@@ -204,11 +204,15 @@ self.__precacheManifest = [
     "url": "/static/media/oxnard_albumnMobile.d643b8f9.jpg"
   },
   {
+    "revision": "bfe8d06255a2f68f3d14ba5a4d8024ec",
+    "url": "/static/media/bg.bfe8d062.png"
+  },
+  {
     "revision": "c6cbbadaf0df94adcd00b3411be82cd5",
     "url": "/static/media/universe.c6cbbada.otf"
   },
   {
-    "revision": "fab763ad6709e3cf0b31869e9cec1cba",
+    "revision": "af8598507d4137d17bbbadf9f00494ea",
     "url": "/index.html"
   }
 ];

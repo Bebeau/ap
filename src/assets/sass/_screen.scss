@@ -147,7 +147,7 @@ a, button {
 		display: block;
 	}
 	#title {
-		width: 80%;
+		width: 100%;
 		transform: translate(0,-50px);
 	}
 	#logoMarks {
@@ -168,16 +168,22 @@ a, button {
 	#musicLinks {
 		display: block;
 		text-align: center;
+		transform: translate(0,-35px);
 		p {
 			text-transform: uppercase;
 			letter-spacing: 6px;
 			font-weight: bold;
 			font-size: 18pt;
+			margin: 0;
+			&.merchLink {
+				font-size: 14pt;
+				letter-spacing: 4px;
+			}
 		}
 		a {
-			width: 250px;
+			width: 275px;
 			display: block;
-			margin: 0 auto;
+			margin: 15px auto;
 			img {
 				width: 100%;
 				height: auto;

@@ -296,7 +296,7 @@
 		.half {
 			width: auto;
 			display: block;
-			transform: translate(0,-50px) scale(0.7);
+			transform: translate(0,-50px) scale(0.6);
 			#title {
 				transform: translate(0,-20px);
 				width: 100%;
@@ -307,7 +307,12 @@
 			transform: translate(0,0);
 			white-space: nowrap;
 			p {
-				font-size: 12pt;
+				font-size: 16pt;
+				letter-spacing: 1px;
+				&.merchLink {
+					font-size: 16pt;
+					letter-spacing: 1px;
+				}
 			}
 		}
 		button {

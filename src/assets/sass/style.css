@@ -130,7 +130,7 @@ a, button {
     transform: translate(-250px, 0);
     display: block; }
   #splash #title {
-    width: 80%;
+    width: 100%;
     transform: translate(0, -50px); }
   #splash #logoMarks {
     position: absolute;
@@ -147,16 +147,21 @@ a, button {
       margin: 0 5px; }
   #splash #musicLinks {
     display: block;
-    text-align: center; }
+    text-align: center;
+    transform: translate(0, -35px); }
     #splash #musicLinks p {
       text-transform: uppercase;
       letter-spacing: 6px;
       font-weight: bold;
-      font-size: 18pt; }
+      font-size: 18pt;
+      margin: 0; }
+      #splash #musicLinks p.merchLink {
+        font-size: 14pt;
+        letter-spacing: 4px; }
     #splash #musicLinks a {
-      width: 250px;
+      width: 275px;
       display: block;
-      margin: 0 auto; }
+      margin: 15px auto; }
       #splash #musicLinks a img {
         width: 100%;
         height: auto; }
@@ -650,7 +655,7 @@ nav {
     #splash .half {
       width: auto;
       display: block;
-      transform: translate(0, -50px) scale(0.7); }
+      transform: translate(0, -50px) scale(0.6); }
       #splash .half #title {
         transform: translate(0, -20px);
         width: 100%; }
@@ -659,7 +664,11 @@ nav {
       transform: translate(0, 0);
       white-space: nowrap; }
       #splash #musicLinks p {
-        font-size: 12pt; }
+        font-size: 16pt;
+        letter-spacing: 1px; }
+        #splash #musicLinks p.merchLink {
+          font-size: 16pt;
+          letter-spacing: 1px; }
     #splash button {
       position: fixed;
       top: 0;
