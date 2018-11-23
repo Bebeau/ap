@@ -113,10 +113,6 @@ a, button {
       cursor: pointer;
       letter-spacing: 5.5px;
       transition: all 0.3s ease-in-out; }
-  #splash img {
-    width: 200px;
-    height: auto;
-    display: block; }
   #splash .universe {
     font-family: "Universe", sans-serif;
     text-transform: uppercase;
@@ -650,20 +646,24 @@ nav {
     z-index: 10;
     background: linear-gradient(transparent, black); }
   #splash {
-    background: url("../img/oxnard_albumnMobile.jpg") no-repeat scroll right center/cover #f7efe4;
-    background-position: 50% 25px;
-    background-size: 90%;
+    background: #f7efe4;
     overflow-y: scroll; }
     #splash .half {
       width: auto;
+      height: auto;
       display: block;
-      transform: translate(0, -50px) scale(0.6); }
+      transform: translate(0, -50px) scale(1); }
       #splash .half #title {
-        transform: translate(0, -20px);
+        padding: 0;
+        transform: translate(0, 0);
         width: 100%; }
+      #splash .half #bgImage {
+        width: 100%;
+        max-width: 100%;
+        transform: translate(0, 75px); }
     #splash #musicLinks {
       position: relative;
-      transform: translate(0, 0);
+      transform: translate(0, 0) scale(0.8);
       white-space: nowrap; }
       #splash #musicLinks p {
         font-size: 16pt;
@@ -756,7 +756,7 @@ nav {
     #splash .half {
       width: auto;
       display: block;
-      transform: translate(0, -50px) scale(0.7); }
+      transform: translate(0, -50px); }
       #splash .half #title {
         transform: translate(0, -20px);
         width: 100%; } }
@@ -768,13 +768,16 @@ nav {
     #splash .half {
       width: auto;
       display: block;
-      transform: translate(0, -50px) scale(0.7); }
+      transform: translate(0, -50px); }
       #splash .half #title {
         transform: translate(0, -20px);
         width: 100%; } }
 
 @media (max-width: 320px) {
   #splash .half {
-    transform: translate(0, -60px) scale(0.6); }
+    transform: translate(0, -60px); }
   #splash #musicLinks {
-    transform: translate(-25px, 0); } }
+    transform: translate(0, 0);
+    white-space: normal;
+    box-sizing: border-box;
+    padding: 0 15px; } }

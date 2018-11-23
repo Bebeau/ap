@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "4ae21ece8d6af7617a9de980c95db2dc",
-    "url": "/static/media/2.4ae21ece.jpg"
+    "revision": "7230b740165ff7c7d1c4c15facca7e9f",
+    "url": "/static/media/1.7230b740.jpg"
   },
   {
-    "revision": "2d25d19af212f13175a3",
-    "url": "/static/css/main.bb78fcfa.chunk.css"
+    "revision": "742bfe40d500cdac895f",
+    "url": "/static/css/main.6c5cc6cb.chunk.css"
   },
   {
-    "revision": "48749540471369faf9b0",
-    "url": "/static/js/1.48749540.chunk.js"
+    "revision": "038106a384941bba8793",
+    "url": "/static/js/1.038106a3.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -50,6 +50,10 @@ self.__precacheManifest = [
   {
     "revision": "77ea6b218edf96ea6f9ed71d3732bcdf",
     "url": "/static/media/oxnardLP.77ea6b21.png"
+  },
+  {
+    "revision": "d643b8f951be06336506a641eefabe09",
+    "url": "/static/media/oxnard_albumnMobile.d643b8f9.jpg"
   },
   {
     "revision": "cedaf13877aade5b5847316fe11cfa00",
@@ -104,12 +108,12 @@ self.__precacheManifest = [
     "url": "/static/media/venice.cf1d641f.jpg"
   },
   {
-    "revision": "7230b740165ff7c7d1c4c15facca7e9f",
-    "url": "/static/media/1.7230b740.jpg"
+    "revision": "742bfe40d500cdac895f",
+    "url": "/static/js/main.742bfe40.chunk.js"
   },
   {
-    "revision": "2d25d19af212f13175a3",
-    "url": "/static/js/main.2d25d19a.chunk.js"
+    "revision": "4ae21ece8d6af7617a9de980c95db2dc",
+    "url": "/static/media/2.4ae21ece.jpg"
   },
   {
     "revision": "86cc455155b817f377288210b175f140",
@@ -196,23 +200,19 @@ self.__precacheManifest = [
     "url": "/static/media/oxnard_intro.1a642c83.webm"
   },
   {
-    "revision": "bfe8d06255a2f68f3d14ba5a4d8024ec",
-    "url": "/static/media/bg.bfe8d062.png"
-  },
-  {
     "revision": "dda29b03ae56d606a83cb68f42a2c660",
     "url": "/static/media/oxnard_albumn.dda29b03.jpg"
   },
   {
-    "revision": "d643b8f951be06336506a641eefabe09",
-    "url": "/static/media/oxnard_albumnMobile.d643b8f9.jpg"
+    "revision": "bfe8d06255a2f68f3d14ba5a4d8024ec",
+    "url": "/static/media/bg.bfe8d062.png"
   },
   {
     "revision": "c6cbbadaf0df94adcd00b3411be82cd5",
     "url": "/static/media/universe.c6cbbada.otf"
   },
   {
-    "revision": "f51346300de96167d00c9624be2a7e88",
+    "revision": "68be2f3a4749d714edd5fbb5bd5e9a84",
     "url": "/index.html"
   }
 ];

@@ -15,6 +15,8 @@ import logoWhite from './assets/img/SVG/logo_white.svg';
 import oxnardLogo from './assets/img/oxnard.png';
 import oxnardLP from './assets/img/oxnardLP.png';
 
+import oxnardMobile from './assets/img/oxnard_albumnMobile.jpg';
+
 import appleWhite from './assets/img/SVG/apple_white.svg';
 import spotify from './assets/img/SVG/spotify.svg';
 import itunes from './assets/img/SVG/itunes.svg';
@@ -310,6 +312,7 @@ class App extends Component {
         <section className={this.state.clicked ? 'close': null} id="splash">
           <button onClick={this.toggleSplash} >Enter Site</button>
           <article className="half">
+            <img id="bgImage" className="showMobile" src={oxnardMobile} alt="Oxnard" />
             <img id="title" src={oxnardLogo} alt="Oxnard" />
             <div id="musicLinks">
               <p>Album Out Now.</p>
