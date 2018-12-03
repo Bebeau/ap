@@ -298,7 +298,8 @@ nav {
     width: 175px;
     line-height: 24px;
     transform: translate(0, -1px);
-    color: white; }
+    color: white;
+    border-radius: 0; }
     .emailForm input:focus {
       outline: none;
       background: none; }
@@ -680,7 +681,8 @@ nav {
     width: 100%;
     height: 150px;
     z-index: 10;
-    background: linear-gradient(transparent, black); }
+    background: linear-gradient(transparent, black);
+    pointer-events: none; }
   #splash {
     background: #f7efe4;
     overflow-y: scroll; }

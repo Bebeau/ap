@@ -286,6 +286,7 @@
 			height: 150px;
 			z-index: 10;
 			background: linear-gradient(transparent, black);
+			pointer-events: none;
 		}
 	}
 	#splash {
