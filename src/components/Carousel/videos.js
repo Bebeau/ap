@@ -12,12 +12,12 @@ const videos = [
     url: 'https://www.youtube.com/embed/u749Hi0gDVM',
     title: "TINTS"
   },
-  {
-    index: '2',
-    thumb: 'https://img.youtube.com/vi/u749Hi0gDVM/maxresdefault.jpg',
-    url: 'https://www.youtube.com/embed/u749Hi0gDVM',
-    title: "Andy's Oxnard Carnival + Live Listening"
-  },
+  // {
+  //   index: '2',
+  //   thumb: 'https://img.youtube.com/vi/u749Hi0gDVM/maxresdefault.jpg',
+  //   url: 'https://www.youtube.com/embed/u749Hi0gDVM',
+  //   title: "Andy's Oxnard Carnival + Live Listening"
+  // },
   {
     index: '3',
     thumb: 'https://img.youtube.com/vi/7PmUtmfTmbg/maxresdefault.jpg',

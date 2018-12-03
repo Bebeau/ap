@@ -274,7 +274,8 @@ nav {
     height: auto;
     display: inline-block;
     margin: 0 auto;
-    text-align: right; }
+    text-align: right;
+    opacity: 0.5; }
     #legal a img {
       vertical-align: middle; }
 
@@ -399,7 +400,7 @@ nav {
     -webkit-overflow-scrolling: touch; }
     #modal #tour ul {
       list-style: none;
-      margin: 0;
+      margin: 0 0 -100px;
       padding: 0;
       transform: scale(0.8);
       transform-origin: top center; }
