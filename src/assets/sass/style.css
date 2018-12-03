@@ -470,8 +470,9 @@ nav {
       height: auto; }
   #modal #videos {
     width: 100%;
-    overflow: hidden;
-    padding-top: 100px; }
+    overflow: hidden; }
+    #modal #videos.show {
+      justify-content: center; }
     #modal #videos iframe {
       position: relative;
       z-index: 2; }
@@ -625,7 +626,7 @@ nav {
   .hideMobile {
     display: none !important; }
   nav {
-    padding-top: 25px;
+    padding-top: 15px;
     background: none; }
     nav.open {
       pointer-events: none; }
@@ -677,8 +678,7 @@ nav {
     left: 0;
     right: 0;
     width: 100%;
-    position: 10;
-    height: 15vh;
+    height: 150px;
     z-index: 10;
     background: linear-gradient(transparent, black); }
   #splash {
@@ -739,13 +739,18 @@ nav {
       padding-top: 25px; }
       #modal #tour.show {
         justify-content: flex-start; }
-      #modal #tour ul li {
-        width: 225px; }
-        #modal #tour ul li .wrap span.location, #modal #tour ul li .wrap span.continent {
-          display: inline-block;
-          letter-spacing: 0; }
-        #modal #tour ul li .buy {
-          line-height: 40px; }
+      #modal #tour ul {
+        margin-bottom: -275px; }
+        #modal #tour ul li {
+          width: 225px; }
+          #modal #tour ul li .wrap span.location, #modal #tour ul li .wrap span.country {
+            display: inline-block;
+            letter-spacing: 0;
+            text-align: left; }
+          #modal #tour ul li .wrap span.country {
+            margin-left: 5px; }
+          #modal #tour ul li .buy {
+            line-height: 40px; }
     #modal #videos {
       overflow: hidden; }
   #logo {
@@ -782,6 +787,8 @@ nav {
     bottom: 15px;
     width: 100%;
     text-align: center; }
+    .emailForm form {
+      display: none; }
     .emailForm input {
       margin-bottom: 10px;
       border-radius: 0; }
@@ -791,7 +798,7 @@ nav {
       font-size: 8pt;
       letter-spacing: 1px;
       vertical-align: middle;
-      line-height: 18px; }
+      line-height: 21px; }
       .emailForm .showMobile a {
         width: 40px;
         height: auto;

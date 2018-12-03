@@ -80,6 +80,8 @@ class App extends Component {
     this.targetPhotos = document.querySelector('#photos');
     this.targetTours = document.querySelector('#tour');
     this.targetMusic = document.querySelector('#music');
+    this.targetStage = document.querySelector('#stage');
+    disableBodyScroll(this.targetStage);
   }
   toggleSplash = () => {
     const currentState = this.state.clicked;

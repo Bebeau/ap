@@ -539,7 +539,9 @@ nav {
 	#videos {
 		width: 100%;
 		overflow: hidden;
-		padding-top: 100px;
+		&.show {
+			justify-content: center;
+		}
 		iframe {
 			position: relative;
 			z-index: 2;

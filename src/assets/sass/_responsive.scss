@@ -217,7 +217,7 @@
 		display: none !important;
 	}
 	nav {
-		padding-top: 25px;
+		padding-top: 15px;
 		background: none;
 		&.open {
 			pointer-events: none;
@@ -283,8 +283,7 @@
 			left: 0;
 			right: 0;
 			width: 100%;
-			position: 10;
-			height: 15vh;
+			height: 150px;
 			z-index: 10;
 			background: linear-gradient(transparent, black);
 		}
@@ -361,14 +360,19 @@
 				justify-content: flex-start;
 			}
 			ul {
+				margin-bottom: -275px;
 				li {
 					width: 225px;
 					.wrap {
 						span {
 							&.location,
-							&.continent {
+							&.country {
 								display: inline-block;
 								letter-spacing: 0;
+								text-align: left;
+							}
+							&.country {
+								margin-left: 5px;
 							}
 						}
 					}
@@ -423,6 +427,9 @@
 		bottom: 15px;
 		width: 100%;
 		text-align: center;
+		form {
+			display: none;
+		}
 		input {
 			margin-bottom: 10px;
 			border-radius: 0;
@@ -433,7 +440,7 @@
 			font-size: 8pt;
 			letter-spacing: 1px;
 			vertical-align: middle;
-			line-height: 18px;
+			line-height: 21px;
 			a {
 				width: 40px;
 				height: auto;

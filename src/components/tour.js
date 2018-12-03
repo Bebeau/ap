@@ -245,8 +245,6 @@ const shows = [
 
 class Tour extends Component {
   render() {
-    var date = new Date();
-    console.log(date);
     const tours = shows.map(item => {
       return (
         <li className="event" key={item.key}>
