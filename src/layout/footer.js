@@ -29,11 +29,11 @@ class Footer extends Component{
                 messages={
                   {
                     sending: "Sending...",
-                    success: "Thank you for your support.",
+                    success: "Thank you. You're on the list!",
                     error: "Oops, that didn't work.",
                     empty: "Please submit a vaild email address.",
                     duplicate: "This email address has already joined.",
-                    button: "Submit"
+                    button: "Subscribe"
                   }
                 }
               />

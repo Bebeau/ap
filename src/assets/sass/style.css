@@ -307,7 +307,7 @@ nav {
     line-height: 24px;
     background: #0d0d0d;
     color: white;
-    width: 100px;
+    width: 125px;
     text-transform: uppercase;
     margin: 0 0 0 10px;
     padding: 0;
@@ -315,6 +315,7 @@ nav {
     .emailForm button:hover {
       cursor: pointer; }
   .emailForm p {
+    color: #EFB123 !important;
     margin-bottom: 0;
     transition: all 1s ease-in-out; }
 
@@ -800,7 +801,9 @@ nav {
         opacity: 1; }
         .emailForm .showMobile a img {
           width: 100%;
-          vertical-align: middle; } }
+          vertical-align: middle; }
+    .emailForm p {
+      margin: 0 0 10px; } }
 
 @media (max-width: 375px) and (max-height: 812px) {
   #splash {
