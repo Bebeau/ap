@@ -168,17 +168,17 @@ a, button {
 			text-transform: uppercase;
 			letter-spacing: 6px;
 			font-weight: bold;
-			font-size: 18pt;
+			font-size: 14pt;
 			margin: 0;
 			&.merchLink {
-				font-size: 14pt;
-				letter-spacing: 4px;
+				font-size: 44pt;
+				letter-spacing: 1px;
 			}
 		}
 		a {
 			width: 275px;
 			display: block;
-			margin: 15px auto;
+			margin: 0 auto;
 			img {
 				width: 100%;
 				height: auto;
@@ -256,12 +256,12 @@ nav {
 }
 #social {
 	position: fixed;
-	bottom: 25px;
-	left: 25px;
+	top: 25px;
+	right: 25px;
 	z-index: 999;
 	a {
 		display: inline-block;
-		margin: 0 10px;
+		margin: 0 8px;
 		&#facebook {
 			width: 10px;
 			height: auto;
@@ -277,27 +277,24 @@ nav {
 		&#youtube {
 			width: 55px;
 			height: auto;
-			margin: 0 5px;
+			margin: 0;
 		}
 		img {
 			width: 100%;
 			height: auto;
 		}
-	}
-	.showMobile {
-		font-size: 10pt;
-		line-height: 25px;
-		vertical-align: middle;
-		color: white;
-		text-align: center;
-		opacity: 0.5;
+		&.showMobile {
+			display: none;
+		}
+		&.hideMobile {
+			display: inline-block;
+		}
 	}
 }
 #legal {
 	position: fixed;
 	bottom: 0;
 	right: 25px;
-	opacity: 0.5;
 	display: block;
 	color: white;
 	font-size: 8pt;
@@ -317,11 +314,54 @@ nav {
 		height: auto;
 		display: inline-block;
 		margin: 0 auto;
-		opacity: 0.35;
 		text-align: right;
 		img {
 			vertical-align: middle;
 		}
+	}
+}
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+.emailForm {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 11;
+	padding: 25px;
+	transition: all 1s ease-in-out;
+	-webkit-overflow-scrolling: touch;
+	input {
+		background: none;
+		border: none;
+		border-bottom: 1px solid white;
+		width: 175px;
+		line-height: 24px;
+		transform: translate(0,-1px);
+		color: white;
+		&:focus {
+			outline: none;
+			background: none;
+		}
+	}
+	button {
+		border: 1px solid white;
+		line-height: 24px;
+		background: #0d0d0d;
+		color: white;
+		width: 100px;
+		text-transform: uppercase;
+		margin: 0 0 0 10px;
+		padding: 0;
+		letter-spacing: 4px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	p {
+		margin-bottom: 0;
+		transition: all 1s ease-in-out;
 	}
 }
 #modal {
@@ -365,7 +405,7 @@ nav {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			justify-content: center;
+			justify-content: flex-start;
 		}
 	}
 	#music {
@@ -408,7 +448,6 @@ nav {
 	}
 	#tour {
 		width: 100%;
-		transform: translate(0,-50px);
 		box-sizing: border-box;
 		overflow-y: scroll;
   		-webkit-overflow-scrolling: touch;
@@ -444,17 +483,17 @@ nav {
 					width: 200px;
 				}
 				.venue {
-					width: 300px;
+					width: 250px;
 					font-style: oblique;
 					font-weight: lighter;
 				}
 				.location {
-					width: 50%;
+					width: 200px;
 					text-align: left;
 				}
-				.continent {
-					width: 50%;
-					text-align: left;
+				.country {
+					width: 40%;
+					text-align: center;
 				}
 				.buy {
 					vertical-align: middle;
@@ -498,6 +537,7 @@ nav {
 	#videos {
 		width: 100%;
 		overflow: hidden;
+		padding-top: 100px;
 		iframe {
 			position: relative;
 			z-index: 2;

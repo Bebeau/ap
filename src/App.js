@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import ReactPixel from 'react-facebook-pixel';
 import VideoSlider from './components/Carousel/videos.js';
+import Tours from './components/tour.js';
+import Albums from './components/music.js';
+import Photos from './components/photos.js';
 
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
@@ -17,42 +20,7 @@ import oxnardLP from './assets/img/oxnardLP.png';
 
 import oxnardMobile from './assets/img/oxnard_albumnMobile.jpg';
 
-import appleWhite from './assets/img/SVG/apple_white.svg';
-import spotify from './assets/img/SVG/spotify.svg';
-import itunes from './assets/img/SVG/itunes.svg';
-import tidalWhite from './assets/img/SVG/tidal_white.svg';
-import google from './assets/img/icons/googleplay.png';
-import amazon from './assets/img/SVG/amazon.svg';
-
-import whoru from './assets/img/albums/whoru.jpg';
-import oxnard from './assets/img/albums/oxnard.jpg';
-import tints from './assets/img/albums/tints.jpg';
-import malibu from './assets/img/albums/malibu.jpg';
-import bubblin from './assets/img/albums/bubblin.jpg';
-import yesLawd from './assets/img/albums/yesLawd.jpg';
-import tillitsover from './assets/img/albums/tillItsOver.jpg';
-import venice from './assets/img/albums/venice.jpg';
-
 import Particles from 'react-particles-js';
-
-import photo1 from './assets/img/photos/1.jpg';
-import photo2 from './assets/img/photos/2.jpg';
-import photo3 from './assets/img/photos/3.jpg';
-import photo4 from './assets/img/photos/4.jpg';
-import photo5 from './assets/img/photos/5.jpg';
-import photo6 from './assets/img/photos/6.jpg';
-import photo7 from './assets/img/photos/7.jpg';
-import photo8 from './assets/img/photos/8.jpg';
-import photo9 from './assets/img/photos/9.jpg';
-import photo10 from './assets/img/photos/10.jpg';
-import photo11 from './assets/img/photos/11.jpg';
-import photo12 from './assets/img/photos/12.jpg';
-import photo13 from './assets/img/photos/13.jpg';
-import photo14 from './assets/img/photos/14.jpg';
-import photo15 from './assets/img/photos/15.jpg';
-import photo16 from './assets/img/photos/16.jpg';
-import photo17 from './assets/img/photos/17.jpg';
-import photo18 from './assets/img/photos/18.jpg';
 
 import aftermath from './assets/img/SVG/aftermath.svg';
 import obe from './assets/img/obe.png';
@@ -60,6 +28,11 @@ import twelveTone from './assets/img/12tone.png';
 
 import introVideoMP4 from './assets/videos/oxnard_intro.mp4';
 import introVideoWEBM from './assets/videos/oxnard_intro.webm';
+
+import facebook from './assets/img/SVG/facebook.svg';
+import instagram from './assets/img/SVG/instagram.svg';
+import twitter from './assets/img/SVG/twitter.svg';
+import youtube from './assets/img/SVG/youtube.svg';
 
 const advancedMatching = {};
 const options = {
@@ -69,193 +42,36 @@ const options = {
 ReactPixel.init('252805335389609', advancedMatching, options);
 ReactPixel.pageView();
 
-const albums = [
-  {
-    artwork: [oxnard],
-    apple: 'https://itunes.apple.com/album/oxnard/1439982774?ls=1',
-    spotify: 'http://open.spotify.com/album/3rqqwtJE89WoWvMyPTvbZc',
-    itunes: 'https://itunes.apple.com/album/oxnard/1439982774?ls=1&app=itunes',
-    tidal: 'https://listen.tidal.com/album/98360379',
-    google: 'https://play.google.com/music/m/Bdhowaxhgmcaeqrhlztg4sd2zke',
-    amazon: 'http://amazon.com/dp/B07JMDLHGR'
-  },
-  {
-    artwork: [whoru],
-    apple: 'https://itunes.apple.com/us/album/who-r-u/1439982774?i=1439983348&app=music',
-    spotify: 'https://open.spotify.com/album/6Ml78jvSDFzJhLnXKyU30z',
-    itunes: 'https://itunes.apple.com/us/album/who-r-u/1439982774',
-    tidal: 'https://tidal.com/browse/album/98114488',
-    google: 'https://play.google.com/store/music/album/Anderson_Paak_Who_R_U?id=Bpavhmq5eizsrv2zpm45zn4p5vm',
-    amazon: 'https://www.amazon.com/Who-R-U-Explicit/dp/B07JM8LKS7?tag=smarturl-pivot-20'
-  },
-  {
-    artwork: [tints],
-    apple: 'https://itunes.apple.com/us/album/tints-feat-kendrick-lamar-single/1437534355?app=music&ign-mpt=uo%3D4',
-    spotify: 'https://open.spotify.com/track/1gnwGVoG7V08vMX3hyr90x?si=oLJ8DAv6TU6AIhHwkKBbUg',
-    itunes: 'https://itunes.apple.com/us/album/tints-feat-kendrick-lamar-single/1437534355?app=music&ign-mpt=uo%3D4',
-    tidal: 'https://tidal.com/album/96155864',
-    google: 'https://play.google.com/store/music/album/Anderson_Paak_Tints_feat_Kendrick_Lamar?id=Brnbxp77jjsxpkfmmwjtg3tdhry&hl=en',
-    amazon: 'https://www.amazon.com/Tints-feat-Kendrick-Lamar-Explicit/dp/B07HPX4F5Y/ref=sr_1_1?ie=UTF8&qid=1540537494&sr=8-1&keywords=anderson+paak+tints'
-  },
-  {
-    artwork: [bubblin],
-    apple: 'https://itunes.apple.com/us/album/bubblin/1383381572?i=1383381915&app=music&ign-mpt=uo%3D4',
-    spotify: 'https://open.spotify.com/album/6N1y1a5qnqN8pBkizOdMvk?si=A2y4GZEGQxq68qt9pu8jog',
-    itunes: 'https://itunes.apple.com/us/album/bubblin/1383381572?i=1383381915&app=music&ign-mpt=uo%3D4',
-    tidal: 'https://tidal.com/track/88736899',
-    google: 'https://play.google.com/store/music/album?id=B756yrjl7kg2eofq2fqclykshsm&tid=song-Ttjpmct5y72vzsqhxxmng2gvx4a',
-    amazon: 'https://www.amazon.com/dp/B07CZVG8QR/ref=ap_ws_tlw_trk6'
-  },
-  {
-    artwork: [malibu],
-    apple: 'https://open.spotify.com/album/4VFG1DOuTeDMBjBLZT7hCK?si=2ZJdsZzsSQufftITqowCpg',
-    spotify: 'https://open.spotify.com/album/4VFG1DOuTeDMBjBLZT7hCK?si=2ZJdsZzsSQufftITqowCpg',
-    itunes: 'https://itunes.apple.com/us/album/malibu/1065681363?app=music&ign-mpt=uo%3D4',
-    tidal: 'https://tidal.com/album/55010255',
-    google: 'https://play.google.com/store/music/album/Anderson_Paak_Malibu?id=B562fkkr2nawzqrty3v5vr2x7fe',
-    amazon: 'https://www.amazon.com/Malibu-Explicit-Anderson-Paak/dp/B0192ZU8TG/ref=ntt_mus_dp_dpt_1'
-  },
-  {
-    artwork: [tillitsover],
-    apple: 'https://itunes.apple.com/us/album/til-its-over-single/1355644175?app=music&ign-mpt=uo%3D4',
-    spotify: 'https://open.spotify.com/album/7z4UqvGprXWpQ0wo8ldLDA?si=giMbalMYQh2U1DfLF87KeQ',
-    itunes: 'https://itunes.apple.com/us/album/til-its-over-single/1355644175?app=music&ign-mpt=uo%3D4',
-    tidal: 'https://tidal.com/album/86783333',
-    google: 'https://play.google.com/store/music/album?id=Be3blgz2r4f2fvsqxkzt4xihzre&tid=song-Tujidsxyffjurb2q5skhuosnd74',
-    amazon: 'https://www.amazon.com/dp/B07BVTB4HB/ref=ap_ws_tlw_trk5'
-  },
-  {
-    artwork: [yesLawd],
-    apple: 'https://itunes.apple.com/us/album/yes-lawd/1150640159?app=music&ign-mpt=uo%3D4',
-    spotify: 'https://open.spotify.com/album/0K3FiXt6ekJTWaUku3LpHL?si=49_BbqGuSVaLPrV0QUFGxw',
-    itunes: 'https://itunes.apple.com/us/album/yes-lawd/1150640159?app=music&ign-mpt=uo%3D4',
-    tidal: 'https://tidal.com/album/82333145',
-    google: 'https://play.google.com/store/music/album/NxWorries_Yes_Lawd?id=Bdo33c3q74gfnfizeivojzmfhka&hl=en',
-    amazon: 'https://www.amazon.com/Yes-Lawd-Explicit-NxWorries/dp/B0786VTWKT/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1540424593&sr=1-1-mp3-albums-bar-strip-0&keywords=nxworries'
-  },
-  {
-    artwork: [venice],
-    apple: 'https://itunes.apple.com/us/album/venice/929712951?app=music&ign-mpt=uo%3D4',
-    spotify: 'https://open.spotify.com/album/2DOiha5oI19Dmw5M9ryHD8?si=gfEotoYwQua5ZP2Vt8zGzQ',
-    itunes: 'https://itunes.apple.com/us/album/venice/929712951?app=music&ign-mpt=uo%3D4',
-    tidal: 'https://tidal.com/album/36796815',
-    google: 'https://play.google.com/store/music/album/Anderson_Paak_Venice?id=Bhvutosdz6uiobdwusjlsnndkou',
-    amazon: 'https://www.amazon.com/Venice-Explicit-Anderson-Paak/dp/B00P1K6Z3U/ref=ntt_mus_dp_dpt_2'
-  }
-]
-
-const photos = [
-  {
-    img: [photo1]
-  },
-  {
-    img: [photo18]
-  },
-  {
-    img: [photo2]
-  },
-  {
-    img: [photo3]
-  },
-  {
-    img: [photo4]
-  },
-  {
-    img: [photo5]
-  },
-  {
-    img: [photo6]
-  },
-  {
-    img: [photo7]
-  },
-  {
-    img: [photo8]
-  },
-  {
-    img: [photo9]
-  },
-  {
-    img: [photo10]
-  },
-  {
-    img: [photo11]
-  },
-  {
-    img: [photo12]
-  },
-  {
-    img: [photo13]
-  },
-  {
-    img: [photo14]
-  },
-  {
-    img: [photo15]
-  },
-  {
-    img: [photo16]
-  },
-  {
-    img: [photo17]
-  }
-]
-
-class Albums extends React.Component {
-  render() {
-    return (
-      <article className="album">
-        <img src={this.props.artwork[0]} alt="" />
-        {this.props.apple ? (
-          <a className="apple" href={this.props.apple} target="_BLANK" rel="noopener noreferrer">
-            <img src={appleWhite} alt="Apple Music" />
-          </a>
-        ) : null };
-        {this.props.spotify ? (
-          <a className="spotify" href={this.props.spotify} target="_BLANK" rel="noopener noreferrer">
-            <img src={spotify} alt="Spotify" />
-          </a>
-        ) : null };
-        {this.props.itunes ? (
-          <a className="itunes" href={this.props.itunes} target="_BLANK" rel="noopener noreferrer">
-            <img src={itunes} alt="iTunes" />
-          </a>
-        ) : null };
-        {this.props.tidal ? (
-          <a className="tidal" href={this.props.tidal} target="_BLANK" rel="noopener noreferrer">
-            <img src={tidalWhite} alt="Tidal" />
-          </a>
-        ) : null };
-        {this.props.google ? (
-          <a className="google" href={this.props.google} target="_BLANK" rel="noopener noreferrer">
-            <img src={google} alt="Google" />
-          </a>
-        ) : null };
-        {this.props.amazon ? (
-          <a className="amazon" href={this.props.amazon} target="_BLANK" rel="noopener noreferrer">
-            <img src={amazon} alt="Amazon" />
-          </a>
-        ) : null };
-      </article>
-    )
-  }
-};
-
-class Photos extends React.Component {
-  render() {
-    return (
-      <img src={this.props.img} alt="" />
-    )
-  }
-}
-
 class App extends Component {
   constructor() {
     super()
     this.addActiveClass = this.addActiveClass.bind(this);
-    this.state = {
-      active: false,
-      clicked: false
+    var pathArray = window.location.pathname.split('/');
+    if(
+      pathArray[1] === 'home'
+    ) {
+      this.state = {
+        active: false,
+        fadeIn: true,
+        clicked: true
+      }
+    } else if(
+      pathArray[1] === 'tour' ||
+      pathArray[1] === 'music' ||
+      pathArray[1] === 'videos' ||
+      pathArray[1] === 'photos'
+    ) {
+      this.state = {
+        active: true,
+        id: pathArray[1],
+        fadeIn: true,
+        clicked: true
+      }
+    } else {
+      this.state = {
+        active: false,
+        clicked: false
+      }
     }
   }
   targetElement = null;
@@ -287,6 +103,7 @@ class App extends Component {
       disableBodyScroll(this.targetTours);
       disableBodyScroll(this.targetMusic);
     }.bind(this), 800);
+    // window.location.href = window.location.protocol+"://"+window.location.hostname+"/"+id;
   }
   showMenu = (id) => {
     this.setState({ 
@@ -300,12 +117,12 @@ class App extends Component {
     clearAllBodyScrollLocks();
   }
   render() {
-    if(this.state.clicked) {
-        var fixed = document.getElementById('splash');
-        fixed.addEventListener('touchmove', function(e) {
-        e.preventDefault();
-      }, false);
-    }
+    // if(this.state.clicked) {
+    //     var fixed = document.getElementById('splash');
+    //     fixed.addEventListener('touchmove', function(e) {
+    //     e.preventDefault();
+    //   }, false);
+    // }
     return (
       <div id="App">
         <Header />
@@ -315,11 +132,11 @@ class App extends Component {
             <img id="bgImage" className="showMobile" src={oxnardMobile} alt="Oxnard" />
             <img id="title" src={oxnardLogo} alt="Oxnard" />
             <div id="musicLinks">
-              <p>Album Out Now.</p>
+              <p>Album Available Now</p>
               <a href="https://buy.andersonpaak.com/" target="_BLANK" rel="noopener noreferrer">
                 <img src={oxnardLP} alt="Oxnard Pre-Order" />
               </a>
-              <p className="merchLink">Merch Available for Pre-Order</p>
+              <p className="merchLink">Shop Now</p>
             </div>
           </article>
           <div id="videoWrap">
@@ -353,71 +170,35 @@ class App extends Component {
               <button onClick={this.addActiveClass.bind(this, 'music')}>Music</button>
               <button onClick={this.addActiveClass.bind(this, 'videos')}>Videos</button>
               <button onClick={this.addActiveClass.bind(this, 'photos')}>Photos</button>
+              <article id="social" className="showMobile">
+                <a id="facebook" href="https://www.facebook.com/AndersonPaak" target="_BLANK" rel="noopener noreferrer">
+                  <img src={facebook} alt="" />
+                </a>
+                <a id="instagram" href="https://www.instagram.com/anderson._paak/" target="_BLANK" rel="noopener noreferrer">
+                  <img src={instagram} alt="" />
+                </a>
+                <a id="twitter" href="https://twitter.com/AndersonPaak" target="_BLANK" rel="noopener noreferrer">
+                  <img src={twitter} alt="" />
+                </a>
+                <a id="youtube" href="https://www.youtube.com/user/Breezylovejoy" target="_BLANK" rel="noopener noreferrer">
+                  <img src={youtube} alt="" />
+                </a>
+              </article>
             </div>
           </nav>
           <section id="modal" className={this.state.active ? 'open': null}>
             <div id="music" className={this.state.id === 'music' ? 'show modalwrap': 'modalwrap'}>
-              {albums.map((album, index) => (
-                <Albums
-                  key={index}
-                  artwork={album.artwork}
-                  apple={album.apple}
-                  spotify={album.spotify}
-                  itunes={album.itunes}
-                  tidal={album.tidal}
-                  google={album.google}
-                  amazon={album.amazon}
-                />
-              ))}
+              <Albums/>
             </div>
             <div id="videos" className={this.state.id === 'videos' ? 'show modalwrap': 'modalwrap'}>
               <VideoSlider />
             </div>
             <div id="photos" className={this.state.id === 'photos' ? 'show modalwrap': 'modalwrap'}>
-              {photos.map((photo, index) => (
-                <Photos
-                  key={index}
-                  img={photo.img}
-                />
-              ))}
+              <Photos />
             </div>
             <div id="tour" className={this.state.id === 'tour' ? 'show modalwrap': 'modalwrap'}>
               <h2>Upcoming Dates</h2>
-              <ul>
-                <li className="event">
-                  <div className="wrap">
-                    <span className="date">01.09.2019</span>
-                    <span className="venue">Hordern Pavilion</span>
-                  </div>
-                  <div className="wrap">
-                    <span className="location">Sydney, NSW</span>
-                    <span className="continent">Australia</span>
-                  </div>
-                  <a href="https://www.livenation.com.au/show/1207348/anderson-paak-and-the-free-nationals/sydney/2019-01-09/en" target="_BLANK" rel="noopener noreferrer" className="buy">Tickets</a>
-                </li>
-                <li className="event">
-                  <div className="wrap">
-                    <span className="date">01.10.2019</span>
-                    <span className="venue">Festival Hall</span>
-                  </div>
-                  <div className="wrap">
-                    <span className="location">Melbourne, VIC</span>
-                    <span className="continent">Australia</span>
-                  </div>
-                  <a href="https://www.livenation.com.au/show/1207352/anderson-paak-and-the-free-nationals/melbourne/2019-01-10/en" target="_BLANK" rel="noopener noreferrer" className="buy">Tickets</a>
-                </li>
-                <li className="event">
-                  <div className="wrap">
-                    <span className="date">01.12.2019</span>
-                    <span className="venue">Logan Campbell Centre</span>
-                  </div>
-                  <div className="wrap">
-                    <span className="location">Auckland</span>
-                    <span className="continent">New Zealand</span>
-                  </div>
-                  <a href="https://www.livenation.co.nz/show/1207362/anderson-paak-and-the-free-nationals/auckland/2019-01-12/en" target="_BLANK" rel="noopener noreferrer" className="buy">Tickets</a>
-                </li>
-              </ul>
+              <Tours />
             </div>
           </section>
           <Footer />

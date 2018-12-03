@@ -14,24 +14,30 @@ const videos = [
   },
   {
     index: '2',
+    thumb: 'https://img.youtube.com/vi/u749Hi0gDVM/maxresdefault.jpg',
+    url: 'https://www.youtube.com/embed/u749Hi0gDVM',
+    title: "Andy's Oxnard Carnival + Live Listening"
+  },
+  {
+    index: '3',
     thumb: 'https://img.youtube.com/vi/7PmUtmfTmbg/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/7PmUtmfTmbg',
     title: "Bubblin'"
   },
   {
-    index: '3',
+    index: '4',
     thumb: 'https://img.youtube.com/vi/N6rusSDuv-Y/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/N6rusSDuv-Y',
     title: "Bubblin' Challenge"
   },
   {
-    index: '4',
+    index: '5',
     thumb: 'https://img.youtube.com/vi/-OqrcUvrbRY/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/-OqrcUvrbRY',
     title: 'Come Down'
   },
   {
-    index: '5',
+    index: '6',
     thumb: 'https://img.youtube.com/vi/y_Ka5wiQBEw/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/y_Ka5wiQBEw',
     title: 'The Season / Carry Me / The Waters'

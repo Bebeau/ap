@@ -149,15 +149,15 @@ a, button {
       text-transform: uppercase;
       letter-spacing: 6px;
       font-weight: bold;
-      font-size: 18pt;
+      font-size: 14pt;
       margin: 0; }
       #splash #musicLinks p.merchLink {
-        font-size: 14pt;
-        letter-spacing: 4px; }
+        font-size: 44pt;
+        letter-spacing: 1px; }
     #splash #musicLinks a {
       width: 275px;
       display: block;
-      margin: 15px auto; }
+      margin: 0 auto; }
       #splash #musicLinks a img {
         width: 100%;
         height: auto; }
@@ -225,12 +225,12 @@ nav {
 
 #social {
   position: fixed;
-  bottom: 25px;
-  left: 25px;
+  top: 25px;
+  right: 25px;
   z-index: 999; }
   #social a {
     display: inline-block;
-    margin: 0 10px; }
+    margin: 0 8px; }
     #social a#facebook {
       width: 10px;
       height: auto; }
@@ -243,23 +243,19 @@ nav {
     #social a#youtube {
       width: 55px;
       height: auto;
-      margin: 0 5px; }
+      margin: 0; }
     #social a img {
       width: 100%;
       height: auto; }
-  #social .showMobile {
-    font-size: 10pt;
-    line-height: 25px;
-    vertical-align: middle;
-    color: white;
-    text-align: center;
-    opacity: 0.5; }
+    #social a.showMobile {
+      display: none; }
+    #social a.hideMobile {
+      display: inline-block; }
 
 #legal {
   position: fixed;
   bottom: 0;
   right: 25px;
-  opacity: 0.5;
   display: block;
   color: white;
   font-size: 8pt;
@@ -278,10 +274,48 @@ nav {
     height: auto;
     display: inline-block;
     margin: 0 auto;
-    opacity: 0.35;
     text-align: right; }
     #legal a img {
       vertical-align: middle; }
+
+::placeholder {
+  color: white;
+  opacity: 1; }
+
+.emailForm {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+  padding: 25px;
+  transition: all 1s ease-in-out;
+  -webkit-overflow-scrolling: touch; }
+  .emailForm input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 175px;
+    line-height: 24px;
+    transform: translate(0, -1px);
+    color: white; }
+    .emailForm input:focus {
+      outline: none;
+      background: none; }
+  .emailForm button {
+    border: 1px solid white;
+    line-height: 24px;
+    background: #0d0d0d;
+    color: white;
+    width: 100px;
+    text-transform: uppercase;
+    margin: 0 0 0 10px;
+    padding: 0;
+    letter-spacing: 4px; }
+    .emailForm button:hover {
+      cursor: pointer; }
+  .emailForm p {
+    margin-bottom: 0;
+    transition: all 1s ease-in-out; }
 
 #modal {
   position: absolute;
@@ -325,7 +359,7 @@ nav {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center; }
+      justify-content: flex-start; }
   #modal #music {
     text-align: center;
     min-height: 100%;
@@ -360,7 +394,6 @@ nav {
           width: 50px; }
   #modal #tour {
     width: 100%;
-    transform: translate(0, -50px);
     box-sizing: border-box;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch; }
@@ -393,15 +426,15 @@ nav {
         #modal #tour ul li .date {
           width: 200px; }
         #modal #tour ul li .venue {
-          width: 300px;
+          width: 250px;
           font-style: oblique;
           font-weight: lighter; }
         #modal #tour ul li .location {
-          width: 50%;
+          width: 200px;
           text-align: left; }
-        #modal #tour ul li .continent {
-          width: 50%;
-          text-align: left; }
+        #modal #tour ul li .country {
+          width: 40%;
+          text-align: center; }
         #modal #tour ul li .buy {
           vertical-align: middle;
           width: 100px;
@@ -435,7 +468,8 @@ nav {
       height: auto; }
   #modal #videos {
     width: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    padding-top: 100px; }
     #modal #videos iframe {
       position: relative;
       z-index: 2; }
@@ -554,7 +588,7 @@ nav {
       justify-content: center; }
     #modal #tour ul {
       width: auto;
-      padding-bottom: 150px; }
+      padding-bottom: 0; }
       #modal #tour ul li {
         width: 300px;
         margin: 25px auto; }
@@ -680,7 +714,8 @@ nav {
       text-align: center;
       line-height: 60px;
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      background: linear-gradient(#f7efe4, transparent); }
     #splash #logoMarks {
       display: block;
       position: relative;
@@ -725,29 +760,45 @@ nav {
     #logo img {
       width: 75px; }
   #social {
-    left: 50%;
-    bottom: 15px;
-    transform: translate(-50%, 0);
-    white-space: nowrap; }
+    position: relative;
+    right: auto;
+    top: auto;
+    text-align: right; }
     #social div {
       font-size: 6pt; }
-    #social .showMobile.sign {
+    #social a {
+      display: inline-block;
+      margin: 0 8px; }
+      #social a#youtube {
+        margin: 0; }
+        #social a#youtube.showMobile {
+          display: inline-block !important; }
+  .emailForm {
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    bottom: 15px;
+    width: 100%;
+    text-align: center; }
+    .emailForm input {
+      margin-bottom: 10px; }
+    .emailForm .showMobile {
+      color: white;
       text-transform: uppercase;
       font-size: 8pt;
       letter-spacing: 1px;
-      vertical-align: middle; }
-      #social .showMobile.sign a {
+      vertical-align: middle;
+      line-height: 18px; }
+      .emailForm .showMobile a {
         width: 40px;
         height: auto;
         margin: 0;
-        padding: 0; }
-        #social .showMobile.sign a img {
-          vertical-align: middle; }
-  #legal {
-    bottom: 10px;
-    right: 15px; }
-    #legal a {
-      transform: translate(0, 0); } }
+        padding: 0;
+        display: inline-block;
+        opacity: 0.35; }
+        .emailForm .showMobile a img {
+          width: 100%;
+          vertical-align: middle; } }
 
 @media (max-width: 375px) and (max-height: 812px) {
   #splash {

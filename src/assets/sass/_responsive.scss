@@ -161,7 +161,7 @@
 			}
 			ul {
 				width: auto;
-				padding-bottom: 150px;
+				padding-bottom: 0;
 				li {
 					width: 300px;
 					margin: 25px auto;
@@ -331,6 +331,7 @@
 			line-height: 60px;
 			margin: 0;
 			padding: 0;
+			background: linear-gradient(#f7efe4, transparent);
 		}
 		#logoMarks {
 			display: block;
@@ -397,36 +398,53 @@
 		}
 	}
 	#social {
-		left: 50%;
-		bottom: 15px;
-		transform: translate(-50%,0);
-		white-space: nowrap;
+		position: relative;
+		right: auto;
+		top: auto;
+		text-align: right;
 		div {
 			font-size: 6pt;
 		}
-		.showMobile {
-			&.sign {
-				text-transform: uppercase;
-				font-size: 8pt;
-				letter-spacing: 1px;
-				vertical-align: middle;
-				a {
-					width: 40px;
-					height: auto;
-					margin: 0;
-					padding: 0;
-					img {
-						vertical-align: middle;
-					}
+		a {
+			display: inline-block;
+			margin: 0 8px;
+			&#youtube {
+				margin: 0;
+				&.showMobile {
+					display: inline-block !important;
 				}
 			}
 		}
 	}
-	#legal {
-		bottom: 10px;
-		right: 15px;
-		a {
-			transform: translate(0,0);
+	.emailForm {
+		margin: 0 auto;
+		padding: 0;
+		display: block;
+		bottom: 15px;
+		width: 100%;
+		text-align: center;
+		input {
+			margin-bottom: 10px;
+		}
+		.showMobile {
+			color: white;
+			text-transform: uppercase;
+			font-size: 8pt;
+			letter-spacing: 1px;
+			vertical-align: middle;
+			line-height: 18px;
+			a {
+				width: 40px;
+				height: auto;
+				margin: 0;
+				padding: 0;
+				display: inline-block;
+				opacity: 0.35;
+				img {
+					width: 100%;
+					vertical-align: middle;
+				}
+			}
 		}
 	}
 }
