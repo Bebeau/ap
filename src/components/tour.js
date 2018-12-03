@@ -25,102 +25,102 @@ const shows = [
     country: 'NEW ZEALAND',
     purchase: 'https://www.livenation.co.nz/show/1207362/anderson-paak-and-the-free-nationals/auckland/2019-01-12/en'
   },
-  // {
-  //   key: '4',
-  //   date: '02.11.2019',
-  //   venue: 'The Masonic',
-  //   area: 'SAN FRANSISCO, CA',
-  //   country: 'USA',
-  //   purchase: 'https://www.ticketmaster.com/event/1C00557DE67597E5'
-  // },
-  // {
-  //   key: '5',
-  //   date: '02.13.2019',
-  //   venue: 'The Fillmore',
-  //   area: 'Denver, CO',
-  //   country: 'USA',
-  //   purchase: 'https://www.ticketmaster.com/event/1E00557EE12F2C08'
-  // },
-  // {
-  //   key: '6',
-  //   date: '02.15.2019',
-  //   venue: 'The Fillmore',
-  //   area: 'Detroit, MI',
-  //   country: 'USA',
-  //   purchase: 'https://www.ticketmaster.com/event/0800557EE65062A1'
-  // },
-  // {
-  //   key: '7',
-  //   date: '02.16.2019',
-  //   venue: 'The Riviera Theatre',
-  //   area: 'Chicago, IL',
-  //   country: 'USA',
-  //   purchase: 'https://www.ticketfly.com/purchase/event/1797766?utm_medium=bks'
-  // },
-  // {
-  //   key: '8',
-  //   date: '02.18.2019',
-  //   venue: 'Coco Cola Roxy Theatre',
-  //   area: 'Atlanta, GA',
-  //   country: 'USA',
-  //   purchase: 'https://www.ticketmaster.com/event/0E00557DBB412702'
-  // },
-  // {
-  //   key: '9',
-  //   date: '02.19.2019',
-  //   venue: 'The Fillmore Charlotte',
-  //   area: 'Charlotte, NC',
-  //   country: 'USA',
-  //   purchase: 'http://www.ticketmaster.com/event/2D00557E91AE2695'
-  // },
-  // {
-  //   key: '10',
-  //   date: '02.20.2019',
-  //   venue: 'MGM National Harbor',
-  //   area: 'Washington, DC',
-  //   country: 'USA',
-  //   purchase: 'https://www.ticketmaster.com/event/1500557EE4F25429'
-  // },
-  // {
-  //   key: '11',
-  //   date: '02.22.2019',
-  //   venue: 'Hammerstein Ballroom',
-  //   area: 'New York, NY',
-  //   country: 'USA',
-  //   purchase: 'https://www.ticketmaster.com/event/0000557E0E66A426'
-  // },
-  // {
-  //   key: '12',
-  //   date: '02.23.2019',
-  //   venue: 'Orpheum Theatre',
-  //   area: 'Boston, MA',
-  //   country: 'USA',
-  //   purchase: 'https://www.ticketmaster.com/event/0100557EECBB911F'
-  // },
-  // {
-  //   key: '13',
-  //   date: '02.24.2019',
-  //   venue: 'The Fillmore',
-  //   area: 'Philadelphia, PA',
-  //   country: 'USA',
-  //   purchase: 'https://www.ticketmaster.com/event/0200557E0838AB59'
-  // },
-  // {
-  //   key: '14',
-  //   date: '02.26.2019',
-  //   venue: 'The Rebel',
-  //   area: 'Toranto, ON',
-  //   country: 'USA',
-  //   purchase: 'https://www.ticketmaster.ca/event/1000557EC682310A'
-  // },
-  // {
-  //   key: '15',
-  //   date: '02.26.2019',
-  //   venue: 'The Rebel',
-  //   area: 'Toranto, ON',
-  //   country: 'USA',
-  //   purchase: 'https://www.ticketmaster.ca/event/1000557EC682310A'
-  // },
+  {
+    key: '4',
+    date: '02.11.2019',
+    venue: 'The Masonic',
+    area: 'SAN FRANSISCO, CA',
+    country: 'USA',
+    purchase: 'https://www.ticketmaster.com/event/1C00557DE67597E5'
+  },
+  {
+    key: '5',
+    date: '02.13.2019',
+    venue: 'The Fillmore',
+    area: 'Denver, CO',
+    country: 'USA',
+    purchase: 'https://www.ticketmaster.com/event/1E00557EE12F2C08'
+  },
+  {
+    key: '6',
+    date: '02.15.2019',
+    venue: 'The Fillmore',
+    area: 'Detroit, MI',
+    country: 'USA',
+    purchase: 'https://www.ticketmaster.com/event/0800557EE65062A1'
+  },
+  {
+    key: '7',
+    date: '02.16.2019',
+    venue: 'The Riviera Theatre',
+    area: 'Chicago, IL',
+    country: 'USA',
+    purchase: 'https://www.ticketfly.com/purchase/event/1797766?utm_medium=bks'
+  },
+  {
+    key: '8',
+    date: '02.18.2019',
+    venue: 'Coco Cola Roxy Theatre',
+    area: 'Atlanta, GA',
+    country: 'USA',
+    purchase: 'https://www.ticketmaster.com/event/0E00557DBB412702'
+  },
+  {
+    key: '9',
+    date: '02.19.2019',
+    venue: 'The Fillmore Charlotte',
+    area: 'Charlotte, NC',
+    country: 'USA',
+    purchase: 'http://www.ticketmaster.com/event/2D00557E91AE2695'
+  },
+  {
+    key: '10',
+    date: '02.20.2019',
+    venue: 'MGM National Harbor',
+    area: 'Washington, DC',
+    country: 'USA',
+    purchase: 'https://www.ticketmaster.com/event/1500557EE4F25429'
+  },
+  {
+    key: '11',
+    date: '02.22.2019',
+    venue: 'Hammerstein Ballroom',
+    area: 'New York, NY',
+    country: 'USA',
+    purchase: 'https://www.ticketmaster.com/event/0000557E0E66A426'
+  },
+  {
+    key: '12',
+    date: '02.23.2019',
+    venue: 'Orpheum Theatre',
+    area: 'Boston, MA',
+    country: 'USA',
+    purchase: 'https://www.ticketmaster.com/event/0100557EECBB911F'
+  },
+  {
+    key: '13',
+    date: '02.24.2019',
+    venue: 'The Fillmore',
+    area: 'Philadelphia, PA',
+    country: 'USA',
+    purchase: 'https://www.ticketmaster.com/event/0200557E0838AB59'
+  },
+  {
+    key: '14',
+    date: '02.26.2019',
+    venue: 'The Rebel',
+    area: 'Toranto, ON',
+    country: 'USA',
+    purchase: 'https://www.ticketmaster.ca/event/1000557EC682310A'
+  },
+  {
+    key: '15',
+    date: '02.26.2019',
+    venue: 'The Rebel',
+    area: 'Toranto, ON',
+    country: 'USA',
+    purchase: 'https://www.ticketmaster.ca/event/1000557EC682310A'
+  },
   {
     key: '16',
     date: '03.04.2019',
