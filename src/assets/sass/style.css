@@ -716,7 +716,7 @@ nav {
       line-height: 60px;
       margin: 0;
       padding: 0;
-      background: linear-gradient(#f7efe4, transparent); }
+      background: #f7efe4; }
     #splash #logoMarks {
       display: block;
       position: relative;
