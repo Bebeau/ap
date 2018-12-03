@@ -425,6 +425,7 @@
 		text-align: center;
 		input {
 			margin-bottom: 10px;
+			border-radius: 0;
 		}
 		.showMobile {
 			color: white;
@@ -439,7 +440,7 @@
 				margin: 0;
 				padding: 0;
 				display: inline-block;
-				opacity: 0.35;
+				opacity: 1;
 				img {
 					width: 100%;
 					vertical-align: middle;

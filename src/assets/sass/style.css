@@ -782,7 +782,8 @@ nav {
     width: 100%;
     text-align: center; }
     .emailForm input {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      border-radius: 0; }
     .emailForm .showMobile {
       color: white;
       text-transform: uppercase;
@@ -796,7 +797,7 @@ nav {
         margin: 0;
         padding: 0;
         display: inline-block;
-        opacity: 0.35; }
+        opacity: 1; }
         .emailForm .showMobile a img {
           width: 100%;
           vertical-align: middle; } }
