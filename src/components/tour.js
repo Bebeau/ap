@@ -127,23 +127,23 @@ const shows = [
     venue: 'Spectrum',
     area: 'Oslo',
     country: 'Norway',
-    purchase: 'https://www.livenation.no/artist/anderson-paak-and-the-free-nationals-tickets'
+    purchase: 'https://www.livenation.no/show/1241850/anderson-paak-and-the-free-nationals-andy-s-beach-club-world-tour/Oslo/2019-03-04/no'
   },
-  {
-    key: '17',
-    date: '03.05.2019',
-    venue: 'Annexet',
-    area: 'Stockholm',
-    country: 'Sweden',
-    purchase: 'https://www.livenation.se/artist/anderson-paak-and-the-free-nationals-tickets'
-  },
+  // {
+  //   key: '17',
+  //   date: '03.05.2019',
+  //   venue: 'Annexet',
+  //   area: 'Stockholm',
+  //   country: 'Sweden',
+  //   purchase: ''
+  // },
   {
     key: '18',
     date: '03.07.2019',
     venue: 'Royal Arena',
     area: 'Copenhagen',
     country: 'Denmark',
-    purchase: 'https://www.livenation.dk/artist/anderson-paak-and-the-free-nationals-tickets'
+    purchase: 'https://www.livenation.dk/show/1241618/anderson-paak-and-the-free-nationals-andy-s-beach-club-world-tour/copenhagen/2019-03-07/dk'
   },
   {
     key: '19',
@@ -151,7 +151,7 @@ const shows = [
     venue: 'AFAS Live',
     area: 'Amsterdam',
     country: 'Holland',
-    purchase: 'https://www.livenation.nl/artist/anderson-paak-and-the-free-nationals-tickets'
+    purchase: 'https://www.livenation.nl/show/1241708/anderson-paak-and-the-free-nationals/amsterdam%20zuidoost/2019-03-09/nl'
   },
   {
     key: '20',
@@ -159,7 +159,7 @@ const shows = [
     venue: 'Lotto Arena',
     area: 'Brussels',
     country: 'Belgium',
-    purchase: 'https://fr.livenation.be/artist/anderson-paak-and-the-free-nationals-tickets'
+    purchase: 'https://fr.livenation.be/show/1237930/anderson-paak-and-the-free-nationals/antwerpen/2019-03-10/fr'
   },
   {
     key: '21',
@@ -167,7 +167,7 @@ const shows = [
     venue: 'Zenith',
     area: 'Paris',
     country: 'France',
-    purchase: 'https://www.livenation.fr/artist/anderson-paak-and-the-free-nationals-tickets'
+    purchase: 'https://www.livenation.fr/show/1241663/anderson-paak-and-the-free-nationals/paris/2019-03-12/fr'
   },
   {
     key: '22',
@@ -175,7 +175,7 @@ const shows = [
     venue: 'Alexandra Palace',
     area: 'London',
     country: 'UK',
-    purchase: 'https://www.livenation.co.uk/artist/anderson-paak-and-the-free-nationals-tickets'
+    purchase: 'https://www.livenation.co.uk/show/1237468/anderson-paak-and-the-free-nationals/london/2019-03-15/en'
   },
   {
     key: '23',
@@ -183,7 +183,7 @@ const shows = [
     venue: 'O2 Victoria Warehouse',
     area: 'Manchester',
     country: 'UK',
-    purchase: 'https://www.livenation.co.uk/artist/anderson-paak-and-the-free-nationals-tickets'
+    purchase: 'https://www.livenation.co.uk/show/1237471/anderson-paak-and-the-free-nationals/manchester/2019-03-16/en'
   },
   {
     key: '24',
@@ -191,7 +191,7 @@ const shows = [
     venue: 'O2 Academy',
     area: 'Glasgow',
     country: 'Scot',
-    purchase: 'https://www.livenation.co.uk/artist/anderson-paak-and-the-free-nationals-tickets'
+    purchase: 'https://www.livenation.co.uk/show/1237718/anderson-paak-and-the-free-nationals/glasgow/2019-03-18/en'
   },
   {
     key: '25',
@@ -207,7 +207,7 @@ const shows = [
     venue: 'Columbiahalle',
     area: 'Berlin',
     country: 'Germany',
-    purchase: 'https://www.livenation.de/artist/anderson-paak-and-the-free-nationals-tickets'
+    purchase: 'https://www.livenation.de/show/1241726/anderson-paak-and-the-free-nationals-andy-s-beach-club-world-tour/berlin/2019-03-22/de'
   },
   {
     key: '27',
@@ -215,7 +215,7 @@ const shows = [
     venue: 'Jahrhunderthalle',
     area: 'Frankfurt',
     country: 'Germany',
-    purchase: 'https://www.livenation.de/artist/anderson-paak-and-the-free-nationals-tickets'
+    purchase: 'https://www.livenation.de/show/1241728/anderson-paak-and-the-free-nationals-andy-s-beach-club-world-tour/frankfurt/2019-03-23/de'
   },
   {
     key: '28',
@@ -223,7 +223,7 @@ const shows = [
     venue: 'Fabrique',
     area: 'Milan',
     country: 'Italy',
-    purchase: 'https://www.livenation.it/artist/anderson-paak-and-the-free-nationals-tickets'
+    purchase: 'https://www.livenation.it/show/1241031/anderson-paak-and-the-free-nationals-andy-s-beach-club-world-tour-/Milano/2019-03-25/it'
   },
   {
     key: '29',
@@ -231,7 +231,7 @@ const shows = [
     venue: 'Tonhalle',
     area: 'Munich',
     country: 'Germany',
-    purchase: 'https://www.livenation.de/artist/anderson-paak-and-the-free-nationals-tickets'
+    purchase: 'https://www.livenation.de/show/1241730/anderson-paak-and-the-free-nationals-andy-s-beach-club-world-tour/münchen/2019-03-26/de'
   },
   {
     key: '30',
@@ -239,7 +239,7 @@ const shows = [
     venue: 'Gasometer',
     area: 'Vienna',
     country: 'Austria',
-    purchase: 'https://www.livenation.de/artist/anderson-paak-and-the-free-nationals-tickets'
+    purchase: 'https://www.livenation.de/show/1241732/anderson-paak-and-the-free-nationals-andy-s-beach-club-world-tour/vienna/2019-03-27/de'
   }
 ]
 
