@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/5.91cec957.jpg"
   },
   {
-    "revision": "83902daf62754981a1b4",
-    "url": "/static/css/main.0f207dae.chunk.css"
+    "revision": "2892939ad998fd3cf3eb",
+    "url": "/static/css/main.984abcf5.chunk.css"
   },
   {
     "revision": "29ccfe38db3e474cc767",
@@ -108,8 +108,8 @@ self.__precacheManifest = [
     "url": "/static/media/4.72bc4c3c.jpg"
   },
   {
-    "revision": "83902daf62754981a1b4",
-    "url": "/static/js/main.83902daf.chunk.js"
+    "revision": "2892939ad998fd3cf3eb",
+    "url": "/static/js/main.2892939a.chunk.js"
   },
   {
     "revision": "cb0349734eb0a0e6d8cd47ff004aae8d",
@@ -204,19 +204,19 @@ self.__precacheManifest = [
     "url": "/static/media/oxnard_intro.1a642c83.webm"
   },
   {
-    "revision": "bfe8d06255a2f68f3d14ba5a4d8024ec",
-    "url": "/static/media/bg.bfe8d062.png"
-  },
-  {
     "revision": "dda29b03ae56d606a83cb68f42a2c660",
     "url": "/static/media/oxnard_albumn.dda29b03.jpg"
+  },
+  {
+    "revision": "bfe8d06255a2f68f3d14ba5a4d8024ec",
+    "url": "/static/media/bg.bfe8d062.png"
   },
   {
     "revision": "c6cbbadaf0df94adcd00b3411be82cd5",
     "url": "/static/media/universe.c6cbbada.otf"
   },
   {
-    "revision": "737034c15a53180c8bbf4a4e9dc8f8b4",
+    "revision": "16e3541fc1d8c6b59cb16f464ecb051b",
     "url": "/index.html"
   }
 ];
