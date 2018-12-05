@@ -628,6 +628,7 @@ nav {
     display: none !important; }
   nav {
     padding-top: 15px;
+    padding-right: 15px;
     background: none; }
     nav.open {
       pointer-events: none; }
@@ -771,7 +772,8 @@ nav {
     position: relative;
     right: auto;
     top: auto;
-    text-align: right; }
+    text-align: right;
+    margin-top: 10px; }
     #social div {
       font-size: 6pt; }
     #social a {

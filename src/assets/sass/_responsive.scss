@@ -218,6 +218,7 @@
 	}
 	nav {
 		padding-top: 15px;
+		padding-right: 15px;
 		background: none;
 		&.open {
 			pointer-events: none;
@@ -406,6 +407,7 @@
 		right: auto;
 		top: auto;
 		text-align: right;
+		margin-top: 10px;
 		div {
 			font-size: 6pt;
 		}
