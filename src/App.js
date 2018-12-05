@@ -163,6 +163,7 @@ class App extends Component {
             <button onClick={this.addActiveClass.bind(this, 'music')} className={this.state.id === 'music' ? 'selected': null}>Music</button>
             <button onClick={this.addActiveClass.bind(this, 'videos')} className={this.state.id === 'videos' ? 'selected': null}>Videos</button>
             <button onClick={this.addActiveClass.bind(this, 'photos')} className={this.state.id === 'photos' ? 'selected': null}>Photos</button>
+            <a href="http://paakhouse.org" target="_blank" rel="noopener noreferrer">House</a>
           </nav>
           <nav className={this.state.active ? 'open showMobile': "showMobile"}>
             <button className="close" onClick={this.showMenu}></button>
@@ -172,6 +173,7 @@ class App extends Component {
               <button onClick={this.addActiveClass.bind(this, 'music')}>Music</button>
               <button onClick={this.addActiveClass.bind(this, 'videos')}>Videos</button>
               <button onClick={this.addActiveClass.bind(this, 'photos')}>Photos</button>
+              <a href="http://paakhouse.org" target="_blank" rel="noopener noreferrer">House</a>
               <article id="social" className="showMobile">
                 <a id="facebook" href="https://www.facebook.com/AndersonPaak" target="_BLANK" rel="noopener noreferrer">
                   <img src={facebook} alt="" />
