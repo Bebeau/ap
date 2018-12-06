@@ -216,7 +216,7 @@ self.__precacheManifest = [
     "url": "/static/media/universe.c6cbbada.otf"
   },
   {
-    "revision": "a1a162684396acf6e2c4ed56ef5b8e1b",
+    "revision": "8789bdd4b04d1b602444b271cd0fc08d",
     "url": "/index.html"
   }
 ];
