@@ -20,7 +20,7 @@ const shows = [
   {
     key: '3',
     date: '01.12.2019',
-    venue: 'Logan Campbell Centre',
+    venue: 'Spark Arena',
     area: 'AUCKLAND',
     country: 'NEW ZEALAND',
     purchase: 'https://www.livenation.co.nz/show/1207362/anderson-paak-and-the-free-nationals/auckland/2019-01-12/en'
@@ -124,7 +124,7 @@ const shows = [
   {
     key: '16',
     date: '03.04.2019',
-    venue: 'Spectrum',
+    venue: 'Spektrum',
     area: 'Oslo',
     country: 'Norway',
     purchase: 'https://www.livenation.no/show/1241850/anderson-paak-and-the-free-nationals-andy-s-beach-club-world-tour/Oslo/2019-03-04/no'
@@ -156,7 +156,7 @@ const shows = [
   {
     key: '20',
     date: '03.10.2019',
-    venue: 'Lotto Arena',
+    venue: 'Antwerp',
     area: 'Brussels',
     country: 'Belgium',
     purchase: 'https://fr.livenation.be/show/1237930/anderson-paak-and-the-free-nationals/antwerpen/2019-03-10/fr'
