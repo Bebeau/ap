@@ -29,7 +29,7 @@ const shows = [
     key: '4',
     date: '02.11.2019',
     venue: 'The Masonic',
-    area: 'SAN FRANSISCO, CA',
+    area: 'SAN FRANCISCO, CA',
     country: 'USA',
     purchase: 'https://www.ticketmaster.com/event/1C00557DE67597E5'
   },
