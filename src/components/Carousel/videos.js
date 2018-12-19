@@ -6,12 +6,12 @@ import './carousel.scss';
 import play from '../../assets/img/SVG/play.svg';
 
 const videos = [
-  // {
-  //   index: '7',
-  //   thumb: 'https://img.youtube.com/vi/FbSU5iNQ_20/maxresdefault.jpg',
-  //   url: 'https://www.youtube.com/embed/FbSU5iNQ_20',
-  //   title: ".Paak House: Los Angeles, CA"
-  // },
+  {
+    index: '7',
+    thumb: 'https://img.youtube.com/vi/FbSU5iNQ_20/maxresdefault.jpg',
+    url: 'https://www.youtube.com/embed/FbSU5iNQ_20',
+    title: ".Paak House: Los Angeles, CA"
+  },
   {
     index: '1',
     thumb: 'https://img.youtube.com/vi/u749Hi0gDVM/maxresdefault.jpg',

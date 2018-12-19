@@ -278,8 +278,8 @@ const shows = [
 class Tour extends Component {
   render() {
     const tours = shows.map(item => {
-      var currentDate = (new Date()).toLocaleDateString('en-US');
-      var tourDate = (new Date(item.date)).toLocaleDateString('en-US');
+      var currentDate = (new Date());
+      var tourDate = (new Date(item.date));
       if(tourDate >= currentDate) {
         return (
           <li className="event" key={item.key}>
