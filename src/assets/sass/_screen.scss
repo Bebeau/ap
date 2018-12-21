@@ -489,41 +489,41 @@ nav {
 						margin: 0;
 						paddign: 0;
 					}
-					.date {
-						width: 300px;
-					}
-					.venue {
-						width: 250px;
-						font-style: oblique;
-						font-weight: lighter;
-					}
-					.location {
-						width: 200px;
-						text-align: left;
-					}
-					.country {
-						width: 40%;
-						text-align: center;
-					}
-					.buy {
-						vertical-align: middle;
-						width: 100px;
-						background: #EFB123;
-						text-decoration: none;
-						color: black;
-						font-size: 8pt;
-						letter-spacing: 3px;
-						display: inline-block;
-						line-height: 50px;
-						padding: 0 25px;
-						margin: 0;
-						text-align: center;
-						display: table-cell;
+				}
+				.date {
+					width: 300px;
+				}
+				.venue {
+					width: 250px;
+					font-style: oblique;
+					font-weight: lighter;
+				}
+				.location {
+					width: 200px;
+					text-align: left;
+				}
+				.country {
+					width: 40%;
+					text-align: center;
+				}
+				.buy {
+					vertical-align: middle;
+					width: 100px;
+					background: #EFB123;
+					text-decoration: none;
+					color: black;
+					font-size: 8pt;
+					letter-spacing: 3px;
+					display: inline-block;
+					line-height: 50px;
+					padding: 0 25px;
+					margin: 0;
+					text-align: center;
+					display: table-cell;
+					transition: all 0.3s ease-in-out;
+					&:hover {
+						background: lighten(#EFB123, 10%);
 						transition: all 0.3s ease-in-out;
-						&:hover {
-							background: lighten(#EFB123, 10%);
-							transition: all 0.3s ease-in-out;
-						}
 					}
 				}
 			}
