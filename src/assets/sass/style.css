@@ -92,7 +92,7 @@ a, button {
       width: 50px;
       height: 100vh;
       z-index: 1;
-      background: linear-gradient(to right, #f1ebdd, transparent); }
+      background: linear-gradient(to right, #f1ebdd, rgba(241, 225, 231, 0)); }
     #splash #videoWrap #video {
       height: 100%; }
   #splash button {
@@ -371,6 +371,10 @@ nav {
     padding: 0 200px 150px;
     width: 100%;
     transform: scale(1);
+    -ms-transform: scale 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch; }
     #modal #music.show {
@@ -405,6 +409,10 @@ nav {
       margin: 0 0 -300px;
       padding: 0;
       transform: scale(0.8);
+      -ms-transform: scale 0.8;
+      -webkit-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -o-transform: scale(0.8);
       transform-origin: top center; }
       #modal #tour ul li {
         color: white;
@@ -417,7 +425,7 @@ nav {
         #modal #tour ul li .wrap {
           display: table-cell;
           box-sizing: border-box;
-          width: 50%;
+          width: 400px;
           margin: 0;
           padding: 0;
           vertical-align: middle; }
@@ -426,36 +434,36 @@ nav {
             white-space: nowrap;
             margin: 0;
             paddign: 0; }
-        #modal #tour ul li .date {
-          width: 200px; }
-        #modal #tour ul li .venue {
-          width: 250px;
-          font-style: oblique;
-          font-weight: lighter; }
-        #modal #tour ul li .location {
-          width: 200px;
-          text-align: left; }
-        #modal #tour ul li .country {
-          width: 40%;
-          text-align: center; }
-        #modal #tour ul li .buy {
-          vertical-align: middle;
-          width: 100px;
-          background: #EFB123;
-          text-decoration: none;
-          color: black;
-          font-size: 8pt;
-          letter-spacing: 3px;
-          display: inline-block;
-          line-height: 50px;
-          padding: 0 25px;
-          margin: 0;
-          text-align: center;
-          display: table-cell;
-          transition: all 0.3s ease-in-out; }
-          #modal #tour ul li .buy:hover {
-            background: #f2c253;
+          #modal #tour ul li .wrap .date {
+            width: 300px; }
+          #modal #tour ul li .wrap .venue {
+            width: 250px;
+            font-style: oblique;
+            font-weight: lighter; }
+          #modal #tour ul li .wrap .location {
+            width: 200px;
+            text-align: left; }
+          #modal #tour ul li .wrap .country {
+            width: 40%;
+            text-align: center; }
+          #modal #tour ul li .wrap .buy {
+            vertical-align: middle;
+            width: 100px;
+            background: #EFB123;
+            text-decoration: none;
+            color: black;
+            font-size: 8pt;
+            letter-spacing: 3px;
+            display: inline-block;
+            line-height: 50px;
+            padding: 0 25px;
+            margin: 0;
+            text-align: center;
+            display: table-cell;
             transition: all 0.3s ease-in-out; }
+            #modal #tour ul li .wrap .buy:hover {
+              background: #f2c253;
+              transition: all 0.3s ease-in-out; }
   #modal #photos {
     width: 100%;
     margin: 0 auto;

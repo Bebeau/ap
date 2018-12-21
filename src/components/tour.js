@@ -278,23 +278,21 @@ const shows = [
 class Tour extends Component {
   render() {
     const tours = shows.map(item => {
-      var currentDate = (new Date());
-      var tourDate = (new Date(item.date));
-      if(tourDate >= currentDate) {
-        return (
-          <li className="event" key={item.key}>
-            <div className="wrap">
-              <span className="date">{item.date}</span>
-              <span className="venue">{item.venue}</span>
-            </div>
-            <div className="wrap">
-              <span className="location">{item.area}</span>
-              <span className="country">{item.country}</span>
-            </div>
-            <a href={item.purchase} target="_BLANK" rel="noopener noreferrer" className="buy">Tickets</a>
-          </li>
-        )
-      };
+      // var currentDate = (new Date());
+      // var tourDate = (new Date(item.date));
+      return (
+        <li className="event" key={item.key}>
+          <div className="wrap">
+            <span className="date">{item.date}</span>
+            <span className="venue">{item.venue}</span>
+          </div>
+          <div className="wrap">
+            <span className="location">{item.area}</span>
+            <span className="country">{item.country}</span>
+          </div>
+          <a href={item.purchase} target="_BLANK" rel="noopener noreferrer" className="buy">Tickets</a>
+        </li>
+      )
     });
     return (
       <ul id="tours">

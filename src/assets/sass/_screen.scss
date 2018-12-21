@@ -100,7 +100,7 @@ a, button {
 			width: 50px;
 			height: 100vh;
 			z-index: 1;
-			background: linear-gradient(to right, #f1ebdd, transparent);
+			background: linear-gradient(to right, #f1ebdd, rgba(241,225,231,0));
 		}
 		#video {
 			height: 100%;
@@ -419,6 +419,10 @@ nav {
 		padding: 0 200px 150px;
 		width: 100%;
 		transform: scale(1);
+		-ms-transform: scale (1);
+		-webkit-transform:scale(1);
+		-moz-transform: scale(1);
+		-o-transform: scale(1);
 		overflow-y: scroll;
   		-webkit-overflow-scrolling: touch;
 		&.show {
@@ -459,6 +463,10 @@ nav {
 			margin: 0 0 -300px;
 			padding: 0;
 			transform: scale(0.8);
+			-ms-transform: scale (0.8);
+			-webkit-transform:scale(0.8);
+			-moz-transform: scale(0.8);
+			-o-transform: scale(0.8);
 			transform-origin: top center;
 			li {
 				color: white;
@@ -471,7 +479,7 @@ nav {
 				.wrap {
 					display: table-cell;
 					box-sizing: border-box;
-					width: 50%;
+					width: 400px;
 					margin: 0;
 					padding: 0;
 					vertical-align: middle;
@@ -481,41 +489,41 @@ nav {
 						margin: 0;
 						paddign: 0;
 					}
-				}
-				.date {
-					width: 200px;
-				}
-				.venue {
-					width: 250px;
-					font-style: oblique;
-					font-weight: lighter;
-				}
-				.location {
-					width: 200px;
-					text-align: left;
-				}
-				.country {
-					width: 40%;
-					text-align: center;
-				}
-				.buy {
-					vertical-align: middle;
-					width: 100px;
-					background: #EFB123;
-					text-decoration: none;
-					color: black;
-					font-size: 8pt;
-					letter-spacing: 3px;
-					display: inline-block;
-					line-height: 50px;
-					padding: 0 25px;
-					margin: 0;
-					text-align: center;
-					display: table-cell;
-					transition: all 0.3s ease-in-out;
-					&:hover {
-						background: lighten(#EFB123, 10%);
+					.date {
+						width: 300px;
+					}
+					.venue {
+						width: 250px;
+						font-style: oblique;
+						font-weight: lighter;
+					}
+					.location {
+						width: 200px;
+						text-align: left;
+					}
+					.country {
+						width: 40%;
+						text-align: center;
+					}
+					.buy {
+						vertical-align: middle;
+						width: 100px;
+						background: #EFB123;
+						text-decoration: none;
+						color: black;
+						font-size: 8pt;
+						letter-spacing: 3px;
+						display: inline-block;
+						line-height: 50px;
+						padding: 0 25px;
+						margin: 0;
+						text-align: center;
+						display: table-cell;
 						transition: all 0.3s ease-in-out;
+						&:hover {
+							background: lighten(#EFB123, 10%);
+							transition: all 0.3s ease-in-out;
+						}
 					}
 				}
 			}
