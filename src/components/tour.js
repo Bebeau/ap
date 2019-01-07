@@ -231,7 +231,7 @@ const shows = [
     venue: 'Olympia Theatre',
     area: 'Dublin',
     country: 'IRE',
-    purchase: 'https://www.ticketmaster.ie/anderson-paak-the-free-nationals-andys-dublin-03-20-2019/event/18005583F35EB145'
+    purchase: 'https://www.ticketmaster.ie/search?q=paak&datestart=2019-03-20'
   },
   {
     key: '30',

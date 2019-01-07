@@ -12,6 +12,9 @@ import youtube from '../assets/img/SVG/youtube.svg';
 import youtubeMobile from '../assets/img/SVG/youtube_mobile.svg';
 
 class Footer extends Component{
+  getYear() {
+    return new Date().getFullYear();
+  }
     render(){
        return (
           <footer>
@@ -58,7 +61,7 @@ class Footer extends Component{
               </a>
             </article>
             <p id="legal" className="hideMobile">
-            	<span>© 2018 Anderson .Paak</span>
+            	<span>© {this.getYear()} Anderson .Paak</span>
               <span className="sign">Built By <a href="https://instagram.com/beheardla" target="_BLANK" rel="noopener noreferrer"> <img src={heard} alt="@beheardla" /></a></span>
             </p>
           </footer>
