@@ -272,6 +272,22 @@ const shows = [
     area: 'Vienna',
     country: 'Austria',
     purchase: 'https://www.livenation.de/show/1241732/anderson-paak-and-the-free-nationals-andy-s-beach-club-world-tour/vienna/2019-03-27/de'
+  },
+  {
+    key: '35',
+    date: '04.12.2019',
+    venue: 'Coachella',
+    area: 'Indio, CA',
+    country: 'USA',
+    purchase: 'https://www.coachella.com/'
+  },
+  {
+    key: '36',
+    date: '04.19.2019',
+    venue: 'Coachella',
+    area: 'Indio, CA',
+    country: 'USA',
+    purchase: 'https://www.coachella.com/'
   }
 ]
 
