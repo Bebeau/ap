@@ -288,6 +288,14 @@ const shows = [
     area: 'Indio, CA',
     country: 'USA',
     purchase: 'https://www.coachella.com/'
+  },
+  {
+    key: '37',
+    date: '05.25.2019',
+    venue: 'Boston Calling',
+    area: 'Boston, MA',
+    country: 'USA',
+    purchase: 'https://bostoncalling.com'
   }
 ]
 
