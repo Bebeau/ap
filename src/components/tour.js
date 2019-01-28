@@ -1,62 +1,62 @@
 import React, { Component } from 'react';
 
 const shows = [
-  {
-    key: '1',
-    date: '12.29.2018',
-    venue: 'Falls Festival',
-    area: 'Lorne',
-    country: 'AUSTRALIA',
-    purchase: 'https://fallsfestival.com/lorne/tickets/'
-  },
-  {
-    key: '2',
-    date: '12.30.2019',
-    venue: 'Falls Festival',
-    area: 'Marion Bay',
-    country: 'AUSTRALIA',
-    purchase: 'https://fallsfestival.com/marion-bay/tickets/'
-  },
-  {
-    key: '3',
-    date: '12.31.2019',
-    venue: 'Falls Festival',
-    area: 'Byron Bay',
-    country: 'AUSTRALIA',
-    purchase: 'https://fallsfestival.com/byron-bay/tickets/'
-  },
-  {
-    key: '4',
-    date: '01.05.2019',
-    venue: 'Fall Festival',
-    area: 'Fremantle',
-    country: 'Australia',
-    purchase: 'https://fallsfestival.com/fremantle/tickets/'
-  },
-  {
-    key: '5',
-    date: '01.09.2019',
-    venue: 'Horden Pavilion',
-    area: 'SYDNEY, NSW',
-    country: 'AUSTRALIA',
-    purchase: 'https://www.livenation.com.au/show/1207348/anderson-paak-and-the-free-nationals/sydney/2019-01-09/en'
-  },
-  {
-    key: '6',
-    date: '01.10.2019',
-    venue: 'Festival Hall',
-    area: 'MELBOURNE, VIC',
-    country: 'AUSTRALIA',
-    purchase: 'https://www.livenation.com.au/show/1207352/anderson-paak-and-the-free-nationals/melbourne/2019-01-10/en'
-  },
-  {
-    key: '7',
-    date: '01.12.2019',
-    venue: 'Spark Arena',
-    area: 'AUCKLAND',
-    country: 'NEW ZEALAND',
-    purchase: 'https://www.livenation.co.nz/show/1207362/anderson-paak-and-the-free-nationals/auckland/2019-01-12/en'
-  },
+  // {
+  //   key: '1',
+  //   date: '12.29.2018',
+  //   venue: 'Falls Festival',
+  //   area: 'Lorne',
+  //   country: 'AUSTRALIA',
+  //   purchase: 'https://fallsfestival.com/lorne/tickets/'
+  // },
+  // {
+  //   key: '2',
+  //   date: '12.30.2019',
+  //   venue: 'Falls Festival',
+  //   area: 'Marion Bay',
+  //   country: 'AUSTRALIA',
+  //   purchase: 'https://fallsfestival.com/marion-bay/tickets/'
+  // },
+  // {
+  //   key: '3',
+  //   date: '12.31.2019',
+  //   venue: 'Falls Festival',
+  //   area: 'Byron Bay',
+  //   country: 'AUSTRALIA',
+  //   purchase: 'https://fallsfestival.com/byron-bay/tickets/'
+  // },
+  // {
+  //   key: '4',
+  //   date: '01.05.2019',
+  //   venue: 'Fall Festival',
+  //   area: 'Fremantle',
+  //   country: 'Australia',
+  //   purchase: 'https://fallsfestival.com/fremantle/tickets/'
+  // },
+  // {
+  //   key: '5',
+  //   date: '01.09.2019',
+  //   venue: 'Horden Pavilion',
+  //   area: 'SYDNEY, NSW',
+  //   country: 'AUSTRALIA',
+  //   purchase: 'https://www.livenation.com.au/show/1207348/anderson-paak-and-the-free-nationals/sydney/2019-01-09/en'
+  // },
+  // {
+  //   key: '6',
+  //   date: '01.10.2019',
+  //   venue: 'Festival Hall',
+  //   area: 'MELBOURNE, VIC',
+  //   country: 'AUSTRALIA',
+  //   purchase: 'https://www.livenation.com.au/show/1207352/anderson-paak-and-the-free-nationals/melbourne/2019-01-10/en'
+  // },
+  // {
+  //   key: '7',
+  //   date: '01.12.2019',
+  //   venue: 'Spark Arena',
+  //   area: 'AUCKLAND',
+  //   country: 'NEW ZEALAND',
+  //   purchase: 'https://www.livenation.co.nz/show/1207362/anderson-paak-and-the-free-nationals/auckland/2019-01-12/en'
+  // },
   {
     key: '8',
     date: '02.11.2019',
