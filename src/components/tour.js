@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 const shows = [
   {
     key: '1',
-    date: '12.29.2018',
+    date: '12/29/2018',
     venue: 'Falls Festival',
     area: 'Lorne',
     country: 'AUSTRALIA',
@@ -11,7 +11,7 @@ const shows = [
   },
   {
     key: '2',
-    date: '12.30.2018',
+    date: '12/30/2018',
     venue: 'Falls Festival',
     area: 'Marion Bay',
     country: 'AUSTRALIA',
@@ -19,7 +19,7 @@ const shows = [
   },
   {
     key: '3',
-    date: '12.31.2018',
+    date: '12/31/2018',
     venue: 'Falls Festival',
     area: 'Byron Bay',
     country: 'AUSTRALIA',
@@ -27,7 +27,7 @@ const shows = [
   },
   {
     key: '4',
-    date: '01.05.2019',
+    date: '01/05/2019',
     venue: 'Fall Festival',
     area: 'Fremantle',
     country: 'Australia',
@@ -35,7 +35,7 @@ const shows = [
   },
   {
     key: '5',
-    date: '01.09.2019',
+    date: '01/09/2019',
     venue: 'Horden Pavilion',
     area: 'SYDNEY, NSW',
     country: 'AUSTRALIA',
@@ -43,7 +43,7 @@ const shows = [
   },
   {
     key: '6',
-    date: '01.10.2019',
+    date: '01/10/2019',
     venue: 'Festival Hall',
     area: 'MELBOURNE, VIC',
     country: 'AUSTRALIA',
@@ -51,7 +51,7 @@ const shows = [
   },
   {
     key: '7',
-    date: '01.12.2019',
+    date: '01/12/2019',
     venue: 'Spark Arena',
     area: 'AUCKLAND',
     country: 'NEW ZEALAND',
@@ -59,7 +59,7 @@ const shows = [
   },
   {
     key: '8',
-    date: '02.11.2019',
+    date: '02/11/2019',
     venue: 'The Masonic',
     area: 'SAN FRANCISCO, CA',
     country: 'USA',
@@ -67,7 +67,7 @@ const shows = [
   },
   {
     key: '9',
-    date: '02.13.2019',
+    date: '02/13/2019',
     venue: 'The Fillmore',
     area: 'Denver, CO',
     country: 'USA',
@@ -75,7 +75,7 @@ const shows = [
   },
   {
     key: '10',
-    date: '02.15.2019',
+    date: '02/15/2019',
     venue: 'The Fillmore',
     area: 'Detroit, MI',
     country: 'USA',
@@ -83,7 +83,7 @@ const shows = [
   },
   {
     key: '11',
-    date: '02.16.2019',
+    date: '02/16/2019',
     venue: 'The Riviera Theatre',
     area: 'Chicago, IL',
     country: 'USA',
@@ -91,7 +91,7 @@ const shows = [
   },
   {
     key: '12',
-    date: '02.18.2019',
+    date: '02/18/2019',
     venue: 'Coco Cola Roxy Theatre',
     area: 'Atlanta, GA',
     country: 'USA',
@@ -99,7 +99,7 @@ const shows = [
   },
   {
     key: '13',
-    date: '02.19.2019',
+    date: '02/19/2019',
     venue: 'The Fillmore Charlotte',
     area: 'Charlotte, NC',
     country: 'USA',
@@ -107,7 +107,7 @@ const shows = [
   },
   {
     key: '14',
-    date: '02.20.2019',
+    date: '02/20/2019',
     venue: 'MGM National Harbor',
     area: 'Washington, DC',
     country: 'USA',
@@ -115,7 +115,7 @@ const shows = [
   },
   {
     key: '15',
-    date: '02.22.2019',
+    date: '02/22/2019',
     venue: 'Hammerstein Ballroom',
     area: 'New York, NY',
     country: 'USA',
@@ -123,7 +123,7 @@ const shows = [
   },
   {
     key: '16',
-    date: '02.23.2019',
+    date: '02/23/2019',
     venue: 'Orpheum Theatre',
     area: 'Boston, MA',
     country: 'USA',
@@ -131,7 +131,7 @@ const shows = [
   },
   {
     key: '17',
-    date: '02.24.2019',
+    date: '02/24/2019',
     venue: 'The Fillmore',
     area: 'Philadelphia, PA',
     country: 'USA',
@@ -139,7 +139,7 @@ const shows = [
   },
   {
     key: '18',
-    date: '02.26.2019',
+    date: '02/26/2019',
     venue: 'The Rebel',
     area: 'Toronto, ON',
     country: 'Canada',
@@ -147,7 +147,7 @@ const shows = [
   },
   {
     key: '19',
-    date: '03.04.2019',
+    date: '03/04/2019',
     venue: 'Spektrum',
     area: 'Oslo',
     country: 'Norway',
@@ -155,7 +155,7 @@ const shows = [
   },
   {
     key: '20',
-    date: '03.05.2019',
+    date: '03/05/2019',
     venue: 'Annexet',
     area: 'Sweden',
     country: 'Stockholm',
@@ -163,7 +163,7 @@ const shows = [
   },
   {
     key: '21',
-    date: '03.07.2019',
+    date: '03/07/2019',
     venue: 'Royal Arena',
     area: 'Copenhagen',
     country: 'Denmark',
@@ -171,7 +171,7 @@ const shows = [
   },
   {
     key: '22',
-    date: '03.09.2019',
+    date: '03/09/2019',
     venue: 'AFAS Live',
     area: 'Amsterdam',
     country: 'Holland',
@@ -179,7 +179,7 @@ const shows = [
   },
   {
     key: '23',
-    date: '03.10.2019',
+    date: '03/10/2019',
     venue: 'Antwerp',
     area: 'Brussels',
     country: 'Belgium',
@@ -187,7 +187,7 @@ const shows = [
   },
   {
     key: '24',
-    date: '03.12.2019',
+    date: '03/12/2019',
     venue: 'Zenith',
     area: 'Paris',
     country: 'France',
@@ -195,7 +195,7 @@ const shows = [
   },
   {
     key: '25',
-    date: '03.15.2019',
+    date: '03/15/2019',
     venue: 'Alexandra Palace',
     area: 'London',
     country: 'UK',
@@ -203,7 +203,7 @@ const shows = [
   },
   {
     key: '26',
-    date: '03.16.2019',
+    date: '03/16/2019',
     venue: 'O2 Victoria Warehouse',
     area: 'Manchester',
     country: 'UK',
@@ -211,7 +211,7 @@ const shows = [
   },
   {
     key: '27',
-    date: '03.18.2019',
+    date: '03/18/2019',
     venue: 'O2 Academy',
     area: 'Glasgow',
     country: 'Scot',
@@ -219,7 +219,7 @@ const shows = [
   },
   {
     key: '28',
-    date: '03.19.2019',
+    date: '03/19/2019',
     venue: 'Olympia Theatre',
     area: 'Dublin',
     country: 'IRE',
@@ -227,7 +227,7 @@ const shows = [
   },
   {
     key: '29',
-    date: '03.20.2019',
+    date: '03/20/2019',
     venue: 'Olympia Theatre',
     area: 'Dublin',
     country: 'IRE',
@@ -235,7 +235,7 @@ const shows = [
   },
   {
     key: '30',
-    date: '03.22.2019',
+    date: '03/22/2019',
     venue: 'Columbiahalle',
     area: 'Berlin',
     country: 'Germany',
@@ -243,7 +243,7 @@ const shows = [
   },
   {
     key: '31',
-    date: '03.23.2019',
+    date: '03/23/2019',
     venue: 'Jahrhunderthalle',
     area: 'Frankfurt',
     country: 'Germany',
@@ -251,7 +251,7 @@ const shows = [
   },
   {
     key: '32',
-    date: '03.25.2019',
+    date: '03/25/2019',
     venue: 'Fabrique',
     area: 'Milan',
     country: 'Italy',
@@ -259,7 +259,7 @@ const shows = [
   },
   {
     key: '33',
-    date: '03.26.2019',
+    date: '03/26/2019',
     venue: 'Tonhalle',
     area: 'Munich',
     country: 'Germany',
@@ -267,7 +267,7 @@ const shows = [
   },
   {
     key: '34',
-    date: '03.27.2019',
+    date: '03/27/2019',
     venue: 'Gasometer',
     area: 'Vienna',
     country: 'Austria',
@@ -275,7 +275,7 @@ const shows = [
   },
   {
     key: '35',
-    date: '04.12.2019',
+    date: '04/12/2019',
     venue: 'Coachella',
     area: 'Indio, CA',
     country: 'USA',
@@ -283,11 +283,27 @@ const shows = [
   },
   {
     key: '36',
-    date: '04.19.2019',
+    date: '04/19/2019',
     venue: 'Coachella',
     area: 'Indio, CA',
     country: 'USA',
     purchase: 'https://www.coachella.com/'
+  },
+  {
+    key: '37',
+    date: '08/24/2019',
+    venue: 'Reading Festival',
+    area: 'Reading',
+    country: 'UK',
+    purchase: 'https://www.readingfestival.com/tickets'
+  },
+  {
+    key: '38',
+    date: '08/24/2019',
+    venue: 'Leeds Festival',
+    area: 'Wetherby',
+    country: 'UK',
+    purchase: 'https://www.readingfestival.com/tickets'
   }
 ]
 
@@ -296,11 +312,13 @@ class Tour extends Component {
     const tours = shows.map(item => {
       var currentDate = (new Date().toDateString());
       var tourDate = (new Date(item.date).toDateString());
+      var displayDate = (item.date).replace(/\//g, ".");
+      console.log(displayDate);
       if(new Date(tourDate) >= new Date(currentDate)) {
         return (
           <li className="event" key={item.key}>
             <div className="wrap">
-              <span className="date">{item.date}</span>
+              <span className="date">{displayDate}</span>
               <span className="venue">{item.venue}</span>
             </div>
             <div className="wrap">
