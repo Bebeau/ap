@@ -290,6 +290,30 @@ const shows = [
     purchase: 'https://www.coachella.com/'
   },
   {
+    key: '39',
+    date: '5/11/2019',
+    venue: 'FORM: Arcosanti',
+    area: 'Mayer, AZ',
+    country: 'USA',
+    purchase: 'https://experienceform.com'
+  },
+  {
+    key: '40',
+    date: '5/25/2019',
+    venue: 'Boston Calling',
+    area: 'Boston, MA',
+    country: 'USA',
+    purchase: 'https://bostoncalling.com/tickets/'
+  },
+  {
+    key: '41',
+    date: '7/13/19',
+    venue: 'Forecastle Festival',
+    area: 'Louisville, KY',
+    country: 'USA',
+    purchase: 'https://forecastlefest.com/tickets/'
+  },
+  {
     key: '37',
     date: '08/24/2019',
     venue: 'Reading Festival',
@@ -313,7 +337,6 @@ class Tour extends Component {
       var currentDate = (new Date().toDateString());
       var tourDate = (new Date(item.date).toDateString());
       var displayDate = (item.date).replace(/\//g, ".");
-      console.log(displayDate);
       if(new Date(tourDate) >= new Date(currentDate)) {
         return (
           <li className="event" key={item.key}>
