@@ -406,7 +406,7 @@ nav {
     -webkit-overflow-scrolling: touch; }
     #modal #tour ul {
       list-style: none;
-      margin: 0 0 -300px;
+      margin: 0 0 -600px;
       padding: 0;
       transform: scale(0.8);
       -ms-transform: scale 0.8;
@@ -425,27 +425,27 @@ nav {
         #modal #tour ul li .wrap {
           display: table-cell;
           box-sizing: border-box;
-          width: 400px;
           margin: 0;
           padding: 0;
           vertical-align: middle; }
+          #modal #tour ul li .wrap.first {
+            width: 400px; }
+          #modal #tour ul li .wrap.second {
+            width: 250px; }
           #modal #tour ul li .wrap span {
             display: inline-block;
-            white-space: nowrap;
-            margin: 0;
-            paddign: 0; }
+            white-space: normal;
+            margin: 0; }
         #modal #tour ul li .date {
           width: 300px; }
-        #modal #tour ul li .venue {
-          width: 250px;
-          font-style: oblique;
-          font-weight: lighter; }
-        #modal #tour ul li .location {
-          width: 200px;
-          text-align: left; }
+        #modal #tour ul li .venue,
         #modal #tour ul li .country {
-          width: 40%;
-          text-align: center; }
+          width: 100%;
+          font-style: oblique;
+          font-weight: lighter;
+          padding-right: 25px;
+          box-sizing: border-box;
+          text-align: left; }
         #modal #tour ul li .buy {
           vertical-align: middle;
           width: 100px;
@@ -464,6 +464,8 @@ nav {
           #modal #tour ul li .buy:hover {
             background: #f2c253;
             transition: all 0.3s ease-in-out; }
+          #modal #tour ul li .buy.vip {
+            border-left: 3px solid black; }
   #modal #photos {
     width: 100%;
     margin: 0 auto;
@@ -503,7 +505,8 @@ nav {
       justify-content: flex-start; }
     #modal #tour ul {
       width: auto;
-      padding-bottom: 150px; }
+      padding-bottom: 150px;
+      margin: 0 0 -2000px; }
       #modal #tour ul li {
         width: 300px;
         margin: 25px auto; }
@@ -512,6 +515,8 @@ nav {
           display: block;
           font-size: 10pt;
           margin: 10px 0; }
+          #modal #tour ul li .wrap.first {
+            width: auto; }
           #modal #tour ul li .wrap span.venue, #modal #tour ul li .wrap span.date, #modal #tour ul li .wrap span.location, #modal #tour ul li .wrap span.continent {
             width: auto; }
           #modal #tour ul li .wrap span.date {
@@ -525,9 +530,12 @@ nav {
             padding: 0 5px; }
         #modal #tour ul li .buy {
           width: 100%;
-          display: block;
+          display: inline-block;
           margin: 0 auto;
-          padding: 0; } }
+          padding: 0; }
+          #modal #tour ul li .buy.vip {
+            border: none;
+            margin-top: 10px; } }
 
 @media (max-width: 1024px) and (max-height: 1366px) {
   #splash {

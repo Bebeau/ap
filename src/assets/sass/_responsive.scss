@@ -25,6 +25,7 @@
 			ul {
 				width: auto;
 				padding-bottom: 150px;
+				margin: 0 0 -2000px;
 				li {
 					width: 300px;
 					margin: 25px auto;
@@ -33,6 +34,9 @@
 						display: block;
 						font-size: 10pt;
 						margin: 10px 0;
+						&.first {
+							width: auto;
+						}
 						span {
 							&.venue,
 							&.date,
@@ -59,9 +63,13 @@
 					}
 					.buy {
 						width: 100%;
-						display: block;
+						display: inline-block;
 						margin: 0 auto;
 						padding: 0;
+						&.vip {
+							border: none;
+							margin-top: 10px;
+						}
 					}
 				}
 			}
