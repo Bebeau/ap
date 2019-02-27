@@ -485,15 +485,15 @@ const shows = [
     purchase: 'https://www.laneone.com/tours/anderson-paak/andersonpaak?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite',
     vip: 'https://www.laneone.com/events/anderson-paak/e/RV8KVN82?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
-  {
-    key: '59',
-    date: '06/26/2019',
-    venue: 'Cal Coast Credit Union Open Air Theatre',
-    area: 'San Diego, CA',
-    country: 'USA',
-    purchase: 'https://www.laneone.com/tours/anderson-paak/andersonpaak?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite',
-    vip: 'https://www.laneone.com/events/anderson-paak/e/R49PZS6K?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
-  },
+  // {
+  //   key: '59',
+  //   date: '06/26/2019',
+  //   venue: 'Cal Coast Credit Union Open Air Theatre',
+  //   area: 'San Diego, CA',
+  //   country: 'USA',
+  //   purchase: 'https://www.laneone.com/tours/anderson-paak/andersonpaak?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite',
+  //   vip: 'https://www.laneone.com/events/anderson-paak/e/R49PZS6K?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
+  // },
   {
     key: '60',
     date: '06/27/2019',
@@ -503,15 +503,15 @@ const shows = [
     purchase: 'https://www.laneone.com/tours/anderson-paak/andersonpaak?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite',
     vip: 'https://www.laneone.com/events/anderson-paak/e/222ML9PK?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
-  {
-    key: '61',
-    date: '06/29/2019',
-    venue: 'The Forum',
-    area: 'Los Angeles, CA',
-    country: 'USA',
-    purchase: 'https://www.laneone.com/tours/anderson-paak/andersonpaak?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite',
-    vip: 'https://www.laneone.com/events/anderson-paak/e/BF6DGDF3?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
-  },
+  // {
+  //   key: '61',
+  //   date: '06/29/2019',
+  //   venue: 'The Forum',
+  //   area: 'Los Angeles, CA',
+  //   country: 'USA',
+  //   purchase: 'https://www.laneone.com/tours/anderson-paak/andersonpaak?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite',
+  //   vip: 'https://www.laneone.com/events/anderson-paak/e/BF6DGDF3?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
+  // },
   {
     key: '62',
     date: '7/13/19',
