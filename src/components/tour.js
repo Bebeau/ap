@@ -311,7 +311,7 @@ const shows = [
     venue: 'Ascend Amphitheater',
     area: 'Nashville, TN',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/1B00565B59B613BB',
     vip: 'https://www.laneone.com/events/anderson-paak/e/4FC7H688?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -320,7 +320,7 @@ const shows = [
     venue: 'Jacobs Pavilion at Nautica',
     area: 'Cleveland, OH',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/0500565A16E2A03E',
     vip: 'https://www.laneone.com/events/anderson-paak/e/8DV9VFNB?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -329,7 +329,7 @@ const shows = [
     venue: 'The Met',
     area: 'Philadelphia, PA',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/02005656299CF229',
     vip: 'https://www.laneone.com/events/anderson-paak/e/8RRS6W6F?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -338,7 +338,7 @@ const shows = [
     venue: 'Mohegan Sun Arena',
     area: 'Uncasville, CT',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/1D00565AF4134350',
     vip: 'https://www.laneone.com/events/anderson-paak/e/FKR97K6F?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -347,7 +347,7 @@ const shows = [
     venue: 'The Pavilion at Rock Row',
     area: 'Westbrook, ME',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/0100565AB5F56086',
     vip: 'https://www.laneone.com/events/anderson-paak/e/LK77T7SD?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -356,7 +356,7 @@ const shows = [
     venue: 'MECU Pavilion',
     area: 'Baltimore, MD',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/1500565BA9D626DD',
     vip: 'https://www.laneone.com/events/anderson-paak/e/NWJTCPM3?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -365,7 +365,7 @@ const shows = [
     venue: 'Madison Square Garden',
     area: 'New York, NY',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/3B005659D6172B63',
     vip: 'https://www.laneone.com/events/anderson-paak/e/HGWJ7W9T?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -374,7 +374,7 @@ const shows = [
     venue: 'RBC Echo Beach',
     area: 'Toronto, ON',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.ca/event/1000565AA0411BCB',
     vip: 'https://www.laneone.com/events/anderson-paak/e/SHVSPTKQ?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -383,7 +383,7 @@ const shows = [
     venue: 'Meadow Brook Amphitheatre',
     area: 'Detroit, MI',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/0800565A1A4695BD',
     vip: 'https://www.laneone.com/events/anderson-paak/e/MLKFJ9HH?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -392,7 +392,7 @@ const shows = [
     venue: 'Huntington Bank Pavilion at Northerly Island',
     area: 'Chicago, IL',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/0400565A95191A8A',
     vip: 'https://www.laneone.com/events/anderson-paak/e/337M8N2F?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -401,7 +401,7 @@ const shows = [
     venue: 'Red Hat Amp',
     area: 'Raleigh, NC',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/2D00565AD1B66FE5',
     vip: 'https://www.laneone.com/events/anderson-paak/e/KDHJTN74?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -410,7 +410,7 @@ const shows = [
     venue: 'State Bank Amphitheater at Chastain Park',
     area: 'Atlanta, GA',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/0E00565AB9D04511',
     vip: 'https://www.laneone.com/events/anderson-paak/e/72JH9ZQQ?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -419,7 +419,7 @@ const shows = [
     venue: 'Bold Sphere Music at Champions Square',
     area: 'New Orleans, LA',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/1B00565A2FFBBE04',
     vip: 'https://www.laneone.com/events/anderson-paak/e/27N8VPSH?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -428,7 +428,7 @@ const shows = [
     venue: 'Revention Music Center',
     area: 'Houston, TX',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/3A00565ADC4853A3',
     vip: 'https://www.laneone.com/events/anderson-paak/e/4TMQFW83?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -437,7 +437,7 @@ const shows = [
     venue: 'Toyota Music Factory',
     area: 'Dallas, TX',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/0C00565A45919173',
     vip: 'https://www.laneone.com/events/anderson-paak/e/9RNSV4K4?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -446,7 +446,7 @@ const shows = [
     venue: 'Red Rocks Amphitheater',
     area: 'Denver, CO',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'http://axs.com/events/371011/anderson-paak-the-free-nationals-tickets?skin=redrocks',
     vip: 'https://www.laneone.com/events/anderson-paak/e/SQZNWKBP?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -455,7 +455,7 @@ const shows = [
     venue: 'The Pearl',
     area: 'Las Vegas, NV',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/17005659A86E2791',
     vip: 'https://www.laneone.com/events/anderson-paak/e/T3TC388B?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -464,7 +464,7 @@ const shows = [
     venue: 'PNE Forum',
     area: 'Vancouver, BC',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://ticketleader.ca/events/anderson-paak',
     vip: 'https://www.laneone.com/events/anderson-paak/e/NS6Z9FZQ?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -473,7 +473,7 @@ const shows = [
     venue: 'WaMu Theater @ CenturyLink Field',
     area: 'Seattle, WA',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/0F00565A86571CC3',
     vip: 'https://www.laneone.com/events/anderson-paak/e/77L84826?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
@@ -482,7 +482,7 @@ const shows = [
     venue: 'McMenamins Edgefield',
     area: 'Portland, OR',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.etix.com/ticket/p/6952173/anderson-paak-best-teef-in-the-game-tour-with-special-guest-thundercat-troutdale-mcmenamins-edgefield-amphitheater?cobrand=edgefieldconcerts',
     vip: 'https://www.laneone.com/events/anderson-paak/e/RV8KVN82?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   // {
@@ -500,7 +500,7 @@ const shows = [
     venue: 'Bill Graham Civic Center',
     area: 'San Francisco, CA',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/1C00565AACF3460F',
     vip: 'https://www.laneone.com/events/anderson-paak/e/222ML9PK?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   // {
