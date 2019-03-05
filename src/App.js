@@ -15,19 +15,16 @@ import Footer from './layout/footer';
 
 import logoWhite from './assets/img/SVG/logo_white.svg';
 
-import oxnardLogo from './assets/img/oxnard.png';
-import oxnardLP from './assets/img/oxnardLP.png';
-
-import oxnardMobile from './assets/img/oxnard_albumnMobile.jpg';
-
 import Particles from 'react-particles-js';
 
-import aftermath from './assets/img/SVG/aftermath.svg';
-import obe from './assets/img/obe.png';
-import twelveTone from './assets/img/12tone.png';
-
-import introVideoMP4 from './assets/videos/oxnard_intro.mp4';
-import introVideoWEBM from './assets/videos/oxnard_intro.webm';
+// import oxnardLogo from './assets/img/oxnard.png';
+// import oxnardLP from './assets/img/oxnardLP.png';
+// import oxnardMobile from './assets/img/oxnard_albumnMobile.jpg';
+// import aftermath from './assets/img/SVG/aftermath.svg';
+// import obe from './assets/img/obe.png';
+// import twelveTone from './assets/img/12tone.png';
+// import introVideoMP4 from './assets/videos/oxnard_intro.mp4';
+// import introVideoWEBM from './assets/videos/oxnard_intro.webm';
 
 import facebook from './assets/img/SVG/facebook.svg';
 import instagram from './assets/img/SVG/instagram.svg';
@@ -48,14 +45,6 @@ class App extends Component {
     this.addActiveClass = this.addActiveClass.bind(this);
     var pathArray = window.location.pathname.split('/');
     if(
-      pathArray[1] === 'home'
-    ) {
-      this.state = {
-        active: false,
-        fadeIn: true,
-        clicked: true
-      }
-    } else if(
       pathArray[1] === 'tour' ||
       pathArray[1] === 'music' ||
       pathArray[1] === 'videos' ||
@@ -69,9 +58,16 @@ class App extends Component {
       }
     } else {
       this.state = {
-        active: false,
-        clicked: false
+        active: true,
+        fadeIn: true
       }
+      this.timeoutId = setTimeout(function () {
+        this.setState({
+          active: false,
+          clicked: true,
+          id: 'home'
+        });
+      }.bind(this), 800);
     }
   }
   targetElement = null;
@@ -128,31 +124,6 @@ class App extends Component {
     return (
       <div id="App">
         <Header />
-        <section className={this.state.clicked ? 'close': null} id="splash">
-          <button onClick={this.toggleSplash} >Enter Site</button>
-          <article className="half">
-            <img id="bgImage" className="showMobile" src={oxnardMobile} alt="Oxnard" />
-            <img id="title" src={oxnardLogo} alt="Oxnard" />
-            <div id="musicLinks">
-              <p>Album Available Now</p>
-              <a href="https://buy.andersonpaak.com/" target="_BLANK" rel="noopener noreferrer">
-                <img src={oxnardLP} alt="Oxnard Pre-Order" />
-              </a>
-              <p className="merchLink">Shop Now</p>
-            </div>
-          </article>
-          <div id="videoWrap">
-            <video id="video" autoPlay muted preload="auto">
-              <source src={introVideoWEBM} type="video/webm" />
-              <source src={introVideoMP4} type="video/mp4" />
-            </video>
-          </div>
-          <div id="logoMarks">
-            <img id="aftermath" src={aftermath} alt="Aftermath" />
-            <img id="obe" src={obe} alt="OBE" />
-            <img id="twelveTone" src={twelveTone} alt="12 Tone" />
-          </div>
-        </section>
         <div id="container" className={this.state.clicked ? 'in': null}>
           <div id="logo">
             <img src={logoWhite} alt="Anderson Paak" />
