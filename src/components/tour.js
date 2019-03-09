@@ -461,7 +461,7 @@ const shows = [
   {
     key: '56',
     date: '06/19/2019',
-    venue: 'PNE Forum',
+    venue: 'PNE Amphitheatre',
     area: 'Vancouver, BC',
     country: 'USA',
     purchase: 'https://ticketleader.ca/events/anderson-paak',
