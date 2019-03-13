@@ -535,6 +535,14 @@ const shows = [
     area: 'Wetherby',
     country: 'UK',
     purchase: 'https://www.readingfestival.com/tickets'
+  },
+  {
+    key: '65',
+    date: '08/28/2019',
+    venue: 'Dimensions Festival',
+    area: 'Fort Punta Christo, Pula',
+    country: 'Croatia',
+    purchase: 'https://dimensionsfestival.com'
   }
 ]
 
