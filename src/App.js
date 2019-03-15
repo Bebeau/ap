@@ -128,7 +128,7 @@ class App extends Component {
             <img id="title" src={venturaLogo} alt="Ventura" />
             <div id="musicLinks">
               <p className="date">04.12.19</p>
-              <p className="order">Pre-Order Now</p>
+              <p className="order">Pre-Order The Album</p>
               <a id="apple" href="https://itunes.apple.com/album/ventura/1456175798?app=music" target="_blank" rel="noopener noreferrer">
                 <img src={apple} alt="Apple" />
               </a>
@@ -144,6 +144,7 @@ class App extends Component {
               <a id="amazon" href="https://www.amazon.com/gp/product/B07PQNN8XW?tag=smarturl-pivot-20" target="_blank" rel="noopener noreferrer">
                 <img src={amazon} alt="Amazon" />
               </a>
+              <a id="shop" href="https://buy.andersonpaak.com/" target="_blank" rel="noopener noreferrer">Shop<br /><span>Now</span></a>
             </div>
           </article>
           <div id="artwork">
