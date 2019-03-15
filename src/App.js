@@ -13,23 +13,25 @@ import './assets/sass/style.css';
 import Header from './layout/header';
 import Footer from './layout/footer';
 
+import venturaLogo from './assets/img/ventura.png';
+import venturaMobile from './assets/img/ventura_album.png';
+import aftermath from './assets/img/SVG/aftermath.svg';
+import obe from './assets/img/obe.png';
+import twelveTone from './assets/img/12tone.png';
+
 import logoWhite from './assets/img/SVG/logo_white.svg';
-
 import Particles from 'react-particles-js';
-
-// import oxnardLogo from './assets/img/oxnard.png';
-// import oxnardLP from './assets/img/oxnardLP.png';
-// import oxnardMobile from './assets/img/oxnard_albumnMobile.jpg';
-// import aftermath from './assets/img/SVG/aftermath.svg';
-// import obe from './assets/img/obe.png';
-// import twelveTone from './assets/img/12tone.png';
-// import introVideoMP4 from './assets/videos/oxnard_intro.mp4';
-// import introVideoWEBM from './assets/videos/oxnard_intro.webm';
 
 import facebook from './assets/img/SVG/facebook.svg';
 import instagram from './assets/img/SVG/instagram.svg';
 import twitter from './assets/img/SVG/twitter.svg';
 import youtube from './assets/img/SVG/youtube.svg';
+
+import apple from './assets/img/SVG/apple.svg';
+import spotify from './assets/img/SVG/spotify.svg';
+import itunes from './assets/img/SVG/itunes.svg';
+import google from './assets/img/SVG/google.svg';
+import amazon from './assets/img/SVG/amazon.svg';
 
 const advancedMatching = {};
 const options = {
@@ -45,6 +47,14 @@ class App extends Component {
     this.addActiveClass = this.addActiveClass.bind(this);
     var pathArray = window.location.pathname.split('/');
     if(
+      pathArray[1] === 'home'
+    ) {
+      this.state = {
+        active: false,
+        fadeIn: true,
+        clicked: true
+      }
+    } else if(
       pathArray[1] === 'tour' ||
       pathArray[1] === 'music' ||
       pathArray[1] === 'videos' ||
@@ -58,16 +68,9 @@ class App extends Component {
       }
     } else {
       this.state = {
-        active: true,
-        fadeIn: true
+        active: false,
+        clicked: false
       }
-      this.timeoutId = setTimeout(function () {
-        this.setState({
-          active: false,
-          clicked: true,
-          id: 'home'
-        });
-      }.bind(this), 800);
     }
   }
   targetElement = null;
@@ -115,15 +118,43 @@ class App extends Component {
     clearAllBodyScrollLocks();
   }
   render() {
-    // if(this.state.clicked) {
-    //     var fixed = document.getElementById('splash');
-    //     fixed.addEventListener('touchmove', function(e) {
-    //     e.preventDefault();
-    //   }, false);
-    // }
     return (
       <div id="App">
         <Header />
+        <section className={this.state.clicked ? 'close': null} id="splash">
+          <button onClick={this.toggleSplash} >Enter Site</button>
+          <article className="half">
+            <img id="bgImage" className="showMobile" src={venturaMobile} alt="Ventura" />
+            <img id="title" src={venturaLogo} alt="Ventura" />
+            <div id="musicLinks">
+              <p className="date">04.12.19</p>
+              <p className="order">Pre-Order Now</p>
+              <a id="apple" href="https://itunes.apple.com/album/ventura/1456175798?app=music" target="_blank" rel="noopener noreferrer">
+                <img src={apple} alt="Apple" />
+              </a>
+              <a id="spotify" href="https://open.spotify.com/album/4oLEB2ABMfxqC6mchADZp7" target="_blank" rel="noopener noreferrer">
+                <img src={spotify} alt="Spotify" />
+              </a>
+              <a id="itunes" href="https://itunes.apple.com/album/ventura/1456175798?app=itunes" target="_blank" rel="noopener noreferrer">
+                <img src={itunes} alt="iTunes" />
+              </a>
+              <a id="google" href="https://play.google.com/store/music/album?id=Bvutalufsiwjbcu4365hjnz3yzu" target="_blank" rel="noopener noreferrer">
+                <img src={google} alt="Google" />
+              </a>
+              <a id="amazon" href="https://www.amazon.com/gp/product/B07PQNN8XW?tag=smarturl-pivot-20" target="_blank" rel="noopener noreferrer">
+                <img src={amazon} alt="Amazon" />
+              </a>
+            </div>
+          </article>
+          <div id="artwork">
+            <img src={venturaMobile} alt="Ventura" />
+          </div>
+          <div id="logoMarks">
+            <img id="aftermath" src={aftermath} alt="Aftermath" />
+            <img id="obe" src={obe} alt="OBE" />
+            <img id="twelveTone" src={twelveTone} alt="12 Tone" />
+          </div>
+        </section>
         <div id="container" className={this.state.clicked ? 'in': null}>
           <div id="logo">
             <img src={logoWhite} alt="Anderson Paak" />

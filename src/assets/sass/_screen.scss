@@ -59,141 +59,131 @@ a, button {
 		transition: all 1.2s ease-in-out;
 	}
 }
-// #splash {
-// 	position: fixed;
-// 	top: 0;
-// 	left: 0;
-// 	right: 0;
-// 	bottom: 0;
-// 	z-index: 999;
-// 	box-sizing: border-box;
-// 	overflow: hidden;
-// 	background: #f1ebdd;
-// 	&.close {
-// 		transform: translate(0,-100vh);
-// 		transition: all 0.3s ease-in-out;
-// 	}
-// 	.half {
-// 		width: 50%;
-// 		height: 100vh;
-// 		box-sizing: border-box;
-// 		display: flex;
-// 		flex-direction: column;
-// 		align-items: center;
-// 		justify-content: center;
-// 		position: relative;
-// 		z-index: 2;
-// 	}
-// 	#videoWrap {
-// 		position: absolute;
-// 		top: 0;
-// 		right: 0;
-// 		height: 100vh;
-// 		width: auto;
-// 		&:after {
-// 			content: "";
-// 			display: block;
-// 			position: absolute;
-// 			top: 0;
-// 			left: 0;
-// 			bottom: 0;
-// 			width: 50px;
-// 			height: 100vh;
-// 			z-index: 1;
-// 			background: linear-gradient(to right, #f1ebdd, rgba(241,225,231,0));
-// 		}
-// 		#video {
-// 			height: 100%;
-// 		}
-// 	}
-// 	button {
-// 		background: none;
-// 		border: none;
-// 		position: absolute;
-// 		top: 25px;
-// 		right: 25px;
-// 		text-transform: uppercase;
-// 		font-weight: bold;
-// 		font-size: 16px;
-// 		letter-spacing: 5px;
-// 		text-align: center;
-// 		transition: all 0.3s ease-in-out;
-// 		z-index: 999;
-// 		font-weight: bold;
-// 		&:hover {
-// 			cursor: pointer;
-// 			letter-spacing: 5.5px;
-// 			transition: all 0.3s ease-in-out;
-// 		}
-// 	}
-// 	.universe {
-// 		font-family: "Universe", sans-serif;
-// 		text-transform: uppercase;
-// 		font-size: 21pt;
-// 	}
-// 	.cooper {
-// 		font-family: "cooper-black-std", sans-serif;
-// 		text-transform: uppercase;
-// 		font-size: 24pt;
-// 	}
-// 	#intro {
-// 		text-align: left;
-// 		transform: translate(-250px,0);
-// 		display: block;
-// 	}
-// 	#title {
-// 		width: 100%;
-// 		transform: translate(0,-50px);
-// 	}
-// 	#logoMarks {
-// 		position: absolute;
-// 		left: 25px;
-// 		bottom: 25px;
-// 		height: auto;
-// 		z-index: 999;
-// 		width: 200px;
-// 		img {
-// 			width: 45px;
-// 			height: auto;
-// 			display: inline-block;
-// 			vertical-align: middle;
-// 			margin: 0 5px;
-// 		}
-// 	}
-// 	#musicLinks {
-// 		display: block;
-// 		text-align: center;
-// 		transform: translate(0,-35px);
-// 		p {
-// 			text-transform: uppercase;
-// 			letter-spacing: 6px;
-// 			font-weight: bold;
-// 			font-size: 14pt;
-// 			margin: 0;
-// 			&.merchLink {
-// 				font-size: 44pt;
-// 				letter-spacing: 1px;
-// 			}
-// 		}
-// 		a {
-// 			width: 275px;
-// 			display: block;
-// 			margin: 0 auto;
-// 			img {
-// 				width: 100%;
-// 				height: auto;
-// 			}
-// 		}
-// 	}
-// 	.image {
-// 		position: relative;
-// 		z-index: 1;
-// 		video {
-// 			border: none;
-// 			height: auto;
-// 		}
-// 	}
-// }
+#splash {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	box-sizing: border-box;
+	overflow: hidden;
+	background: #faf9ee;
+	&.close {
+		transform: translate(0,-100vh);
+		transition: all 0.3s ease-in-out;
+	}
+	.half {
+		width: 50%;
+		height: 100vh;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		z-index: 2;
+	}
+	#artwork {
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100%;
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		img {
+			max-width: 100%;
+		}
+	}
+	button {
+		background: none;
+		border: none;
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 16px;
+		letter-spacing: 5px;
+		text-align: center;
+		transition: all 0.3s ease-in-out;
+		z-index: 999;
+		font-weight: bold;
+		&:hover {
+			cursor: pointer;
+			letter-spacing: 5.5px;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+	#title {
+		width: 100%;
+		transform: translate(0,-25px);
+	}
+	#logoMarks {
+		position: absolute;
+		left: 25px;
+		bottom: 25px;
+		height: auto;
+		z-index: 999;
+		width: 200px;
+		img {
+			width: 45px;
+			height: auto;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 5px;
+			&#aftermath {
+				width: 30px;
+			}
+		}
+	}
+	#musicLinks {
+		display: block;
+		text-align: center;
+		transform: translate(0,-35px);
+		p {
+			text-transform: uppercase;
+			letter-spacing: 10px;
+			margin: 0;
+			color: #818389;
+			line-height: 60px;
+			&.date {
+				font-weight: bold;
+				font-size: 24pt;
+			}
+			&.order {
+				font-size: 12pt;
+				letter-spacing: 16px;
+				font-weight: lighter;
+			}
+		}
+		a {
+			width: 35px;
+			display: inline-block;
+			margin: 0 auto;
+			padding: 0 10px;
+			vertical-align: middle;
+			&#apple {
+				width: 75px;
+			}
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.image {
+		position: relative;
+		z-index: 1;
+		video {
+			border: none;
+			height: auto;
+		}
+	}
+}
 #logo {
 	position: fixed;
 	left: 0;
@@ -460,7 +450,7 @@ nav {
   		-webkit-overflow-scrolling: touch;
 		ul {
 			list-style: none;
-			margin: 0 0 -600px;
+			margin: 0 0 -400px;
 			padding: 0;
 			transform: scale(0.8);
 			-ms-transform: scale (0.8);
