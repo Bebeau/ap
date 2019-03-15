@@ -89,7 +89,7 @@ a, button {
     #splash #artwork img {
       max-width: 100%; }
   #splash button {
-    background: none;
+    background: #faf9ee;
     border: none;
     position: absolute;
     top: 25px;
