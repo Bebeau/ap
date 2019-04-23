@@ -491,7 +491,7 @@ const shows = [
     venue: 'Cal Coast Credit Union Open Air Theatre',
     area: 'San Diego, CA',
     country: 'USA',
-    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    purchase: 'https://www.ticketmaster.com/event/0A005661EA634155',
     vip: 'https://www.laneone.com/events/anderson-paak/e/R49PZS6K?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
