@@ -400,8 +400,13 @@
 		bottom: 15px;
 		width: 100%;
 		text-align: center;
+		h6 {
+			width: 250px;
+			margin: 0 auto;
+			text-align: left;
+		}
 		form {
-			display: none;
+			display: block;
 		}
 		input {
 			margin-bottom: 10px;
@@ -427,8 +432,10 @@
 				}
 			}
 		}
-		p {
-			margin: 0 0 10px;
+		.msg-alert {
+			p {
+				margin: 0 0 5px;
+			}
 		}
 	}
 }

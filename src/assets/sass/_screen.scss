@@ -329,7 +329,7 @@ nav {
     opacity: 1;
 }
 .emailForm {
-	display: none;
+	display: block;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -337,6 +337,15 @@ nav {
 	padding: 25px;
 	transition: all 1s ease-in-out;
 	-webkit-overflow-scrolling: touch;
+	h6 {
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+		color: white;
+		font-weight: normal;
+		font-size: 9px;
+		letter-spacing: 1px;
+	}
 	input {
 		background: none;
 		border: none;
@@ -346,29 +355,39 @@ nav {
 		transform: translate(0,-1px);
 		color: white;
 		border-radius: 0;
+		font-size: 10pt;
+		font-family: "century-gothic", sans-serif;
 		&:focus {
 			outline: none;
 			background: none;
 		}
 	}
 	button {
-		border: 1px solid white;
-		line-height: 24px;
-		background: #0d0d0d;
-		color: white;
-		width: 125px;
-		text-transform: uppercase;
-		margin: 0 0 0 10px;
-		padding: 0;
-		letter-spacing: 4px;
+		width: auto;
+		background: white;
+		text-decoration: none;
+		color: black;
+		font-size: 8pt;
+		letter-spacing: 1px;
+		line-height: 25px;
+		padding: 0 15px;
+		margin: 0 0 0 7px;
+		transform: translate(0,-1px);
+		border: none;
+		text-align: center;
+		display: table-cell;
+		transition: all 0.3s ease-in-out;
 		&:hover {
-			cursor: pointer;
+			background: #EFB123;
+			transition: all 0.3s ease-in-out;
 		}
 	}
-	p {
-		color: #EFB123 !important;
-		margin-bottom: 0;
-		transition: all 1s ease-in-out;
+	.msg-alert {
+		p {
+			color: #EFB123 !important;
+			margin: 5px 0 0;
+			transition: all 1s ease-in-out;
+		}
 	}
 }
 #modal {

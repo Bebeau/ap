@@ -19,12 +19,13 @@ class Footer extends Component{
        return (
           <footer>
             <div className="emailForm">
+              <h6>Subscribe to Mailing List</h6>
               <Mailchimp
-                action='https://beheard.us15.list-manage.com/subscribe/post?u=2ecae27fc6e77119152da8047&amp;id=c6bf77fa68'
+                action='https://gmail.us20.list-manage.com/subscribe/post?u=ba019c6be008d79b7b06e3f50&amp;id=9866411023'
                 fields={[
                   {
                     name: 'EMAIL',
-                    placeholder: 'Enter Email For Exclusives',
+                    placeholder: 'Email...',
                     type: 'email',
                     required: true
                   }
@@ -36,7 +37,7 @@ class Footer extends Component{
                     error: "Oops, that didn't work.",
                     empty: "Please submit a vaild email address.",
                     duplicate: "This email address has already joined.",
-                    button: "Subscribe"
+                    button: "Submit"
                   }
                 }
               />

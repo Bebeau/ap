@@ -572,6 +572,7 @@ class Tour extends Component {
           </li> 
         )
       }
+      return null;
     });
     return (
       <ul id="tours">
