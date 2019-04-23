@@ -39,6 +39,7 @@ const options = {
     debug: false,
 };
 ReactPixel.init('252805335389609', advancedMatching, options);
+ReactPixel.init('1024129180947932', advancedMatching, options);
 ReactPixel.pageView();
 
 class App extends Component {

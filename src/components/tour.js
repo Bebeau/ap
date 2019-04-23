@@ -485,33 +485,33 @@ const shows = [
     purchase: 'https://www.etix.com/ticket/p/6952173/anderson-paak-best-teef-in-the-game-tour-with-special-guest-thundercat-troutdale-mcmenamins-edgefield-amphitheater?cobrand=edgefieldconcerts',
     vip: 'https://www.laneone.com/events/anderson-paak/e/RV8KVN82?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
-  // {
-  //   key: '59',
-  //   date: '06/26/2019',
-  //   venue: 'Cal Coast Credit Union Open Air Theatre',
-  //   area: 'San Diego, CA',
-  //   country: 'USA',
-  //   purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
-  //   vip: 'https://www.laneone.com/events/anderson-paak/e/R49PZS6K?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
-  // },
+  {
+    key: '59',
+    date: '06/26/2019',
+    venue: 'Cal Coast Credit Union Open Air Theatre',
+    area: 'San Diego, CA',
+    country: 'USA',
+    purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
+    vip: 'https://www.laneone.com/events/anderson-paak/e/R49PZS6K?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
+  },
   {
     key: '60',
     date: '06/27/2019',
     venue: 'Bill Graham Civic Center',
     area: 'San Francisco, CA',
     country: 'USA',
-    purchase: 'https://www.ticketmaster.com/event/1C00565AACF3460F',
+    purchase: 'https://www.ticketmaster.com/event/0A005661EA634155',
     vip: 'https://www.laneone.com/events/anderson-paak/e/222ML9PK?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
-  // {
-  //   key: '61',
-  //   date: '06/29/2019',
-  //   venue: 'The Forum',
-  //   area: 'Los Angeles, CA',
-  //   country: 'USA',
-  //   purchase: 'https://verifiedfan.ticketmaster.com/andersonpaak',
-  //   vip: 'https://www.laneone.com/events/anderson-paak/e/BF6DGDF3?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
-  // },
+  {
+    key: '61',
+    date: '06/29/2019',
+    venue: 'The Forum',
+    area: 'Los Angeles, CA',
+    country: 'USA',
+    purchase: 'https://www.ticketmaster.com/event/0900568FFAAF509C',
+    vip: 'https://www.laneone.com/events/anderson-paak/e/BF6DGDF3?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
+  },
   {
     key: '62',
     date: '7/13/19',
