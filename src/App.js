@@ -176,7 +176,6 @@ class App extends Component {
               <button onClick={this.addActiveClass.bind(this, 'music')}>Music</button>
               <button onClick={this.addActiveClass.bind(this, 'videos')}>Videos</button>
               <button onClick={this.addActiveClass.bind(this, 'photos')}>Photos</button>
-              <a href="http://paakhouse.org" target="_blank" rel="noopener noreferrer">.Paak House</a>
               <article id="social" className="showMobile">
                 <a id="facebook" href="https://www.facebook.com/AndersonPaak" target="_BLANK" rel="noopener noreferrer">
                   <img src={facebook} alt="" />

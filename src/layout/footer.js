@@ -40,7 +40,7 @@ class Footer extends Component{
                   }
                 }
               />
-              <div className="showMobile">© 2018 Anderson .Paak</div>
+              <div className="showMobile">© {this.getYear()} Anderson .Paak</div>
               <div className="showMobile sign">Built By <a href="instagram://user?username=beheardla" target="_BLANK" rel="noopener noreferrer"> <img src={heard} alt="@beheardla" /></a></div>
             </div>
             <article id="social" className="hideMobile">
