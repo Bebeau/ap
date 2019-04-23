@@ -9,6 +9,7 @@ import amazon from '../assets/img/SVG/amazon.svg';
 
 import whoru from '../assets/img/albums/whoru.jpg';
 import oxnard from '../assets/img/albums/oxnard.jpg';
+import ventura from '../assets/img/albums/ventura.jpg';
 import tints from '../assets/img/albums/tints.jpg';
 import malibu from '../assets/img/albums/malibu.jpg';
 import bubblin from '../assets/img/albums/bubblin.jpg';
@@ -19,6 +20,16 @@ import venice from '../assets/img/albums/venice.jpg';
 const albums = [
   {
     key: '1',
+    artwork: [ventura],
+    apple: 'https://itunes.apple.com/us/album/ventura/1456218234?app=music&ign-mpt=uo%3D4',
+    spotify: 'https://open.spotify.com/album/0YF8PfcGbsKg5IaFyPnlyY',
+    itunes: 'https://itunes.apple.com/us/album/ventura/1456218234?app=itunes&ign-mpt=uo%3D4',
+    tidal: 'https://listen.tidal.com/album/107325494',
+    google: 'https://play.google.com/music/preview/Bitdmrvdhbof25vmqgc7v4prjri?u=0',
+    amazon: 'https://www.amazon.com/Ventura-Explicit-Anderson-Paak/dp/B07PQNN8XW?tag=smarturl-pivot-20'
+  },
+  {
+    key: '2',
     artwork: [oxnard],
     apple: 'https://itunes.apple.com/album/oxnard/1439982774?ls=1',
     spotify: 'http://open.spotify.com/album/3rqqwtJE89WoWvMyPTvbZc',
@@ -28,7 +39,7 @@ const albums = [
     amazon: 'http://amazon.com/dp/B07JMDLHGR'
   },
   {
-    key: '2',
+    key: '3',
     artwork: [whoru],
     apple: 'https://itunes.apple.com/us/album/who-r-u/1439982774?i=1439983348&app=music',
     spotify: 'https://open.spotify.com/album/6Ml78jvSDFzJhLnXKyU30z',
@@ -38,7 +49,7 @@ const albums = [
     amazon: 'https://www.amazon.com/Who-R-U-Explicit/dp/B07JM8LKS7?tag=smarturl-pivot-20'
   },
   {
-    key: '3',
+    key: '4',
     artwork: [tints],
     apple: 'https://itunes.apple.com/us/album/tints-feat-kendrick-lamar-single/1437534355?app=music&ign-mpt=uo%3D4',
     spotify: 'https://open.spotify.com/track/1gnwGVoG7V08vMX3hyr90x?si=oLJ8DAv6TU6AIhHwkKBbUg',
@@ -48,7 +59,7 @@ const albums = [
     amazon: 'https://www.amazon.com/Tints-feat-Kendrick-Lamar-Explicit/dp/B07HPX4F5Y/ref=sr_1_1?ie=UTF8&qid=1540537494&sr=8-1&keywords=anderson+paak+tints'
   },
   {
-    key: '4',
+    key: '5',
     artwork: [bubblin],
     apple: 'https://itunes.apple.com/us/album/bubblin/1383381572?i=1383381915&app=music&ign-mpt=uo%3D4',
     spotify: 'https://open.spotify.com/album/6N1y1a5qnqN8pBkizOdMvk?si=A2y4GZEGQxq68qt9pu8jog',
@@ -58,7 +69,7 @@ const albums = [
     amazon: 'https://www.amazon.com/dp/B07CZVG8QR/ref=ap_ws_tlw_trk6'
   },
   {
-    key: '5',
+    key: '6',
     artwork: [malibu],
     apple: 'https://open.spotify.com/album/4VFG1DOuTeDMBjBLZT7hCK?si=2ZJdsZzsSQufftITqowCpg',
     spotify: 'https://open.spotify.com/album/4VFG1DOuTeDMBjBLZT7hCK?si=2ZJdsZzsSQufftITqowCpg',
@@ -68,7 +79,7 @@ const albums = [
     amazon: 'https://www.amazon.com/Malibu-Explicit-Anderson-Paak/dp/B0192ZU8TG/ref=ntt_mus_dp_dpt_1'
   },
   {
-    key: '6',
+    key: '7',
     artwork: [tillitsover],
     apple: 'https://itunes.apple.com/us/album/til-its-over-single/1355644175?app=music&ign-mpt=uo%3D4',
     spotify: 'https://open.spotify.com/album/7z4UqvGprXWpQ0wo8ldLDA?si=giMbalMYQh2U1DfLF87KeQ',
@@ -78,7 +89,7 @@ const albums = [
     amazon: 'https://www.amazon.com/dp/B07BVTB4HB/ref=ap_ws_tlw_trk5'
   },
   {
-    key: '7',
+    key: '8',
     artwork: [yesLawd],
     apple: 'https://itunes.apple.com/us/album/yes-lawd/1150640159?app=music&ign-mpt=uo%3D4',
     spotify: 'https://open.spotify.com/album/0K3FiXt6ekJTWaUku3LpHL?si=49_BbqGuSVaLPrV0QUFGxw',
@@ -88,7 +99,7 @@ const albums = [
     amazon: 'https://www.amazon.com/Yes-Lawd-Explicit-NxWorries/dp/B0786VTWKT/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1540424593&sr=1-1-mp3-albums-bar-strip-0&keywords=nxworries'
   },
   {
-    key: '8',
+    key: '9',
     artwork: [venice],
     apple: 'https://itunes.apple.com/us/album/venice/929712951?app=music&ign-mpt=uo%3D4',
     spotify: 'https://open.spotify.com/album/2DOiha5oI19Dmw5M9ryHD8?si=gfEotoYwQua5ZP2Vt8zGzQ',
