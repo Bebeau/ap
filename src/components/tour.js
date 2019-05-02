@@ -514,7 +514,7 @@ const shows = [
   },
   {
     key: '62',
-    date: '7/13/19',
+    date: '07/13/19',
     venue: 'Forecastle Festival',
     area: 'Louisville, KY',
     country: 'USA',
@@ -522,6 +522,30 @@ const shows = [
   },
   {
     key: '63',
+    date: '08/16/19',
+    venue: 'Openair Gampel',
+    area: 'Gampel',
+    country: 'Switzerland',
+    purchase: 'https://www.openairgampel.ch/2019/tickets'
+  },
+  {
+    key: '64',
+    date: '08/17/19',
+    venue: 'Lowlands Festival',
+    area: 'Biddinghuizen',
+    country: 'Netherlands',
+    purchase: 'https://lowlands.nl/'
+  },
+  {
+    key: '65',
+    date: '08/18/19',
+    venue: 'Pukkelpop Festival',
+    area: 'Hasselt',
+    country: 'Belgium',
+    purchase: 'https://tickets.pukkelpop.be/en/step1/'
+  },
+  {
+    key: '66',
     date: '08/24/2019',
     venue: 'Reading Festival',
     area: 'Reading',
@@ -529,7 +553,7 @@ const shows = [
     purchase: 'https://www.readingfestival.com/tickets'
   },
   {
-    key: '64',
+    key: '67',
     date: '08/24/2019',
     venue: 'Leeds Festival',
     area: 'Wetherby',
@@ -537,7 +561,7 @@ const shows = [
     purchase: 'https://www.readingfestival.com/tickets'
   },
   {
-    key: '65',
+    key: '68',
     date: '08/28/2019',
     venue: 'Dimensions Festival',
     area: 'Fort Punta Christo, Pula',
