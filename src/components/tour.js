@@ -291,7 +291,7 @@ const shows = [
   },
   {
     key: '37',
-    date: '5/11/2019',
+    date: '05/11/2019',
     venue: 'FORM: Arcosanti',
     area: 'Mayer, AZ',
     country: 'USA',
@@ -299,14 +299,6 @@ const shows = [
   },
   {
     key: '38',
-    date: '5/25/2019',
-    venue: 'Boston Calling',
-    area: 'Boston, MA',
-    country: 'USA',
-    purchase: 'https://bostoncalling.com/tickets/'
-  },
-  {
-    key: '39',
     date: '05/17/2019',
     venue: 'Ascend Amphitheater',
     area: 'Nashville, TN',
@@ -315,7 +307,7 @@ const shows = [
     vip: 'https://www.laneone.com/events/anderson-paak/e/4FC7H688?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
-    key: '40',
+    key: '39',
     date: '05/20/2019',
     venue: 'Jacobs Pavilion at Nautica',
     area: 'Cleveland, OH',
@@ -324,7 +316,7 @@ const shows = [
     vip: 'https://www.laneone.com/events/anderson-paak/e/8DV9VFNB?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
-    key: '41',
+    key: '40',
     date: '05/21/2019',
     venue: 'The Met',
     area: 'Philadelphia, PA',
@@ -333,13 +325,21 @@ const shows = [
     vip: 'https://www.laneone.com/events/anderson-paak/e/8RRS6W6F?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
   },
   {
-    key: '42',
+    key: '41',
     date: '05/23/2019',
     venue: 'Mohegan Sun Arena',
     area: 'Uncasville, CT',
     country: 'USA',
     purchase: 'https://www.ticketmaster.com/event/1D00565AF4134350',
     vip: 'https://www.laneone.com/events/anderson-paak/e/FKR97K6F?utm_source=andersonpaak.com&utm_medium=web&utm_campaign=artistwebsite'
+  },
+  {
+    key: '42',
+    date: '05/25/2019',
+    venue: 'Boston Calling',
+    area: 'Boston, MA',
+    country: 'USA',
+    purchase: 'https://bostoncalling.com/tickets/'
   },
   {
     key: '43',
