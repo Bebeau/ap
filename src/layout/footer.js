@@ -42,7 +42,7 @@ class Footer extends Component{
                 }
               />
               <div className="showMobile">© {this.getYear()} Anderson .Paak</div>
-              <div className="showMobile sign">Built By <a href="instagram://user?username=beheardla" target="_BLANK" rel="noopener noreferrer"> <img src={heard} alt="@beheardla" /></a></div>
+              <div className="showMobile sign">Built By <a href="instagram://user?username=heardmusicapp" target="_BLANK" rel="noopener noreferrer"> <img src={heard} alt="@beheardla" /></a></div>
             </div>
             <article id="social" className="hideMobile">
               <a id="facebook" href="https://www.facebook.com/AndersonPaak" target="_BLANK" rel="noopener noreferrer">
@@ -63,7 +63,7 @@ class Footer extends Component{
             </article>
             <p id="legal" className="hideMobile">
             	<span>© {this.getYear()} Anderson .Paak</span>
-              <span className="sign">Built By <a href="https://instagram.com/beheardla" target="_BLANK" rel="noopener noreferrer"> <img src={heard} alt="@beheardla" /></a></span>
+              <span className="sign">Built By <a href="https://instagram.com/heardmusicapp" target="_BLANK" rel="noopener noreferrer"> <img src={heard} alt="@heardmusicapp" /></a></span>
             </p>
           </footer>
        );
