@@ -126,7 +126,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div id="App">
+      <div id="App" className= {this.state.id === 'download' || this.state.id === 'downloads' ? 'downloads': null}>
         <Header />
         <div id="container" className={this.state.clicked ? 'in': null}>
           <div id="logo">

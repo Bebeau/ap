@@ -853,7 +853,12 @@ nav {
           width: 100%;
           vertical-align: middle; }
     .emailForm .msg-alert p {
-      margin: 0 0 5px; } }
+      margin: 0 0 5px; }
+  .downloads .emailForm h6,
+  .downloads .emailForm form {
+    display: none; }
+  .downloads #stage.open {
+    transform: translate(0, 50vh); } }
 
 @media (max-width: 375px) and (max-height: 812px) {
   #splash {

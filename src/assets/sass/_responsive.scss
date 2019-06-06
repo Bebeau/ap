@@ -457,6 +457,19 @@
 			}
 		}
 	}
+	.downloads {
+		.emailForm {
+			h6,
+			form {
+				display: none;
+			}
+		}
+		#stage {
+			&.open {
+				transform: translate(0,50vh);
+			}
+		}
+	}
 }
 @media (max-width: 375px) and (max-height: 812px) {
 	#splash {
