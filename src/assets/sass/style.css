@@ -525,6 +525,12 @@ nav {
     background: white;
     overflow: hidden; }
 
+.downloads #logo,
+.downloads #stage,
+.downloads nav.hideMobile,
+.downloads footer {
+  display: none !important; }
+
 @media (max-width: 1440px) {
   #splash .half {
     transform: scale(0.8); } }

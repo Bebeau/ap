@@ -606,3 +606,11 @@ nav {
 		}
 	}
 }
+.downloads {
+	#logo,
+	#stage,
+	nav.hideMobile,
+	footer {
+		display: none !important;
+	}
+}
