@@ -519,7 +519,10 @@ nav {
     margin: 0;
     line-height: 30px; }
   #modal #download iframe {
-    margin-top: 25px; }
+    margin-top: 25px;
+    padding: 0 25px 25px;
+    border-radius: 10px;
+    background: white; }
 
 @media (max-width: 1440px) {
   #splash .half {
