@@ -598,10 +598,11 @@ nav {
 			line-height: 30px;
 		}
 		iframe {
-			margin-top: 25px;
+			display: block;
+			margin: 25px 0 0;
 			padding: 0 25px 25px;
-			border-radius: 10px;
 			background: white;
+			overflow: hidden;
 		}
 	}
 }

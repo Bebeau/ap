@@ -60,7 +60,8 @@ class App extends Component {
       pathArray[1] === 'music' ||
       pathArray[1] === 'videos' ||
       pathArray[1] === 'photos' ||
-      pathArray[1] === 'download'
+      pathArray[1] === 'download' ||
+      pathArray[1] === 'downloads'
     ) {
       this.state = {
         active: true,
@@ -77,6 +78,8 @@ class App extends Component {
   }
   targetElement = null;
   componentDidMount() {
+    this.showMenu = this.showMenu.bind(this);
+    
     this.targetVideos = document.querySelector('#videos');
     this.targetPhotos = document.querySelector('#photos');
     this.targetTours = document.querySelector('#tour');
@@ -110,7 +113,7 @@ class App extends Component {
     }.bind(this), 800);
     // window.location.href = window.location.protocol+"://"+window.location.hostname+"/"+id;
   }
-  showMenu(id) {
+  showMenu = () => {
     this.setState({ 
       active: false
     });
@@ -176,7 +179,7 @@ class App extends Component {
               <h2>Upcoming Dates</h2>
               <Tours />
             </div>
-            <div id="download" className={this.state.id === 'download' ? 'show modalwrap': 'modalwrap'}>
+            <div id="download" className={this.state.id === 'download' || this.state.id === 'downloads' ? 'show modalwrap': 'modalwrap'}>
               <div>
                 <h2>Yes Lawd!</h2>
                 <p>Thank you for your purchase.</p>

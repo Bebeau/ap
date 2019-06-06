@@ -519,10 +519,11 @@ nav {
     margin: 0;
     line-height: 30px; }
   #modal #download iframe {
-    margin-top: 25px;
+    display: block;
+    margin: 25px 0 0;
     padding: 0 25px 25px;
-    border-radius: 10px;
-    background: white; }
+    background: white;
+    overflow: hidden; }
 
 @media (max-width: 1440px) {
   #splash .half {
@@ -776,6 +777,20 @@ nav {
             line-height: 40px; }
     #modal #videos {
       overflow: hidden; }
+    #modal #download {
+      padding: 0 15px;
+      box-sizing: border-box; }
+      #modal #download.show {
+        flex-direction: column; }
+      #modal #download h2 {
+        margin: 70px 0 25px;
+        font-size: 48px; }
+      #modal #download p {
+        margin: 15px 0;
+        line-height: normal; }
+      #modal #download iframe {
+        width: 100%;
+        padding: 0 0 25px; }
   #logo {
     position: absolute;
     top: 0;
