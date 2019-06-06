@@ -370,13 +370,15 @@ nav {
   #modal #music,
   #modal #videos,
   #modal #photos,
-  #modal #tour {
+  #modal #tour,
+  #modal #download {
     display: none;
     height: 100%; }
     #modal #music.show,
     #modal #videos.show,
     #modal #photos.show,
-    #modal #tour.show {
+    #modal #tour.show,
+    #modal #download.show {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -505,6 +507,19 @@ nav {
     #modal #videos iframe {
       position: relative;
       z-index: 2; }
+  #modal #download.show {
+    flex-direction: row; }
+  #modal #download h2 {
+    color: white;
+    font-size: 62px;
+    margin: 0; }
+  #modal #download p {
+    color: white;
+    text-align: center;
+    margin: 0;
+    line-height: 30px; }
+  #modal #download iframe {
+    margin-top: 25px; }
 
 @media (max-width: 1440px) {
   #splash .half {

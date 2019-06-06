@@ -423,7 +423,8 @@ nav {
 	#music,
 	#videos,
 	#photos,
-	#tour {
+	#tour,
+	#download {
 		display: none;
 		height: 100%;
 		&.show {
@@ -579,6 +580,25 @@ nav {
 		iframe {
 			position: relative;
 			z-index: 2;
+		}
+	}
+	#download {
+		&.show {
+			flex-direction: row;
+		}
+		h2 {
+			color: white;
+			font-size: 62px;
+			margin: 0;
+		}
+		p {
+			color: white;
+			text-align: center;
+			margin: 0;
+			line-height: 30px;
+		}
+		iframe {
+			margin-top: 25px;
 		}
 	}
 }

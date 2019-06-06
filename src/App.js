@@ -59,7 +59,8 @@ class App extends Component {
       pathArray[1] === 'tour' ||
       pathArray[1] === 'music' ||
       pathArray[1] === 'videos' ||
-      pathArray[1] === 'photos'
+      pathArray[1] === 'photos' ||
+      pathArray[1] === 'download'
     ) {
       this.state = {
         active: true,
@@ -80,17 +81,18 @@ class App extends Component {
     this.targetPhotos = document.querySelector('#photos');
     this.targetTours = document.querySelector('#tour');
     this.targetMusic = document.querySelector('#music');
+    this.targetDownload = document.querySelector('#download');
     this.targetSplash = document.querySelector('#splash');
     disableBodyScroll(this.targetSplash);
   }
-  toggleSplash = () => {
+  toggleSplash() {
     const currentState = this.state.clicked;
     this.setState({ 
       clicked: !currentState,
       fadeIn: true
     });
   }
-  addActiveClass = (id) => {
+  addActiveClass(id) {
     ReactPixel.track('ViewContent');
     this.setState({ 
       active: false
@@ -104,10 +106,11 @@ class App extends Component {
       disableBodyScroll(this.targetPhotos);
       disableBodyScroll(this.targetTours);
       disableBodyScroll(this.targetMusic);
+      disableBodyScroll(this.targetDownload);
     }.bind(this), 800);
     // window.location.href = window.location.protocol+"://"+window.location.hostname+"/"+id;
   }
-  showMenu = (id) => {
+  showMenu(id) {
     this.setState({ 
       active: false
     });
@@ -172,6 +175,15 @@ class App extends Component {
             <div id="tour" className={this.state.id === 'tour' ? 'show modalwrap': 'modalwrap'}>
               <h2>Upcoming Dates</h2>
               <Tours />
+            </div>
+            <div id="download" className={this.state.id === 'download' ? 'show modalwrap': 'modalwrap'}>
+              <div>
+                <h2>Yes Lawd!</h2>
+                <p>Thank you for your purchase.</p>
+                <p>Please enter your unique code to redeem your digital download.</p>
+                <iframe title="download" name="soundcard" src="https://www2.atozmedia.com/soundcard/embed.asp" width="516" height="243" frameBorder="0">
+                </iframe>
+              </div>
             </div>
           </section>
           <Footer />
