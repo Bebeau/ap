@@ -562,6 +562,14 @@ const shows = [
   },
   {
     key: '68',
+    date: '08/27/2019',
+    venue: 'Kino Šiška',
+    area: 'Ljubljana',
+    country: 'Slovenia',
+    purchase: 'http://www.eventim.si/si/vstopnice/anderson-paak-the-free-nationals-ljubljana-kino-siska-526985/event.html'
+  },
+  {
+    key: '69',
     date: '08/28/2019',
     venue: 'Dimensions Festival',
     area: 'Fort Punta Christo, Pula',
