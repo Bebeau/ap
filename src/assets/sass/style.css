@@ -770,7 +770,7 @@ nav {
       #modal #tour.show {
         justify-content: flex-start; }
       #modal #tour ul {
-        margin-bottom: -1200px; }
+        margin: 0 0 -200px; }
         #modal #tour ul li {
           width: 225px; }
           #modal #tour ul li .wrap span.location, #modal #tour ul li .wrap span.country {
