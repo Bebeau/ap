@@ -546,6 +546,14 @@ const shows = [
   },
   {
     key: '66',
+    date: '08/22/2019',
+    venue: 'O2 Academy',
+    area: 'Birmingham',
+    country: 'UK',
+    purchase: 'https://www.livenation.co.uk/artist/anderson-paak-and-the-free-nationals-tickets'
+  },
+  {
+    key: '67',
     date: '08/24/2019',
     venue: 'Reading Festival',
     area: 'Reading',
@@ -553,7 +561,7 @@ const shows = [
     purchase: 'https://www.readingfestival.com/tickets'
   },
   {
-    key: '67',
+    key: '68',
     date: '08/24/2019',
     venue: 'Leeds Festival',
     area: 'Wetherby',
@@ -561,7 +569,7 @@ const shows = [
     purchase: 'https://www.readingfestival.com/tickets'
   },
   {
-    key: '68',
+    key: '69',
     date: '08/27/2019',
     venue: 'Kino Šiška',
     area: 'Ljubljana',
@@ -569,7 +577,7 @@ const shows = [
     purchase: 'http://www.eventim.si/si/vstopnice/anderson-paak-the-free-nationals-ljubljana-kino-siska-526985/event.html'
   },
   {
-    key: '69',
+    key: '70',
     date: '08/28/2019',
     venue: 'Dimensions Festival',
     area: 'Fort Punta Christo, Pula',
