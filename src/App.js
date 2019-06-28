@@ -133,7 +133,7 @@ class App extends Component {
             <img src={logoWhite} alt="Anderson Paak" />
           </div>
           <nav className="hideMobile">
-            <a href="https://buy.andersonpaak.com" target="_blank" rel="noopener noreferrer">Store</a>
+            <a href="https://shop.andersonpaak.com" target="_blank" rel="noopener noreferrer">Store</a>
             <button onClick={this.addActiveClass.bind(this, 'tour')} className={this.state.id === 'tour' ? 'selected': null}>Tour</button>
             <button onClick={this.addActiveClass.bind(this, 'music')} className={this.state.id === 'music' ? 'selected': null}>Music</button>
             <button onClick={this.addActiveClass.bind(this, 'videos')} className={this.state.id === 'videos' ? 'selected': null}>Videos</button>
@@ -143,7 +143,7 @@ class App extends Component {
           <nav className={this.state.active ? 'open showMobile': "showMobile"}>
             <button className="close" onClick={this.showMenu}></button>
             <div className="navLinks">
-              <a href="https://buy.andersonpaak.com" target="_blank" rel="noopener noreferrer">Store</a>
+              <a href="https://shop.andersonpaak.com" target="_blank" rel="noopener noreferrer">Store</a>
               <button onClick={this.addActiveClass.bind(this, 'tour')}>Tour</button>
               <button onClick={this.addActiveClass.bind(this, 'music')}>Music</button>
               <button onClick={this.addActiveClass.bind(this, 'videos')}>Videos</button>
