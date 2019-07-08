@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f8f579e4be99b25f23eb099914a4dc19",
+    "revision": "d00d1f754104da73f25d5da1d90bb06b",
     "url": "/index.html"
   },
   {
-    "revision": "5454a283ef2b9e0ff502",
-    "url": "/static/css/main.f2e8bcfd.chunk.css"
+    "revision": "56af59d3fd8a7a02cde2",
+    "url": "/static/css/main.bc874433.chunk.css"
   },
   {
     "revision": "ba0329deb15aaf7daa0b",
     "url": "/static/js/2.79b67b6d.chunk.js"
   },
   {
-    "revision": "5454a283ef2b9e0ff502",
+    "revision": "56af59d3fd8a7a02cde2",
     "url": "/static/js/main.c098ad4b.chunk.js"
   },
   {
@@ -100,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/apple_white.cedaf138.svg"
   },
   {
-    "revision": "bfe8d06255a2f68f3d14ba5a4d8024ec",
-    "url": "/static/media/bg.bfe8d062.png"
+    "revision": "5b2c41a609d5525e7db78570a4a8adf4",
+    "url": "/static/media/bg.5b2c41a6.png"
   },
   {
     "revision": "0f624a0f9be3586f166e7361479c0096",
