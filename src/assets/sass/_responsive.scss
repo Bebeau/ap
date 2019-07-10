@@ -206,6 +206,9 @@
 		padding-top: 15px;
 		padding-right: 15px;
 		background: none;
+		a, button {
+			line-height: 40px;
+		}
 		&.open {
 			pointer-events: none;
 			.close {
@@ -403,7 +406,7 @@
 		}
 		a {
 			display: inline-block;
-			margin: 0 8px;
+			margin: 0 15px;
 			&#youtube {
 				margin: 0;
 				&.showMobile {
@@ -498,6 +501,11 @@
 	}
 }
 @media (max-width: 320px) {
+	nav {
+		a, button {
+			line-height: 35px;
+		}
+	}
 	#splash {
 		#musicLinks {
 			transform: translate(0,0);

@@ -670,6 +670,8 @@ nav {
     padding-top: 15px;
     padding-right: 15px;
     background: none; }
+    nav a, nav button {
+      line-height: 40px; }
     nav.open {
       pointer-events: none; }
       nav.open .close {
@@ -820,7 +822,7 @@ nav {
       font-size: 6pt; }
     #social a {
       display: inline-block;
-      margin: 0 8px; }
+      margin: 0 15px; }
       #social a#youtube {
         margin: 0; }
         #social a#youtube.showMobile {
@@ -887,6 +889,8 @@ nav {
         width: 100%; } }
 
 @media (max-width: 320px) {
+  nav a, nav button {
+    line-height: 35px; }
   #splash #musicLinks {
     transform: translate(0, 0);
     white-space: normal;
