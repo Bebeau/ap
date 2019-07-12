@@ -735,11 +735,14 @@ nav {
     nav.hideMobile {
       display: none !important; }
   #stage {
-    height: 40vh;
-    top: 40%; }
+    height: 50vh;
+    top: 0%;
+    left: -30%; }
   #earth {
-    top: 8%;
-    left: 25%; }
+    top: 55%;
+    left: 40%;
+    width: 118px;
+    height: 118px; }
   #container:after {
     content: "";
     display: block;
