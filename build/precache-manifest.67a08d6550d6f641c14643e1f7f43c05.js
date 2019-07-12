@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "83571986bfb8cab634aefa182a0288fe",
+    "revision": "4dedf168d2b1d9537d23c3f2ea3860b5",
     "url": "/index.html"
   },
   {
-    "revision": "6d7da35edb75b8b1623b",
-    "url": "/static/css/main.152e4898.chunk.css"
+    "revision": "466f082709464340ad00",
+    "url": "/static/css/main.e359a340.chunk.css"
   },
   {
     "revision": "ba0329deb15aaf7daa0b",
     "url": "/static/js/2.79b67b6d.chunk.js"
   },
   {
-    "revision": "6d7da35edb75b8b1623b",
-    "url": "/static/js/main.c098ad4b.chunk.js"
+    "revision": "466f082709464340ad00",
+    "url": "/static/js/main.00cb777a.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -100,12 +100,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/apple_white.cedaf138.svg"
   },
   {
-    "revision": "5b2c41a609d5525e7db78570a4a8adf4",
-    "url": "/static/media/bg.5b2c41a6.png"
-  },
-  {
     "revision": "0f624a0f9be3586f166e7361479c0096",
     "url": "/static/media/bubblin.0f624a0f.jpg"
+  },
+  {
+    "revision": "a04c78a302c8efde84a10ad40149112c",
+    "url": "/static/media/earth.a04c78a3.png"
   },
   {
     "revision": "fcaca8e0d0b04525786d7eb1a7a9bc01",
@@ -158,6 +158,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3a193c036df57e161b400efd8c489153",
     "url": "/static/media/twitter.3a193c03.svg"
+  },
+  {
+    "revision": "42cafcf7534b68aab8553ca5ecbb1fbb",
+    "url": "/static/media/umbrella.42cafcf7.png"
   },
   {
     "revision": "c6cbbadaf0df94adcd00b3411be82cd5",

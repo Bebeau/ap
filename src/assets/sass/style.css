@@ -3,12 +3,18 @@
   font-family: Universe;
   src: url("../fonts/universe.otf") format("opentype"); }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: #0d0d0d;
+  background: #000714;
   font-family: "century-gothic", sans-serif;
   overflow: hidden; }
 
@@ -41,17 +47,33 @@ a, button {
 
 #stage {
   position: absolute;
-  height: 100vh;
+  height: 60vh;
   width: 100%;
-  bottom: 0;
+  top: 25%;
   left: 0;
   z-index: 10;
-  background: url("../img/bg.png") no-repeat scroll bottom center/cover;
-  transition: all 1s ease-in-out;
-  pointer-events: none; }
+  background: url("../img/umbrella.png") no-repeat scroll center/contain;
+  transition: all 0.8s ease-in-out;
+  pointer-events: none;
+  animation: rotate 120s infinite linear;
+  transform: translate(0, -50%); }
   #stage.open {
-    transform: translate(0, 55vh);
-    transition: all 1.2s ease-in-out; }
+    top: 100%;
+    transition: all 2s ease-in-out; }
+
+#earth {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  display: block;
+  width: 118px;
+  height: 118px;
+  background: url("../img/earth.png") no-repeat scroll center/cover;
+  transition: all 0.8s ease-in-out;
+  opacity: 0.5; }
+  #earth.open {
+    transform: translate(0, 10vh);
+    transition: all 2s ease-in-out; }
 
 #splash {
   position: fixed;
@@ -351,9 +373,9 @@ nav {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  transform: translate(0, -100vh);
+  transform: translate(0, -120vh);
   transition: all 1s ease-in-out;
-  opacity: 0; }
+  opacity: 1; }
   #modal.open {
     transform: translate(0, 0);
     transition: all 1.5s ease-in-out;
@@ -712,8 +734,12 @@ nav {
         cursor: poiner !important; }
     nav.hideMobile {
       display: none !important; }
-  #stage.open {
-    transform: translate(0, 30vh); }
+  #stage {
+    height: 40vh;
+    top: 40%; }
+  #earth {
+    top: 8%;
+    left: 25%; }
   #container:after {
     content: "";
     display: block;

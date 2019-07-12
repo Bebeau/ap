@@ -260,9 +260,12 @@
 		}
 	}
 	#stage {
-		&.open {
-			transform: translate(0,30vh);
-		}
+		height: 40vh;
+		top: 40%;
+	}
+	#earth {
+		top: 8%;
+		left: 25%;
 	}
 	#container {
 		&:after {
