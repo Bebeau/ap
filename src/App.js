@@ -197,6 +197,7 @@ class App extends Component {
             }
             className="particles"
           />
+          <article id="earth" className={this.state.active ? 'open': null}></article>
         </div>
       </div>
     );
