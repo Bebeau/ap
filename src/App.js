@@ -13,12 +13,6 @@ import './assets/sass/style.css';
 import Header from './layout/header';
 import Footer from './layout/footer';
 
-// import venturaLogo from './assets/img/ventura.png';
-// import venturaMobile from './assets/img/ventura_album.png';
-// import aftermath from './assets/img/SVG/aftermath.svg';
-// import obe from './assets/img/obe.png';
-// import twelveTone from './assets/img/12tone.png';
-
 import logoWhite from './assets/img/SVG/logo_white.svg';
 import Particles from 'react-particles-js';
 
@@ -27,19 +21,12 @@ import instagram from './assets/img/SVG/instagram.svg';
 import twitter from './assets/img/SVG/twitter.svg';
 import youtube from './assets/img/SVG/youtube.svg';
 
-// import apple from './assets/img/SVG/apple.svg';
-// import spotify from './assets/img/SVG/spotify.svg';
-// import itunes from './assets/img/SVG/itunes.svg';
-// import google from './assets/img/SVG/google.svg';
-// import amazon from './assets/img/SVG/amazon.svg';
-
 const advancedMatching = {};
 const options = {
     autoConfig: true,
     debug: false,
 };
-ReactPixel.init('252805335389609', advancedMatching, options);
-ReactPixel.init('1024129180947932', advancedMatching, options);
+ReactPixel.init('477572989729545', advancedMatching, options);
 ReactPixel.pageView();
 
 class App extends Component {
