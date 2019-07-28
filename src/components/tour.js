@@ -91,7 +91,7 @@ const shows = [
   },
   {
     key: '12',
-    date: '08/31/2019',
+    date: '09/01/2019',
     venue: 'Made In America Festival',
     area: 'Philadelphia, PA',
     country: 'USA',
