@@ -99,11 +99,27 @@ const shows = [
   },
   {
     key: '13',
+    date: '10/13/2019',
+    venue: 'Afropunk Festival',
+    area: 'Atlanta, GA',
+    country: 'USA',
+    purchase: 'https://afropunk.com/festival/brooklyn/tickets/'
+  },
+  {
+    key: '14',
     date: '10/26/2019',
     venue: 'Hulaween Festival',
     area: 'Live Oak, FL',
     country: 'USA',
     purchase: 'https://suwanneehulaween.com/tickets/'
+  },
+  {
+    key: '15',
+    date: '12/06/2019',
+    venue: 'Intersect Festival',
+    area: 'Las Vegas, NV',
+    country: 'USA',
+    purchase: 'https://www.intersectionsfestival.com/tickets'
   }
 ]
 
