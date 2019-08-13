@@ -115,7 +115,7 @@ const shows = [
   },
   {
     key: '15',
-    date: '12/06/2019',
+    date: '12/07/2019',
     venue: 'Intersect Festival',
     area: 'Las Vegas, NV',
     country: 'USA',
