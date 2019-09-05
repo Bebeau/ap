@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Date extends Component {
   render() {
-    let displayDate = (this.props.date).replace(/\-/g, ".");
+    let displayDate = (this.props.date).replace(/-/g, ".");
     return(
       <li className="event" key={this.props.key}>
         <div className="wrap first">

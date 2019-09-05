@@ -39,8 +39,8 @@ class App extends Component {
     ) {
       this.state = {
         active: false,
-        fadeIn: true,
-        clicked: true
+        fadeIn: false,
+        clicked: false
       }
     } else if(
       pathArray[1] === 'tour' ||
@@ -59,9 +59,14 @@ class App extends Component {
     } else {
       this.state = {
         active: false,
-        clicked: true
+        clicked: false
       }
     }
+    this.timeoutId = setTimeout(function () {
+      this.setState({
+        clicked: true
+      });
+    }.bind(this), 500);
   }
   targetElement = null;
   componentDidMount() {
@@ -113,9 +118,9 @@ class App extends Component {
   }
   render() {
     return (
-      <div id="App" className= {this.state.id === 'download' || this.state.id === 'downloads' ? 'downloads': null}>
+      <div id="App" className={this.state.id === 'download' || this.state.id === 'downloads' ? 'downloads': null || this.state.clicked ? 'in': null}>
         <Header />
-        <div id="container" className={this.state.clicked ? 'in': null}>
+        <div id="container">
           <div id="logo">
             <img src={logoWhite} alt="Anderson Paak" />
           </div>

@@ -380,10 +380,20 @@
 			}
 		}
 	}
+	#App {
+		&.in {
+			#social {
+				top: 0;
+			}
+			#logo {
+				left: 15px;
+			}
+		}
+	}
 	#logo {
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: 15px;
+		left: -100%;
 		height: auto;
 		width: auto;
 		text-align: left;
@@ -419,7 +429,7 @@
 		margin: 0 auto;
 		padding: 0;
 		display: block;
-		bottom: 15px;
+		bottom: -100%;
 		width: 100%;
 		text-align: center;
 		h6 {

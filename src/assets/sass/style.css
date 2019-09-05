@@ -33,11 +33,8 @@ a, button {
   height: 100vh; }
 
 #container {
-  opacity: 0;
+  opacity: 1;
   transition: all 2s ease-in-out; }
-  #container.in {
-    opacity: 1;
-    transition: all 2s ease-in-out; }
 
 #stage {
   position: absolute;
@@ -52,6 +49,25 @@ a, button {
   #stage.open {
     transform: translate(0, 55vh);
     transition: all 1.2s ease-in-out; }
+
+#App {
+  opacity: 0;
+  transition: all 3s ease-in-out; }
+  #App.in {
+    opacity: 1;
+    transition: all 3s ease-in-out; }
+    #App.in #logo {
+      left: 0;
+      transition: all 2.5s ease-in-out; }
+    #App.in nav {
+      right: 0;
+      transition: all 2.5s ease-in-out; }
+    #App.in #social {
+      top: 25px;
+      transition: all 2.5s ease-in-out; }
+    #App.in #legal, #App.in .emailForm {
+      bottom: 0;
+      transition: all 2.5s ease-in-out; }
 
 #splash {
   position: fixed;
@@ -172,7 +188,7 @@ a, button {
 
 #logo {
   position: fixed;
-  left: 0;
+  left: -100%;
   padding-left: 25px;
   height: 100vh;
   display: flex;
@@ -181,7 +197,8 @@ a, button {
   justify-content: space-around;
   z-index: 99;
   pointer-events: none;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent); }
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+  transition: all 2.5s ease-in-out; }
   #logo img {
     width: 120px;
     height: auto; }
@@ -189,7 +206,7 @@ a, button {
 nav {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   padding-right: 25px;
   height: 100vh;
   display: flex;
@@ -198,7 +215,8 @@ nav {
   justify-content: center;
   z-index: 12;
   pointer-events: none;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent); }
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+  transition: all 2.5s ease-in-out; }
   nav.hideMobile {
     display: flex !important; }
   nav button, nav a {
@@ -227,9 +245,10 @@ nav {
 
 #social {
   position: fixed;
-  top: 25px;
+  top: -100%;
   right: 25px;
-  z-index: 999; }
+  z-index: 999;
+  transition: all 2.5s ease-in-out; }
   #social a {
     display: inline-block;
     margin: 0 8px; }
@@ -256,7 +275,7 @@ nav {
 
 #legal {
   position: fixed;
-  bottom: 0;
+  bottom: -100%;
   right: 25px;
   display: block;
   color: white;
@@ -264,7 +283,8 @@ nav {
   letter-spacing: 3px;
   text-transform: uppercase;
   z-index: 20;
-  text-align: right; }
+  text-align: right;
+  transition: all 2.5s ease-in-out; }
   #legal span {
     font-size: 6pt;
     display: block;
@@ -288,11 +308,11 @@ nav {
 .emailForm {
   display: block;
   position: fixed;
-  bottom: 0;
+  bottom: -100%;
   left: 0;
   z-index: 11;
   padding: 25px;
-  transition: all 1s ease-in-out;
+  transition: all 2.5s ease-in-out;
   -webkit-overflow-scrolling: touch; }
   .emailForm h6 {
     margin: 0;
@@ -799,10 +819,14 @@ nav {
       #modal #download iframe {
         width: 100%;
         padding: 0 0 25px; }
+  #App.in #social {
+    top: 0; }
+  #App.in #logo {
+    left: 15px; }
   #logo {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 15px;
+    left: -100%;
     height: auto;
     width: auto;
     text-align: left;
@@ -831,7 +855,7 @@ nav {
     margin: 0 auto;
     padding: 0;
     display: block;
-    bottom: 15px;
+    bottom: -100%;
     width: 100%;
     text-align: center; }
     .emailForm h6 {

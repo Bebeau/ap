@@ -37,12 +37,8 @@ a, button {
 	height: 100vh;
 }
 #container {
-	opacity: 0;
+	opacity: 1;
 	transition: all 2s ease-in-out;
-	&.in {
-		opacity: 1;
-		transition: all 2s ease-in-out;
-	}
 }
 #stage {
 	position: absolute;
@@ -57,6 +53,30 @@ a, button {
 	&.open {
 		transform: translate(0,55vh);
 		transition: all 1.2s ease-in-out;
+	}
+}
+#App {
+	opacity: 0;
+	transition: all 3s ease-in-out;
+	&.in {
+		opacity: 1;
+		transition: all 3s ease-in-out;
+		#logo {
+			left: 0;
+			transition: all 2.5s ease-in-out;
+		}
+		nav {
+			right: 0;
+			transition: all 2.5s ease-in-out;
+		}
+		#social {
+			top: 25px;
+			transition: all 2.5s ease-in-out;
+		}
+		#legal, .emailForm {
+			bottom: 0;
+			transition: all 2.5s ease-in-out;
+		}
 	}
 }
 #splash {
@@ -199,7 +219,7 @@ a, button {
 }
 #logo {
 	position: fixed;
-	left: 0;
+	left: -100%;
 	padding-left: 25px;
 	height: 100vh;
 	display: flex;
@@ -209,6 +229,7 @@ a, button {
 	z-index: 99;
 	pointer-events: none;
 	background: linear-gradient(to right, rgba(0,0,0,0.5), transparent);
+	transition: all 2.5s ease-in-out;
 	img {
 		width: 120px;
 		height: auto;
@@ -217,7 +238,7 @@ a, button {
 nav {
 	position: fixed;
 	top: 0;
-	right: 0;
+	right: -100%;
 	padding-right: 25px;
 	height: 100vh;
 	display: flex;
@@ -227,6 +248,7 @@ nav {
 	z-index: 12;
 	pointer-events: none;
 	background: linear-gradient(to left, rgba(0,0,0,0.5), transparent);
+	transition: all 2.5s ease-in-out;
 	&.hideMobile {
 		display: flex !important;
 	}
@@ -259,9 +281,10 @@ nav {
 }
 #social {
 	position: fixed;
-	top: 25px;
+	top: -100%;
 	right: 25px;
 	z-index: 999;
+	transition: all 2.5s ease-in-out;
 	a {
 		display: inline-block;
 		margin: 0 8px;
@@ -296,7 +319,7 @@ nav {
 }
 #legal {
 	position: fixed;
-	bottom: 0;
+	bottom: -100%;
 	right: 25px;
 	display: block;
 	color: white;
@@ -305,6 +328,7 @@ nav {
 	text-transform: uppercase;
 	z-index: 20;
 	text-align: right;
+	transition: all 2.5s ease-in-out;
 	span {
 		font-size: 6pt;
 		display: block;
@@ -331,11 +355,11 @@ nav {
 .emailForm {
 	display: block;
 	position: fixed;
-	bottom: 0;
+	bottom: -100%;
 	left: 0;
 	z-index: 11;
 	padding: 25px;
-	transition: all 1s ease-in-out;
+	transition: all 2.5s ease-in-out;
 	-webkit-overflow-scrolling: touch;
 	h6 {
 		margin: 0;
