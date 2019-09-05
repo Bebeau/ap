@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 
 class Date extends Component {
   render() {
+    let displayDate = (this.props.date).replace(/\-/g, ".");
     return(
       <li className="event" key={this.props.key}>
         <div className="wrap first">
-          <span className="date">{this.props.date}</span>
+          <span className="date">{displayDate}</span>
           <span className="venue">{this.props.venue}</span>
         </div>
         <div className="wrap second">
@@ -52,7 +53,6 @@ class Tour extends Component {
     });
   }
   render() {
-    // console.log(this.state.dates)
     if (!this.state.dates){
         return null
     }
