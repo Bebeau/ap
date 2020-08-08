@@ -20,67 +20,54 @@ const videos = [
   },
   {
     index: '3',
-    thumb: 'https://img.youtube.com/vi/nSqLOMMHZwQ/maxresdefault.jpg',
-    url: 'https://www.youtube.com/embed/nSqLOMMHZwQ',
-    title: ".PAAK House '19"
-  },
-
-  {
-    index: '4',
     thumb: 'https://img.youtube.com/vi/7Jj83FOlBF8/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/7Jj83FOlBF8',
     title: "Make It Better"
   },
   {
-    index: '5',
+    index: '4',
     thumb: 'https://img.youtube.com/vi/K9cbbtLLg8Y/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/K9cbbtLLg8Y',
     title: "Haulin' / Best Teef In The Game Tour Trailer"
   },
   {
-    index: '6',
+    index: '5',
     thumb: 'https://img.youtube.com/vi/okDHQpf1SUo/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/okDHQpf1SUo',
     title: "Ventura Trailer"
   },
   {
-    index: '7',
+    index: '6',
     thumb: 'https://img.youtube.com/vi/gGs_MmATLms/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/gGs_MmATLms',
     title: "Tints / Vertical Video"
   },
   {
-    index: '8',
+    index: '7',
     thumb: 'https://img.youtube.com/vi/u749Hi0gDVM/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/u749Hi0gDVM',
     title: "TINTS"
   },
   {
-    index: '9',
+    index: '8',
     thumb: 'https://img.youtube.com/vi/AMYxwDMobQc/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/AMYxwDMobQc',
     title: "Andy's Oxnard Carnival + Live Listening"
   },
   {
-    index: '10',
+    index: '9',
     thumb: 'https://img.youtube.com/vi/7PmUtmfTmbg/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/7PmUtmfTmbg',
     title: "Bubblin'"
   },
   {
-    index: '11',
-    thumb: 'https://img.youtube.com/vi/N6rusSDuv-Y/maxresdefault.jpg',
-    url: 'https://www.youtube.com/embed/N6rusSDuv-Y',
-    title: "Bubblin' Challenge"
-  },
-  {
-    index: '12',
+    index: '10',
     thumb: 'https://img.youtube.com/vi/-OqrcUvrbRY/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/-OqrcUvrbRY',
     title: 'Come Down'
   },
   {
-    index: '13',
+    index: '11',
     thumb: 'https://img.youtube.com/vi/y_Ka5wiQBEw/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/y_Ka5wiQBEw',
     title: 'The Season / Carry Me / The Waters'
