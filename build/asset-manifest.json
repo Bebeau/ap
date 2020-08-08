@@ -1,5 +1,6 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.css": "/static/css/main.817fed46.chunk.css",
     "main.js": "/static/js/main.6923ba85.chunk.js",
     "main.js.map": "/static/js/main.6923ba85.chunk.js.map",
@@ -9,8 +10,20 @@
     "static/js/2.87994097.chunk.js.map": "/static/js/2.87994097.chunk.js.map",
     "index.html": "/index.html",
     "precache-manifest.eef02395f0e3036c9556a2e4ce0e3a49.js": "/precache-manifest.eef02395f0e3036c9556a2e4ce0e3a49.js",
+=======
+    "main.css": "/static/css/main.86a3555c.chunk.css",
+    "main.js": "/static/js/main.edc9e91c.chunk.js",
+    "main.js.map": "/static/js/main.edc9e91c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3627c102.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3627c102.js.map",
+    "static/js/2.0ce30d30.chunk.js": "/static/js/2.0ce30d30.chunk.js",
+    "static/js/2.0ce30d30.chunk.js.map": "/static/js/2.0ce30d30.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4effa230ceb47986fdb888111854ab39.js": "/precache-manifest.4effa230ceb47986fdb888111854ab39.js",
+>>>>>>> master
     "service-worker.js": "/service-worker.js",
-    "static/css/main.817fed46.chunk.css.map": "/static/css/main.817fed46.chunk.css.map",
+    "static/css/main.86a3555c.chunk.css.map": "/static/css/main.86a3555c.chunk.css.map",
+    "static/js/2.0ce30d30.chunk.js.LICENSE.txt": "/static/js/2.0ce30d30.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/static/media/1.54a6bb4a.jpg",
     "static/media/10.jpg": "/static/media/10.c003ac92.jpg",
     "static/media/11.jpg": "/static/media/11.030a83e5.jpg",
@@ -44,6 +57,8 @@
     "static/media/heard.svg": "/static/media/heard.0e984167.svg",
     "static/media/instagram.svg": "/static/media/instagram.1ede17b7.svg",
     "static/media/itunes.svg": "/static/media/itunes.05fa1071.svg",
+    "static/media/lockdown.jpg": "/static/media/lockdown.2256d645.jpg",
+    "static/media/lockdownRemix.jpg": "/static/media/lockdownRemix.6565fd67.jpg",
     "static/media/logo_white.svg": "/static/media/logo_white.99576138.svg",
     "static/media/malibu.jpg": "/static/media/malibu.a477f6a4.jpg",
     "static/media/oxnard.jpg": "/static/media/oxnard.4a3c00c1.jpg",
@@ -59,5 +74,11 @@
     "static/media/yesLawd.jpg": "/static/media/yesLawd.a2ee73ff.jpg",
     "static/media/youtube.svg": "/static/media/youtube.0635e1a5.svg",
     "static/media/youtube_mobile.svg": "/static/media/youtube_mobile.b7b5f307.svg"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3627c102.js",
+    "static/js/2.0ce30d30.chunk.js",
+    "static/css/main.86a3555c.chunk.css",
+    "static/js/main.edc9e91c.chunk.js"
+  ]
 }
