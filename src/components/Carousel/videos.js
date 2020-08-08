@@ -8,60 +8,79 @@ import play from '../../assets/img/SVG/play.svg';
 const videos = [
   {
     index: '1',
+    thumb: 'https://img.youtube.com/vi/TgItkJCm09c/maxresdefault.jpg',
+    url: 'https://www.youtube.com/embed/TgItkJCm09c',
+    title: "Lockdown"
+  },
+  {
+    index: '2',
+    thumb: 'https://img.youtube.com/vi/3_tHANKrjnc/maxresdefault.jpg',
+    url: 'https://www.youtube.com/embed/3_tHANKrjnc',
+    title: "Don't Slack (With Justin Timberlake)"
+  },
+  {
+    index: '3',
+    thumb: 'https://img.youtube.com/vi/nSqLOMMHZwQ/maxresdefault.jpg',
+    url: 'https://www.youtube.com/embed/nSqLOMMHZwQ',
+    title: ".PAAK House '19"
+  },
+
+  {
+    index: '4',
     thumb: 'https://img.youtube.com/vi/7Jj83FOlBF8/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/7Jj83FOlBF8',
     title: "Make It Better"
   },
   {
-    index: '2',
+    index: '5',
     thumb: 'https://img.youtube.com/vi/K9cbbtLLg8Y/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/K9cbbtLLg8Y',
     title: "Haulin' / Best Teef In The Game Tour Trailer"
   },
   {
-    index: '3',
+    index: '6',
     thumb: 'https://img.youtube.com/vi/okDHQpf1SUo/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/okDHQpf1SUo',
     title: "Ventura Trailer"
   },
   {
-    index: '4',
+    index: '7',
     thumb: 'https://img.youtube.com/vi/gGs_MmATLms/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/gGs_MmATLms',
     title: "Tints / Vertical Video"
   },
   {
-    index: '5',
+    index: '8',
     thumb: 'https://img.youtube.com/vi/u749Hi0gDVM/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/u749Hi0gDVM',
     title: "TINTS"
   },
   {
-    index: '6',
+    index: '9',
     thumb: 'https://img.youtube.com/vi/AMYxwDMobQc/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/AMYxwDMobQc',
     title: "Andy's Oxnard Carnival + Live Listening"
   },
   {
-    index: '7',
+    index: '10',
     thumb: 'https://img.youtube.com/vi/7PmUtmfTmbg/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/7PmUtmfTmbg',
     title: "Bubblin'"
   },
   {
-    index: '8',
+    index: '11',
     thumb: 'https://img.youtube.com/vi/N6rusSDuv-Y/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/N6rusSDuv-Y',
     title: "Bubblin' Challenge"
   },
   {
-    index: '9',
+    index: '12',
     thumb: 'https://img.youtube.com/vi/-OqrcUvrbRY/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/-OqrcUvrbRY',
     title: 'Come Down'
   },
   {
-    index: '10',
+    index: '13',
     thumb: 'https://img.youtube.com/vi/y_Ka5wiQBEw/maxresdefault.jpg',
     url: 'https://www.youtube.com/embed/y_Ka5wiQBEw',
     title: 'The Season / Carry Me / The Waters'
