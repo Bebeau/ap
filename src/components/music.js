@@ -54,11 +54,11 @@ const albums = [
     key: '4',
     artwork: [oxnard],
     apple: 'https://itunes.apple.com/album/oxnard/1439982774?ls=1',
-    spotify: 'http://open.spotify.com/album/3rqqwtJE89WoWvMyPTvbZc',
+    spotify: 'https://open.spotify.com/album/3rqqwtJE89WoWvMyPTvbZc',
     itunes: 'https://itunes.apple.com/album/oxnard/1439982774?ls=1&app=itunes',
     tidal: 'https://listen.tidal.com/album/98360379',
     google: 'https://play.google.com/music/m/Bdhowaxhgmcaeqrhlztg4sd2zke',
-    amazon: 'http://amazon.com/dp/B07JMDLHGR'
+    amazon: 'https://amazon.com/dp/B07JMDLHGR'
   },
   {
     key: '5',
