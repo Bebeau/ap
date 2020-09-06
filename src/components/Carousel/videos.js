@@ -117,9 +117,9 @@ class VideoSlider extends Component {
       )
     });
     return (
-      <Slider {...settings}>
-        {slides}
-      </Slider>
+        <Slider {...settings}>
+          {slides}
+        </Slider>
     );
   }
 }

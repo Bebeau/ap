@@ -4,7 +4,7 @@ class Date extends Component {
   render() {
     let displayDate = (this.props.date).replace(/-/g, ".");
     return(
-      <li className="event" key={this.props.key}>
+      <li className="event">
         <div className="wrap first">
           <span className="date">{displayDate}</span>
           <span className="venue">{this.props.venue}</span>
@@ -41,10 +41,9 @@ class Tour extends Component {
     .then((res) => res.json())
     .then((tourDates) => {
       tourDates.data.map(item => {
-        // console.log(item.attributes)
         this.setState({
           dates: this.state.dates.concat(item)
-        })
+        });
         return null;
       })
     })

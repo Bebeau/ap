@@ -62,16 +62,16 @@ class App extends Component {
         clicked: false
       }
     }
+  }
+  targetElement = null;
+  componentDidMount() {
     this.timeoutId = setTimeout(function () {
       this.setState({
         clicked: true
       });
     }.bind(this), 500);
-  }
-  targetElement = null;
-  componentDidMount() {
+
     this.showMenu = this.showMenu.bind(this);
-    
     this.targetVideos = document.querySelector('#videos');
     this.targetPhotos = document.querySelector('#photos');
     this.targetTours = document.querySelector('#tour');
@@ -103,7 +103,6 @@ class App extends Component {
       disableBodyScroll(this.targetMusic);
       disableBodyScroll(this.targetDownload);
     }.bind(this), 800);
-    // window.location.href = window.location.protocol+"://"+window.location.hostname+"/"+id;
   }
   showMenu = () => {
     this.setState({ 
@@ -159,7 +158,7 @@ class App extends Component {
           </nav>
           <section id="modal" className={this.state.active ? 'open': null}>
             <div id="music" className={this.state.id === 'music' ? 'show modalwrap': 'modalwrap'}>
-              <Albums/>
+              <Albums />
             </div>
             <div id="videos" className={this.state.id === 'videos' ? 'show modalwrap': 'modalwrap'}>
               <VideoSlider />
