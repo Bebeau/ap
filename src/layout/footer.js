@@ -4,7 +4,6 @@ import Mailchimp from 'react-mailchimp-form';
 
 import facebook from '../assets/img/SVG/facebook.svg';
 import instagram from '../assets/img/SVG/instagram.svg';
-import twitter from '../assets/img/SVG/twitter.svg';
 import youtube from '../assets/img/SVG/youtube.svg';
 
 import youtubeMobile from '../assets/img/SVG/youtube_mobile.svg';
@@ -49,9 +48,6 @@ class Footer extends Component{
               </a>
               <a id="instagram" href="https://www.instagram.com/anderson._paak/" target="_BLANK" rel="noopener noreferrer">
                 <img src={instagram} alt="" />
-              </a>
-              <a id="twitter" href="https://twitter.com/AndersonPaak" target="_BLANK" rel="noopener noreferrer">
-                <img src={twitter} alt="" />
               </a>
               <a className="hideMobile" id="youtube" href="https://www.youtube.com/user/Breezylovejoy" target="_BLANK" rel="noopener noreferrer">
                 <img src={youtube} alt="" />
