@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.957bb7e5.css",
-    "main.js": "/static/js/main.f8697fb8.js",
+    "main.js": "/static/js/main.9d59cfe4.js",
     "static/media/8.jpg": "/static/media/8.0c69b0151d51b5b073d4.jpg",
     "static/media/9.jpg": "/static/media/9.f3fc06cf7aa05f5094a4.jpg",
     "static/media/12.jpg": "/static/media/12.05d0496bd84c410aa6c4.jpg",
@@ -28,7 +28,6 @@
     "static/media/14.jpg": "/static/media/14.7268c307e485f506bfcc.jpg",
     "static/media/18.jpg": "/static/media/18.61edb84d43d736909188.jpg",
     "static/media/24.jpg": "/static/media/24.0ffbd14021c902792330.jpg",
-    "static/media/twitter.svg": "/static/media/twitter.95da5c389bcbf1c2b5959bf90ba14b66.svg",
     "static/media/malibu.jpg": "/static/media/malibu.2f508e2ac12a091cf6c2.jpg",
     "static/media/venice.jpg": "/static/media/venice.66af9e7f96010b175e2f.jpg",
     "static/media/22.jpg": "/static/media/22.d5632ed9c11a05a013cf.jpg",
@@ -54,10 +53,10 @@
     "index.html": "/index.html",
     "static/media/youtube_mobile.svg": "/static/media/youtube_mobile.04b399d202b42806254217cfaa6f87a8.svg",
     "main.957bb7e5.css.map": "/static/css/main.957bb7e5.css.map",
-    "main.f8697fb8.js.map": "/static/js/main.f8697fb8.js.map"
+    "main.9d59cfe4.js.map": "/static/js/main.9d59cfe4.js.map"
   },
   "entrypoints": [
     "static/css/main.957bb7e5.css",
-    "static/js/main.f8697fb8.js"
+    "static/js/main.9d59cfe4.js"
   ]
 }
