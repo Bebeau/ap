@@ -388,6 +388,9 @@
 			#logo {
 				left: 15px;
 			}
+			.emailForm {
+				bottom: 15px;
+			}
 		}
 	}
 	#logo {
@@ -452,12 +455,14 @@
 			vertical-align: middle;
 			line-height: 21px;
 			a {
-				width: 40px;
 				height: auto;
 				margin: 0;
 				padding: 0;
 				display: inline-block;
 				opacity: 1;
+				text-decoration: none;
+				color: white;
+				font-weight: bold;
 				img {
 					width: 100%;
 					vertical-align: middle;

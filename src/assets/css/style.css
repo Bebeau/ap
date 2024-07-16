@@ -1002,6 +1002,9 @@ nav button.selected, nav a.selected {
   #App.in #logo {
     left: 15px;
   }
+  #App.in .emailForm {
+    bottom: 15px;
+  }
   #logo {
     position: absolute;
     top: 15px;
@@ -1066,12 +1069,14 @@ nav button.selected, nav a.selected {
     line-height: 21px;
   }
   .emailForm .showMobile a {
-    width: 40px;
     height: auto;
     margin: 0;
     padding: 0;
     display: inline-block;
     opacity: 1;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
   }
   .emailForm .showMobile a img {
     width: 100%;
