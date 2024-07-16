@@ -8,8 +8,6 @@ import Photos from './components/photos.js';
 
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
-import './assets/sass/style.css';
-
 import Header from './layout/header';
 import Footer from './layout/footer';
 

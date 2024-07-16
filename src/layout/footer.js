@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 import Mailchimp from 'react-mailchimp-form';
 
-import heard from '../assets/img/SVG/heard.svg';
-
 import facebook from '../assets/img/SVG/facebook.svg';
 import instagram from '../assets/img/SVG/instagram.svg';
 import twitter from '../assets/img/SVG/twitter.svg';
@@ -42,7 +40,8 @@ class Footer extends Component{
                 }
               />
               <div className="showMobile">© {this.getYear()} Anderson .Paak</div>
-              <div className="showMobile sign">Built By <a href="instagram://user?username=heardmusicapp" target="_BLANK" rel="noopener noreferrer"> <img src={heard} alt="@beheardla" /></a></div>
+              <div className="showMobile sign">Powered By <a href="https://hueunlimited.com" target="_BLANK" rel="noopener noreferrer">HUE</a></div>
+              <div className="showMobile sign">Developed By <a href="https://cltdev.com" target="_BLANK" rel="noopener noreferrer">CLTDEV.com</a></div>
             </div>
             <article id="social" className="hideMobile">
               <a id="facebook" href="https://www.facebook.com/AndersonPaak" target="_BLANK" rel="noopener noreferrer">
@@ -63,7 +62,8 @@ class Footer extends Component{
             </article>
             <p id="legal" className="hideMobile">
             	<span>© {this.getYear()} Anderson .Paak</span>
-              <span className="sign">Built By <a href="https://instagram.com/heardmusicapp" target="_BLANK" rel="noopener noreferrer"> <img src={heard} alt="@heardmusicapp" /></a></span>
+              <span className="sign">Powered By <a href="https://hueunlimited.com" target="_BLANK" rel="noopener noreferrer">HUE</a></span>
+              <span className="sign">Developed By <a href="https://cltdev.com" target="_BLANK" rel="noopener noreferrer">CLTDEV.com</a></span>
             </p>
           </footer>
        );
